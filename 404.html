@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="/styles/base.css">
+        <link rel="stylesheet" type="text/css" href="/styles/mobile.css" media="screen and (max-width: 800px)">
+        <link rel="stylesheet" href="/styles/404.css">
+        <link id="tab_icon" rel="icon" href="/images/logos/icon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>RijnMUN</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo_container">
+                <a href="/"><img class="logo" id="logo" src="/images/logos/logo.png"></a>
+            </div>
+            <!-- dropdown for laptop version -->
+            <div class="menu" id="menu">
+                <a href="/" class="normal">Home</a>
+                <div class="normal">
+                    <div class="dropdown">
+                        <a class="dropbtn" href="/rijnmun-2024/general-information">RijnMUN 2024</a>
+                        <div class="dropdown-content">
+                            <a href="/rijnmun-2024/general-information">General Information</a>
+                            <a href="/rijnmun-2024/committees-and-issues">Committees and Issues</a>
+                            <a href="/rijnmun-2024/programme-of-events">Programme of Events</a>
+                            <a href="/rijnmun-2024/board-of-directors">Board of Directors</a>
+                            <a href="/rijnmun-2024/venue">Venue & Leiden</a>
+                        </div>
+                    </div>
+                </div>
+                <a class="normal" href="/registration">Registration</a>
+                <a class="normal" href="/contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="show_bars()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- dropdown for phone version -->
+        <div class="toggle" id="toggle" style="display:none;">
+            <ul>
+                <li class="main"><a href="/">Home</a></li>
+                <li class="main"><a href="/rijnmun-2024/general-information">RijnMUN 2024</a></li>
+                <ul><li>
+                    <a href="/rijnmun-2024/general-information">General Information</a>
+                    <a href="/rijnmun-2024/committees-and-issues">Committees and Issues</a>
+                    <a href="/rijnmun-2024/programme-of-events">Programme of Events</a>
+                    <a href="/rijnmun-2024/board-of-directors">Board of Directors</a>
+                    <a href="/rijnmun-2024/venue">Venue & Leiden</a>
+                </li></ul>
+                <li class="main"><a href="/registration">Registration</a></li>
+                <li class="main"><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+<script>
+            function show_bars() {
+                var x = document.getElementById("toggle");
+
+                // if (x.className === "toggle") {
+                //     x.className += " responsive";
+                // } else {
+                //     x.className = "toggle";
+                // }
+                
+                // the responsive class name is no longer used
+                if (x.style.display === 'none') {
+                    x.style.display = 'block';
+                    x.style.height = x.scrollHeight + "px";
+
+                } else {
+
+                    x.style.height = 0;
+
+                    setTimeout(function(){
+                        x.style.display = 'none'; 
+                    }, 200, x)
+                    
+                }
+            }
+            function hide_bars() {
+                var x = document.getElementById("toggle");
+
+                // if (x.className != "toggle") {
+                //     x.className = "toggle"
+                // }
+
+                x.style.height = 0;
+
+                setTimeout(function(){
+                    x.style.display = 'none'; 
+                }, 200, x)
+                    
+            }
+
+            document.onkeypress = function (key) {
+                // console.log(code);
+                // console.log(lock);
+
+                key = key || window.event;
+                console.log(key.keyCode);
+
+                if (key.keyCode===104) {
+                    window.location.replace("/");
+                }    
+            }
+        </script>
+        <main onclick="hide_bars()">
+            <div class="title">
+                <h1>Error 404: Page Not Found</h1>
+            </div>
+            <!-- <br> -->
+            <img src="/images/404_not_found.png" style="margin: auto; display: block; width: 30%;">
+            <br>
+            <p>Sorry! It appears the page you are looking for does not exist</p>
+            <p>Please check the website URL and try again</p>
+            <button><a href="/">Get me out of here</a></button>
+        </main>
+        <footer>
+            <div class="f_container">
+                <div class="f">
+                    <div class="ft">
+                        <h4>GENERAL</h4>
+                        <ul class="f_important">
+                            <li>
+                                <a href="/rijnmun-2024/programme-of-events">Agenda</a>
+                            </li>
+                            <li>
+                                <a href="https://foundation.thimun.org/participation/guidelines/" target="_blank">Guidelines</a>
+                            </li>
+                            <li>
+                                <a href="/rijnmun-2024/committees-and-issues">Research</a>
+                            </li>
+                            <li>
+                                <a href="/privacy-statement">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="ftr">
+                        <h4>CONTACT</h4>
+                        <ul class="f_contact">
+                            <li>
+                                <i class="fa fa-institution"></i>
+                                <p>
+                                    RijnMUN
+                                </p>
+                            </li>
+                            <li>
+                                <span class="spc"><i class="fa fa-home" style="font-size: 18px;"></i></span>
+                                <a class="adress" href="https://maps.app.goo.gl/dN1XhpLJ43wm5kVo7">
+                                    Apollolaan 1, 2341 BA<br>Oegstgeest, The Netherlands
+                                </a>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <a href="mailto:rijnmunsecretariat@gmail.com">
+                                    rijnmunsecretariat@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <span class="spc>"><i class="fa fa-globe"></i></span>
+                                <a href="/">
+                                    rijnmun.org
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="timer">
+                        <h4>COUNTDOWN TO RIJNMUN</h4>
+                        <div class="countdown">
+                            <table class="tm_tbl">
+                                <tr><td id="days"></td><td id="hours"></td><td id="minutes"></td><td id="seconds"></td></tr>
+                                <tr><td class="days">Days</td><td class="hours">Hours</td><td class="minutes">Minutes</td><td class="seconds">Seconds</td></tr>
+                            </table>
+                            <script>
+                                var countDownDate = new Date("Oct 12, 2024 8:00:00").getTime();
+                                var x = setInterval(function() {
+                                  var now = new Date().getTime();
+                                  var distance = countDownDate - now;
+                                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                
+                                  document.getElementById("days").innerHTML = days;
+                                  document.getElementById("hours").innerHTML = hours;
+                                  document.getElementById("minutes").innerHTML = minutes;
+                                  document.getElementById("seconds").innerHTML = seconds;
+                                
+                                  if (distance < 0) {
+                                    clearInterval(x);
+                                    document.getElementById("days").innerHTML = "00";
+                                    document.getElementById("hours").innerHTML = "00";
+                                    document.getElementById("minutes").innerHTML = "00";
+                                    document.getElementById("seconds").innerHTML = "00";
+                                  }
+                                }, 1000);
+                            </script>
+                        </div>
+                        <div class="socials">
+                            <a href="https://www.instagram.com/rijn.mun?igsh=cWtvcHhlZzN3N2R5" target="_blank"><img class="insta" src="/images/logos/instagram.png"></a>
+                            <h4>FOLLOW US</h4>
+                            <a href="tiktok" target="_blank"><img class="tiktok" src="/images/logos/tiktok.png"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="map_div">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.4324482386883!2d4.459190276739407!3d52.181011671974325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c7261b8f7c3d%3A0x90ba89f8621db50!2sRijnlands%20Lyceum%20Oegstgeest!5e0!3m2!1sen!2snl!4v1702158487137!5m2!1sen!2snl" width="300" height="200" style="border:0;" allowfullscreen="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <p class="copyright"><i>© RijnMUN 2024, all rights reserved</i></p>
+        </footer>
+    </body>
+</html>
