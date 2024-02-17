@@ -1,0 +1,156 @@
+:root {
+    --theme-bl: #235690;
+    --theme-rd: #D90148;
+    --theme-wh: white;
+    --bl-txt: #0269B3;
+
+    /* other possible colours */
+    --theme-gr: #01895D;
+    --light-gr: #b3e3d4;
+    --theme-yw: #FAB800;
+    --light-yw: #EBC700;
+}
+
+.container {
+    padding: 1% 4.5% 1% 4.5%;
+    display: flex;
+}
+
+.container p, .container p a {
+    text-align: center;
+    color: var(--bl-txt);
+}
+
+.container ul, .container ul p {
+    color: var(--bl-txt);
+    text-align: left;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 60px;
+}
+
+.list-title {
+    text-decoration: underline;
+}
+
+.alan, .alan.goals ul li{
+    color: #008000 !important;
+}
+
+.lenka, .lenka.goals ul li{
+    color: #800080 !important; 
+}
+
+.insta-embeds {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.goals {
+    display: flex;
+}
+
+.alan.goals, .lenka.goals {
+    width: 48%;
+    margin: 1%;
+}
+
+.check::after {
+    content: '\2714';
+    color: #00c545;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.cross::after {
+    content: '\274C';
+    color: #c50000;
+    font-size:14px;
+    font-weight: bold;
+    margin: 0 1em;
+}
+
+.entertainment {
+    display: flex;
+    flex-direction: column;
+}
+
+.entertainment.games {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.anim {
+    width: 80px;
+    height: 100px;
+    margin-top: 20px;
+    margin-right: 500px;
+}
+
+.b { 
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 10px 10px 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    background-color: #000;
+}
+
+.b:nth-child(4n+1) {
+    animation: wave 2s ease .0s infinite;
+}
+
+.b:nth-child(4n+2) {
+    animation: wave 2s ease .2s infinite;
+}
+
+.b:nth-child(4n+3) {
+    animation: wave 2s ease .4s infinite;
+}
+
+.b:nth-child(4n+4) {
+    animation: wave 2s ease .6s infinite;
+    margin-right: 0;
+}
+
+@keyframes wave {
+    0% { top: 0; opacity: 1;}
+    50% { top: 30px; opacity: .2;}
+    100% { top: 0; opacity: 1;}
+}
+
+.dna { 
+    transform: rotateZ(90deg);
+    width: 30px;
+    height: 100px;
+}
+.dna .element { 
+    display: block; 
+    border-left: 5px solid rgb(35, 199, 231); 
+    border-right: 5px solid rgb(35, 199, 231); 
+    border-top: dotted 2px rgb(29, 146, 170);
+    margin-top: 4px;
+    width: 5rem; 
+    height: 0.5rem; 
+    /* perspective: 1000px;  */
+    animation: rotate 5s infinite linear; 
+    animation-delay: calc(var(--i) * 0.2s); 
+} 
+
+@keyframes rotate { 
+    100% { transform: rotateY(360deg); }
+}
+
+.animations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

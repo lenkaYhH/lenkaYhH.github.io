@@ -1,0 +1,186 @@
+:root {
+    --theme-bl: #235690;
+    --theme-rd: #D90148;
+    --theme-wh: white;
+    --bl-txt: #0269B3;
+
+    --dark-bl: #143152;
+}
+
+h3 {
+    width: 98%;
+    font-size: 30px;
+    /* align-self: end; */
+    text-align: end;
+    justify-self: end;
+    /* color: #5cd6ff; */
+    color: #ade1f2f2;
+    margin: 1%;
+}
+
+/* Mobile support */
+
+@media screen and (max-width: 800px) {
+    .welcome {
+        display: block;
+        flex-direction: unset;
+        padding: 1.5%;
+        width: fit-content;
+    }
+
+    h1 {
+        width: unset;
+        padding: 5%;
+        padding-left: 2%;
+        padding-bottom: none;
+        font-size: 50px;
+    }    
+
+    h3 {
+        width: 85%;
+        padding-left: 5%;
+        padding-bottom: 3%;
+        /* padding-right: unset; */
+        margin: 1px;
+        font-size: 25px;
+    }
+
+    /* .title {
+        width: fit-content;
+    } */
+
+    .f_contact {
+        margin-right: none;
+        padding-right: none;
+    }
+
+    ul.f_contact {
+        margin: unset;
+        padding: unset;
+    }
+}
+
+/* SG welcome/announcement letter */
+
+.message p {
+    margin-top: unset;
+    color: var(--bl-txt);
+    font-size: 19px;
+    text-align: center;
+    /* font-weight: 500; */
+    line-height: 30px;
+
+    /* for open sans ----  */
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.message {
+    width: 60%;
+    display: block;
+    justify-content: center;
+}
+
+.keywords {
+    /* font-weight: 800; */
+    margin-top: unset;
+
+    /* for open sans------  */
+    font-weight: 600;
+    font-style: italic;
+}
+
+.container {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+/* sidebar ------------------ */
+
+.sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    /* margin-top: 50px; */
+    padding: 20px;
+    background-color: #ade1f2f2;
+    /* background-color: #AFDDFD; */
+    height: fit-content;
+    border-radius: 10px;
+    width: 250px;
+    color: var(--dark-bl);
+}
+
+.sidebar h4 {
+    margin-bottom: unset;
+}
+
+.sidebar .date {
+    margin: 5px 0 5px 0;
+    font-size: 14px;
+}
+
+.sidebar div {
+    padding-bottom: 20px;
+}
+
+.sidebar .news {
+    padding-bottom: 0;
+}
+
+.side_insta {
+    width: 25px;
+    height: 25px;
+    margin-right: 4px;
+    position: relative;
+    top: 7px;
+}
+
+.side_tiktok {
+    width: 19px;
+    height: 23px;
+    margin-right: 6px;
+    margin-left: 4px;
+    position: relative;
+    top: 6px;
+}
+
+.side_link, .side_link:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.side_link:hover {
+    text-decoration: underline;
+}
+
+
+/* Mobile support */
+
+@media screen and (max-width: 800px) {
+    .message {
+        width: 90%;
+        margin-left: 5vw;
+    }
+
+    .message p {
+        font-size: 15px;
+        /* font-weight: 600; don't override default font design settings*/
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 85vw;
+        margin-left: 2.5vw;
+        margin-bottom: 25px;
+    }
+
+}
