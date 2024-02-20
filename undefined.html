@@ -432,6 +432,25 @@
                         
                         window.addEventListener('mousemove', move);
                     </script>
+
+                    <div class="first-project">
+                        <input type="number" id="num1">
+                        <p>+</p>
+                        <input type="number" id="num2">
+                        <button onclick="process()">enter</button>
+                        <p id="res">=</p>
+
+                        <!-- is it cursed if i nest the script inside a div tag-? -->
+                        <script>
+                            function process() {
+                                console.log("clicked");
+                                let val1 = document.getElementById("num1").value;
+                                let val2 = document.getElementById("num2").value;
+
+                                document.getElementById("res").innerHTML += " Hello World";
+                            }
+                        </script>
+                    </div>
                 </div> 
             </div>
             <script>
@@ -520,12 +539,13 @@
                                 code = formKey('revelio');
                             }
 
-                        } else {
-                            // if mistype, return home
-                            // window.location.replace("/");
-                            // console.log("returning home, wrong lock");
-                            freak_out()
                         }
+
+                        // ok so now you can type anything u want if the page is unlocked
+                        // } else {
+                        //     // if mistype, return home
+                        //     freak_out()
+                        // }
 
                     }
                     

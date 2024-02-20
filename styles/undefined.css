@@ -155,6 +155,7 @@
     justify-content: space-evenly;
 }
 
+/* the css for the emoji alone terrifies me ------- */
 .emoji_thingy {
     display: flex;
     justify-content: center;
@@ -215,4 +216,13 @@
     margin-bottom: 80px;
     border: 2px solid rgb(244, 205, 113);
     border-style: inset;
+}
+
+.first-project {
+    margin: 10px;
+    text-align: center;
+
+    button {
+        margin-top: 5px;
+    }
 }
