@@ -60,10 +60,29 @@
         padding: 5px;
     } */
 
-    #side-button:hover {
+    /* #side-button:hover {
         text-decoration: underline;
         color: #D2BAE7;
         cursor: pointer;
+    } */
+
+    #side-button {
+        z-index: 100;
+        display: block;
+        /* position: absolute; */
+        left: 100px;
+        top: 100px;
+        width: fit-content;
+        height: 30px;
+        .bar {
+            display: block;
+            width: 35px;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--sidebar-text);
+            position: relative;
+            top: calc(var(--i)*1px);
+        }
     }
 
     #side-nav {
@@ -71,12 +90,13 @@
         padding: 5px;
         max-height: 80vh;
         width: fit-content;
-
+        transform: scaleX(-1.1);
         a {
             display: block;
             color: var(--sidebar-text);
             text-decoration: none;
             text-wrap: nowrap;
+            transform: scaleX(-0.9090909091);
         }
 
         a:hover {
