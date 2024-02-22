@@ -59,6 +59,12 @@
         padding: 5px;
     }
 
+    #side-button:hover {
+        text-decoration: underline;
+        color: #D2BAE7;
+        cursor: pointer;
+    }
+
     #side-nav {
         overflow-y: scroll;
         padding: 5px;
