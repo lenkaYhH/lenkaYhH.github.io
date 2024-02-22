@@ -35,12 +35,13 @@
     width: fit-content;
     height: 100%;
     top: 15px;
-    left: 30px;
+    right: 30px;
     position: absolute;
 }
 
 .sidebar {
     display: flex;
+    flex-direction: row-reverse;
     position: -webkit-sticky;
     position: sticky;
     top: 20px;
@@ -54,10 +55,10 @@
     color: var(--sidebar-text);
     opacity: 95%;
 
-    #side-button {
+    /* #side-button {
         font-weight: bold;
         padding: 5px;
-    }
+    } */
 
     #side-button:hover {
         text-decoration: underline;

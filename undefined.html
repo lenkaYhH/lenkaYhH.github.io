@@ -73,7 +73,7 @@
                     <!-- sidebar----------------------- -->
                     <div class="sidebar-parent">
                         <div class="sidebar">
-                            <div id="side-button" onclick="panel()">></div>
+                            <div id="side-button" onclick="panel()"><i id="side-button-i" class="fa fa-caret-left fa-lg"></i></div>
                             <div id="side-nav" style="display:none">
                                 <a href="#counters">Counters</a>
                                 <a href="#fears">Fears</a>
@@ -97,7 +97,6 @@
                             </div>
 
                             <script>
-
                                 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                                     anchor.addEventListener('click', function (e) {
                                         e.preventDefault();
@@ -118,13 +117,15 @@
 
                                 function panel() {
                                     let cont = document.getElementById("side-nav");
+                                    let caret = document.getElementById('side-button-i')
+                                    caret.style.transition = "0.2s ease-in-out"
 
                                     if (cont.style.display === "none") {
                                         // open the contents
                                         cont.style.display = 'block';
                                         cont.style.height = cont.scrollHeight + "px";
-
-                                        document.getElementById("side-button").innerHTML = "<";
+                                        caret.style.transform = "rotate(-90deg)"
+                                        // document.getElementById("side-button").innerHTML = "<";
 
                                     } else {
                                         // close the contents
@@ -134,8 +135,9 @@
                                         setTimeout(function(){
                                             cont.style.display = 'none'; 
                                         }, 200, cont)
+                                        caret.style.transform = "rotate(0deg)"
 
-                                        document.getElementById("side-button").innerHTML = ">";
+                                        // document.getElementById("side-button").innerHTML = ">";
 
                                     }
                                 }
