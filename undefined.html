@@ -50,7 +50,9 @@
 
                 if (key.keyCode===104) {
                     window.location.replace("/");
-                }    
+                } else if (key.keyCode == 109) {
+                    panel();
+                }
             }
         </script>
         <main>
@@ -74,7 +76,7 @@
                     <div class="sidebar-parent">
                         <div class="sidebar">
                             <div id="side-button" onclick="panel()"><span id="bar1" class="bar" style="--i:0"></span><span id="bar2" class="bar" style="--i:9"></span><span id="bar3" class="bar" style="--i:18"></span></div>
-                            <div id="side-nav" style="display:none">
+                            <div id="side-nav" style="--i: 0; display: none;">
                                 <a href="#counters">Counters</a>
                                 <a href="#fears">Fears</a>
                                 <a href="#color-grave">Color Grave</a>
@@ -123,11 +125,12 @@
                                     // let caret = document.getElementById('side-button-i')
                                     // caret.style.transition = "0.2s ease-in-out"
 
-                                    if (cont.style.display === "none") {
+                                    if (cont.style.getPropertyValue("--i") === '0') {
                                         // open the contents
                                         cont.style.display = 'block';
                                         cont.style.height = cont.scrollHeight + "px";
-                                        // cont.style.width = cont.scrollWidth + "px"
+                                        cont.style.width = cont.scrollWidth + "px"
+                                        cont.style.setProperty('--i', '1')
                                         // caret.style.transform = "rotate(-90deg)"
                                         // document.getElementById("side-button").innerHTML = "<";
                                         bar1.style.transition = "0.5s ease-in-out"
@@ -142,8 +145,8 @@
                                     } else {
                                         // close the contents
                                         cont.style.height = 0;
-                                        // cont.style.width = 0
-                            
+                                        cont.style.width = 0
+                                        cont.style.setProperty('--i', '0')
                                         // pausing code for animation
                                         setTimeout(function(){
                                             cont.style.display = 'none'; 
@@ -555,22 +558,22 @@
             <script>
                 // SECURITY ----------------------------------------
                 // shut off page to mobile/tablet users
-                if (screen.availWidth < 1000) { 
-                   window.location.replace("/");
-                }
+                // if (screen.availWidth < 1000) { 
+                //    window.location.replace("/");
+                // }
 
-                // stop right click
-                document.addEventListener('contextmenu', event => event.preventDefault());
+                // // stop right click
+                // document.addEventListener('contextmenu', event => event.preventDefault());
 
-                // if the inspect element is opened, then redirect 
-                if ((window.outerHeight - window.innerHeight) > 150 || (window.outerWidth - window.innerWidth) > 100) {
-                    window.location.replace("/");
-                }
-                window.onresize = function () {
-                    if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 20) {
-                        window.location.replace("/");
-                    }
-                }
+                // // if the inspect element is opened, then redirect 
+                // if ((window.outerHeight - window.innerHeight) > 150 || (window.outerWidth - window.innerWidth) > 100) {
+                //     window.location.replace("/");
+                // }
+                // window.onresize = function () {
+                //     if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 20) {
+                //         window.location.replace("/");
+                //     }
+                // }
                 
                 // PASSWORD---------------------------------
                 // a (index 0, keycode 97)
@@ -639,6 +642,13 @@
                             }
 
                         }
+
+                        if (key.keyCode===104) {
+                            window.location.replace("/");
+                        } else if (key.keyCode == 109) {
+                            panel();
+                        }
+
 
                         // ok so now you can type anything u want if the page is unlocked
                         // } else {

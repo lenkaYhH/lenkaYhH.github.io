@@ -13,6 +13,10 @@
     --sidebar-text: #ADCAEB;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     /* padding: 1% 4.5% 1% 4.5%; */
     padding: 2% 3% 2% 3%;
@@ -87,16 +91,21 @@
 
     #side-nav {
         overflow-y: scroll;
+        overflow-x: scroll;
         padding: 5px;
         max-height: 80vh;
-        width: fit-content;
-        transform: scaleX(-1.1);
+        width: 0;
+        /* I sacrificed the scrollbar for smooth transitions
+        We can always try to add it back later */
+        scrollbar-width: none;
+        /* width: fit-content; */
+        /* transform: scaleX(-1.1); */
         a {
             display: block;
             color: var(--sidebar-text);
             text-decoration: none;
             text-wrap: nowrap;
-            transform: scaleX(-0.9090909091);
+            /* transform: scaleX(-0.9090909091); */
         }
 
         a:hover {
@@ -110,7 +119,7 @@
 #side-nav {
     height: 0;
     overflow: hidden;
-    transition: height 0.2s ease-out;
+    transition: /* height */ 0.2s ease-out;
 }
 
 /* ----------------------------- */
