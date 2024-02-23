@@ -71,7 +71,7 @@ html {
     } */
 
     #side-button {
-        z-index: 100;
+        z-index: 101;
         display: block;
         /* position: absolute; */
         left: 100px;
@@ -114,6 +114,10 @@ html {
         }
     }
 
+}
+
+.sidebar-parent, .sidebar, #side-nav {
+    z-index: 100;
 }
 
 #side-nav {
