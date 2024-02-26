@@ -191,8 +191,8 @@ html {
 .anim {
     width: 80px;
     height: 100px;
-    margin-top: 20px;
-    margin-right: 500px;
+    /* margin-top: 20px; */
+    margin-right: 100px;
 }
 
 .b { 
@@ -231,7 +231,7 @@ html {
 
 .dna { 
     transform: rotateZ(90deg);
-    width: 30px;
+    width: 80px;
     height: 100px;
 }
 .dna .element { 
@@ -326,5 +326,36 @@ html {
 
     button {
         margin-top: 5px;
+    }
+}
+
+/* cool atom animation */
+
+
+.atom {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    perspective: 800px;
+    /* margin-top: 25px; */
+}
+
+.atom span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-left: 5px #000 solid;
+    border-top: 10px transparent solid;
+    border-right: 5px #000 solid;
+    animation: segment 1s linear infinite;
+}
+
+@keyframes segment {
+    from {
+        transform: rotateZ(calc(var(--a)*120deg)) rotateX(70deg) rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(calc(var(--a)*120deg)) rotateX(70deg) rotateZ(360deg);
     }
 }
