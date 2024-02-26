@@ -96,6 +96,7 @@
                                 <a href="#nice-stuff">Nice stuff in our lives</a>
                                 <a href="#emoji">Emoji</a>
                                 <a href="#hello-world">Hello World</a>
+                                <a href="#alan-weird-experiences">Alan, why.</a>
                             </div>
 
                             <script>
@@ -558,27 +559,31 @@
                             }
                         </script>
                     </div>
+                    <div id="alan-weird-experiences">
+                        <ul class="list-title">Alan, why.</ul>
+                        <li><span class="lenka">Uploading code to an Arduino through the terminal</span></li>
+                    </div>
                 </div> 
             </div>
             <script>
                 // SECURITY ----------------------------------------
                 // shut off page to mobile/tablet users
-                // if (screen.availWidth < 1000) { 
-                //    window.location.replace("/");
-                // }
+                if (screen.availWidth < 1000) { 
+                   window.location.replace("/");
+                }
 
-                // // stop right click
-                // document.addEventListener('contextmenu', event => event.preventDefault());
+                // stop right click
+                document.addEventListener('contextmenu', event => event.preventDefault());
 
-                // // if the inspect element is opened, then redirect 
-                // if ((window.outerHeight - window.innerHeight) > 150 || (window.outerWidth - window.innerWidth) > 100) {
-                //     window.location.replace("/");
-                // }
-                // window.onresize = function () {
-                //     if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 20) {
-                //         window.location.replace("/");
-                //     }
-                // }
+                // if the inspect element is opened, then redirect 
+                if ((window.outerHeight - window.innerHeight) > 150 || (window.outerWidth - window.innerWidth) > 100) {
+                    window.location.replace("/");
+                }
+                window.onresize = function () {
+                    if ((window.outerHeight - window.innerHeight) > 100 || (window.outerWidth - window.innerWidth) > 20) {
+                        window.location.replace("/");
+                    }
+                }
                 
                 // PASSWORD---------------------------------
                 // a (index 0, keycode 97)
