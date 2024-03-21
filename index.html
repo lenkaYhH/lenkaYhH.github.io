@@ -3,95 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="light">
+        <meta name="robots" content="index, follow">
+        <meta property="og:type" content="wesbite">
+        <meta property="og:title" content="RijnMUN 2024">
+        <meta property="og:url" content="https://www.rijnmun.org/">
+        <meta property="og:site_name" content="RijnMUN">
+        <meta name="theme-color" content="#23569090">
+        <meta name="description" content="Rijnlands Lyceum Oegstgeest Model United Nations (RijnMUN) is a 3-day beginner conference from 11th to 13th October 2024 aimed at introducing high school students into the wonderful world of MUN. It will be a low-cost conference that takes place at Het Rijnlands Lyceum Oegstgeest and will consist of both workshops and debates designed for complete beginners. Any application for delegates and student officers are welcome.">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="icon" href="/images/favicon.ico" sizes="96x96">
+
         <link rel="stylesheet" type="text/css" href="./styles/base.css">
         <link rel="stylesheet" href="./styles/index.css">
         <link id="tab_icon" rel="icon" href="./images/logos/icon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        
         <title>RijnMUN</title>
     </head>
     <body>
         <header>
             <div class="logo_container">
-                <a href="/"><img class="logo" id="logo" id="logo" src="./images/logos/logo.png"></a>
+                <a href="https://www.rijnmun.org"><img class="logo" id="logo" id="logo" src="./images/logos/logo.png"></a>
             </div>
 
             <!-- dropdown for laptop version -->
             <div class="menu" id="menu">
-                <a href="./" class="current">Home</a>
+                <a href="https://www.rijnmun.org" class="current">Home</a>
                 <div class="normal">
                     <div class="dropdown">
-                        <a class="dropbtn" href="/">RijnMUN 2024</a>
+                        <a class="dropbtn" href="https://www.rijnmun.org">RijnMUN 2024</a>
                         <div class="dropdown-content">
-                            <a href="/">General Information</a>
-                            <a href="/">Committees and Issues</a>
-                            <a href="/">Programme of Events</a>
+                            <a href="https://www.rijnmun.org">General Information</a>
+                            <a href="https://www.rijnmun.org">Committees and Issues</a>
+                            <a href="https://www.rijnmun.org">Programme of Events</a>
                             <a href="/undefined">Board of Directors</a>
-                            <a href="/">Venue & Leiden</a>
+                            <a href="https://www.rijnmun.org">Venue & Leiden</a>
                         </div>
                     </div>
                 </div>
-                <a class="normal" href="/">Registration</a>
-                <a class="normal" href="/">Contact</a>
+                <a class="normal" href="https://www.rijnmun.org">Registration</a>
+                <a class="normal" href="https://www.rijnmun.org">Contact</a>
                 <a href="javascript:void(0);" class="icon" onclick="show_bars()">
                     <i class="fa fa-bars"></i>
                 </a>
             </div>
         </header>
 
-        <!-- dropdown for phone version -->
-        <div class="toggle" id="toggle" style="display:none;">
-            <ul>
-                <li class="main"><a href="./">Home</a></li>
-                <li class="main"><a href="/">RijnMUN 2024</a></li>
-                <ul><li>
-                    <a href="/">General Information</a>
-                    <a href="/">Committees and Issues</a>
-                    <a href="/">Programme of Events</a>
-                    <a href="/">Board of Directors</a>
-                    <a href="/">Venue & Leiden</a>
-                </li></ul>
-                <li class="main"><a href="/">Registration</a></li>
-                <li class="main"><a href="/">Contact</a></li>
-            </ul>
-        </div>
+        
         <script>
-            function show_bars() {
-                var x = document.getElementById("toggle");
-
-                // if (x.className === "toggle") {
-                //     x.className += " responsive";
-                // } else {
-                //     x.className = "toggle";
-                // }
-                
-                // the responsive class name is no longer used
-                if (x.style.display === 'none') {
-                    x.style.display = 'block';
-                    x.style.height = x.scrollHeight + "px";
-
-                } else {
-
-                    x.style.height = 0;
-
-                    setTimeout(function(){
-                        x.style.display = 'none'; 
-                    }, 200, x)
-                    
-                }
-            }
-            function hide_bars() {
-                var x = document.getElementById("toggle");
-
-                // if (x.className != "toggle") {
-                //     x.className = "toggle"
-                // }
-
-                x.style.height = 0;
-
-                setTimeout(function(){
-                    x.style.display = 'none'; 
-                }, 200, x)
-                    
+            // shuts off the page to mobile users
+            if (screen.availWidth < 1000) { 
+                   window.location.replace("https://www.rijnmun.org");
             }
 
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -106,32 +70,25 @@
                     document.getElementById("tab_icon").href = "/images/logos/icon.ico";
                 }
             });
-
-            // previous = document.referrer;
-            // if (previous.includes("/undefined")) {
-            //     alert("Please note that what you just saw was only a joke, and that none of your data was actually collected. However, we strongly ask you not to try and do what you just did again.\nKind Regards,\nThe RijnMUN website creators and tech gods");
-            // }
+            
         </script>
-        <main onclick="hide_bars()">
+        <main>
             <div class="title">
-                <h1>Rijnlands<br>Model United Nations</h1>
-                <h3>12th to 13th October 2024</h3>
+                <h1>Rijnlands Lyceum Oegstgeest<br>Model United Nations</h1>
+                <h3>11th to 13th October 2024</h3>
             </div>
             <div class="container">
                 <div class="message">
                     <p><span class="keywords">Dear MUN directors, advisors, aspiring delegates and student officers,</span>
                         <br>
                         <br>
-                        On behalf of our Secretaries-General, we are overjoyed to announce the first ever <span class="keywords">Rijnlands Lyceum Oegstgeest Model United Nations</span> (RijnMUN) hosted at our school in 2024. And so hereby we would like to welcome you to our website. 
+                        On behalf of our Board of Directors, we are overjoyed to announce the first ever <span class="keywords">Rijnlands Lyceum Oegstgeest Model United Nations</span> (RijnMUN) hosted at our school in 2024. And so hereby we would like to welcome you to our website. 
                         <br>
                         <br>
-                        Over the past months our secretariat has worked effortlessly to build up our conference from point zero, and we are excited to finally be able to share our efforts with you. As many of our neighboring conferences may know, our school has always had an established MUN community. Throughout the past decades our club has attended conferences all over and even outside of the Netherlands. Our MUN directors and students have therefore come into contact and learnt from many conferences held previously to our own. We are absolutely certain that therefore our school, its staff and most importantly its students have both the experience and the enthusiasm that it will take in order to make this conference a success. 
+                        Over the past months our Board of Directors has worked effortlessly to build up our conference from point zero, and we are excited to finally be able to share our efforts with you. Our theme for this conference is <span class="keywords">'Harmony in healing; a journey to peace and hope in conflict-torn areas'</span>. In these troubling times, with the war raging in Ukraine, and the situation in Gaza, many more innocent citizens are becoming victims of these conflicts. At RijnMUN, we believe in promoting peace, and hope, and these words are at the core of our conference. 
                         <br>
                         <br>
-                        Our conference will be hosted in Oegstgeest, a small town in the heart of the Netherlands. We are merely a 6 minute bus ride away from Leiden Centraal which in the center of the beautiful old city making our conference easily accessible and greatly located.
-                        <br>
-                        <br>
-                        Throughout the duration of our two-day conference <span class="keywords">we aim to give delegates a great first time experience</span> in which they will be able to learn all about the rules of procedure and what makes a good delegate. We will ensure this is possible through having workshops led by our experienced Board of Directors and by employing diligent student officers who can guide these delegates through their first MUN conference. 
+                        <span class="keywords">This MUN conference will be directed towards beginner delegates,</span> with little to no MUN experience, as we aim to promote MUN to a new generation of delegates and student officers. Throughout our three-day conference we will be offering both beginner delegate and beginner student officer workshops to help new delegates learn what Model United Nations is all about.
                         <br>
                         <br>
                         For any further information we encourage you to look through our website or contact us for questions you may have. As of now we are eager to receive all your applications. We  hope to see you all there in RijnMUN 2024! 
@@ -139,15 +96,15 @@
                         <br>
                         Sincerely, 
                         <br>
-                        Emily Hanlon and Julie Lodereau
+                        <i>Julie L.H. Lodereau</i>
                         <br>
-                        On behalf of the RijnMUN 2024 Secretariat
+                        Secretary General RijnMUN 2024
                         </p>
                 </div>
                 <div class="sidebar">
                     <div>
                         <h4>Latest News</h4>
-                        <p class="date">Last updated: 07/02/2024</p>
+                        <p class="date">Last updated: 31/02/1984</p>
                         <div class="news">
                             <p>No news yet<br>Please check again later</p>
                         </div>
@@ -155,7 +112,7 @@
                     <div style="padding-bottom: unset;">
                         <h4>Socials</h4>
                         <div style="padding-bottom: unset;"><p><img src="/images/logos/instagram_black.png" class="side_insta"> <a class="side_link" href="https://www.instagram.com/rijn.mun?igsh=cWtvcHhlZzN3N2R5" target="_blank">@rijn.mun</a></p></div>
-                        <div style="padding-bottom: unset;"><p><img src="/images/logos/tiktok_black.png" class="side_tiktok"> [to be announced]</p></div>
+                        <div style="padding-bottom: unset;"><p><img src="/images/logos/tiktok_black.png" class="side_tiktok"> <a href="https://www.rijnmun.org/" class="side_link">@rijn_mun</a></p></div>
                     </div>
                 </div>
             </div>
