@@ -166,9 +166,10 @@ document.onkeypress = function (key) {
                 code = formKey('revelio');
             }
         }
-        if (key.keyCode===104) {
-            window.location.replace("/");
-        } else if (key.keyCode == 109) {
+        // if (key.keyCode===104) {
+        //     window.location.replace("/");
+        // } else 
+        if (key.keyCode == 109) {
             panel();
         }
         // ok so now you can type anything u want if the page is unlocked
@@ -266,4 +267,12 @@ const freak_out = async () => {
     await sleep(100)
     alert("Please note that what you just saw was only a joke, and that none of your data was actually collected. However, we strongly urge you not to try and do what you just did again.\nKind Regards,\nThe RijnMUN website creators and tech gods")
     window.location.replace("/")
+}
+
+function speak_up() {
+    const source = document.getElementById("siri_input");
+    const text = source.value;
+    const utterance = new SpeechSynthesisUtterance(text);
+    window.speechSynthesis.speak(utterance)
+    source.value = "";
 }
