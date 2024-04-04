@@ -185,11 +185,37 @@ function show_content() {
     document.getElementById('title').innerHTML = "Classified Creator Support Page";
     document.getElementsByClassName("real-content")[0].style.display = "block";
     document.getElementsByClassName("cover")[0].style.display = "none";
+    checkin()
 }
 function hide_content() {
     document.getElementById('title').innerHTML = "Error 404: Page Not Found";
     document.getElementsByClassName("real-content")[0].style.display = "none";
     document.getElementsByClassName("cover")[0].style.display = "block";
+}
+
+// TESTING ----------
+function checkin() {
+    var currentdate = new Date()
+    var datetime = currentdate.getDay() + "/" + currentdate.getMonth() + "/" + currentdate.getFullYear()
+    if (document.cookie != '') {
+        let cookies = document.cookie.split("; ")
+        let name = cookies[0].split("=")[1]
+        let time_away = cookies[2].split("=")[1]
+        document.cookie = `name=${name}; Secure`
+        document.cookie = `lastSeen=${time_away}; Secure`
+        document.cookie = `newTime=${datetime}; Secure`
+        document.getElementById("last_sign_in").innerText = `${name} was last seen on ${time_away}`
+    } else {
+        let get_name = window.prompt("Your username: ")
+        if (get_name != null) {
+            document.cookie = `name=${get_name}; Secure`
+            document.cookie = `lastSeen=${datetime}; Secure`
+            document.cookie = `newTime=${datetime}; Secure`
+            let name = get_name
+            let time_away = datetime
+            document.getElementById("last_sign_in").innerText = `${name} was last seen on ${time_away}`
+        }
+    }
 }
 
 // SPECIAL CONTENT -------------------------------------------
