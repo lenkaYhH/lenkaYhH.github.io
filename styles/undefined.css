@@ -359,3 +359,18 @@ html {
         transform: rotateZ(calc(var(--a)*120deg)) rotateX(70deg) rotateZ(360deg);
     }
 }
+
+#resizable-box {
+    display: flex;
+    margin: 20px 0;
+    height: fit-content;
+}
+
+.box {
+    display: flex;
+    resize: both;
+    padding: 10px;
+    border: 1px solid var(--theme-bl);
+    height: 20px;
+    overflow: hidden;
+}
