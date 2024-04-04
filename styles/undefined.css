@@ -320,13 +320,17 @@ html {
     border-style: inset;
 }
 
-.first-project {
+.first-project, #siri {
     margin: 10px;
     text-align: center;
 
     button {
         margin-top: 5px;
     }
+}
+
+#siri {
+    margin: 30px 10px 10px 10px;
 }
 
 /* cool atom animation */
