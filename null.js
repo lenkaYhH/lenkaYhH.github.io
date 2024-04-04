@@ -141,6 +141,7 @@ document.onkeypress = function (key) {
                 let wish = prompt("What page do you want to go to?", "Home");
                 if (wish == "csp") {
                     show_content();
+                    checkin();
                 } else {
                     window.location.replace("/");
                 }
@@ -185,7 +186,6 @@ function show_content() {
     document.getElementById('title').innerHTML = "Classified Creator Support Page";
     document.getElementsByClassName("real-content")[0].style.display = "block";
     document.getElementsByClassName("cover")[0].style.display = "none";
-    checkin()
 }
 function hide_content() {
     document.getElementById('title').innerHTML = "Error 404: Page Not Found";
