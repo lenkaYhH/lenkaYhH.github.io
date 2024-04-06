@@ -202,15 +202,15 @@ function checkin() {
         let name = cookies[0].split("=")[1]
         let time_away = cookies[2].split("=")[1]
         document.cookie = `name=${name}; Secure`
-        document.cookie = `lastSeen=${time_away}; Secure`
-        document.cookie = `newTime=${datetime}; Secure`
+        document.cookie = `lastSeen=${time_away}; SameSite=Strict; Secure`
+        document.cookie = `newTime=${datetime}; SameSite=Strict; Secure`
         document.getElementById("last_sign_in").innerText = `${name} was last seen on ${time_away}`
     } else {
         let get_name = window.prompt("Your username: ")
         if (get_name != null) {
-            document.cookie = `name=${get_name}; Secure`
-            document.cookie = `lastSeen=${datetime}; Secure`
-            document.cookie = `newTime=${datetime}; Secure`
+            document.cookie = `name=${get_name}; SameSite=Strict; Secure`
+            document.cookie = `lastSeen=${datetime}; SameSite=Strict; Secure`
+            document.cookie = `newTime=${datetime}; SameSite=Strict; Secure`
             let name = get_name
             let time_away = datetime
             document.getElementById("last_sign_in").innerText = `${name} was last seen on ${time_away}`
