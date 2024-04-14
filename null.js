@@ -82,13 +82,13 @@ function panel() {
 //     }
 // }
                         
-window.addEventListener('mousemove', move);
-    function process() {
-        console.log("clicked");
-        let val1 = document.getElementById("num1").value;
-        let val2 = document.getElementById("num2").value;
-        document.getElementById("res").innerHTML += " Hello World";
-    }
+// window.addEventListener('mousemove', move);
+function process() {
+    console.log("clicked");
+    let val1 = document.getElementById("num1").value;
+    let val2 = document.getElementById("num2").value;
+    document.getElementById("res").innerHTML += " Hello World";
+}
 
 // SECURITY ----------------------------------------
 // shut off page to mobile/tablet users
