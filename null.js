@@ -117,7 +117,7 @@ const alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm
 function formKey(word) {
     let k = [];
     for (let i=0; i<word.length; i++) {
-        k.push(alphabet.indexOf(word[i])+97);
+        k.push(word[i].charCodeAt(0));
     }
     return k;
 }    
