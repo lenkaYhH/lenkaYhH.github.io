@@ -1,0 +1,72 @@
+:root {
+    --theme-bl: #235690;
+    --theme-rd: #D90148;
+    --theme-wh: white;
+    --bl-txt: #0269B3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row1, .row2 {
+    /* padding-top: 5%;
+    margin-left: 1.5%; */
+    padding: 2% 3%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+p.img_label {
+    font-style: italic;
+    font-size: 16px;
+    line-height: normal;
+    max-width: 400px;
+    text-wrap: pretty;
+    margin: 10px 0;
+    color: #fff;
+    text-align: left;
+}
+
+.img_label.role-title {
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #fff;
+}
+
+.person {
+    margin-top: 3%;
+    justify-self: center;
+    width: 350px;
+  
+}
+
+.person img {
+    width: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+.person .label-content {
+    display: flex;
+    position: relative;
+    top: -4px; left: 1px;
+    width: 348px;
+    background-color: rgba(35, 86, 144, 0.8);
+    border-radius: 0 0 10px 10px;
+}
+
+.person .label-content .label-text {
+    width: 95%;
+    padding-left: 15px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding-top: 15px;
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
