@@ -21,8 +21,6 @@ function panel() {
     let bar1 = document.getElementById('bar1')
     let bar2 = document.getElementById('bar2')
     let bar3 = document.getElementById('bar3')
-    // let caret = document.getElementById('side-button-i')
-    // caret.style.transition = "0.2s ease-in-out"
 
     if (cont.style.getPropertyValue("--i") === '0') {
         // open the contents
@@ -30,8 +28,6 @@ function panel() {
         cont.style.height = cont.scrollHeight + "px";
         cont.style.width = cont.scrollWidth + "px"
         cont.style.setProperty('--i', '1')
-        // caret.style.transform = "rotate(-90deg)"
-        // document.getElementById("side-button").innerHTML = "<";
         bar1.style.transition = "0.5s ease-in-out"
         bar2.style.transition = "0.5s ease-in-out"
         bar3.style.transition = "0.5s ease-in-out"
@@ -50,9 +46,7 @@ function panel() {
         setTimeout(function(){
             cont.style.display = 'none'; 
         }, 200, cont)
-        // caret.style.transform = "rotate(0deg)"
 
-        // document.getElementById("side-button").innerHTML = ">";
         bar1.style.transition = "0.5s ease-in-out"
         bar2.style.transition = "0.5s ease-in-out"
         bar3.style.transition = "0.5s ease-in-out"
