@@ -646,7 +646,8 @@
                                 <tr><td class="days">Days</td><td class="hours">Hours</td><td class="minutes">Minutes</td><td class="seconds">Seconds</td></tr>
                             </table>
                             <script>
-                                var countDownDate = new Date("Oct 12, 2024 8:00:00").getTime();
+                                // var countDownDate = new Date("Oct 12, 2024 8:00:00").getTime();
+                                var countDownDate = new Date("Mar 7, 2024 8:00:00").getTime();
                                 let doc_days = document.getElementById('days')
                                 let doc_hours = document.getElementById('hours')
                                 let doc_mins = document.getElementById('minutes')
@@ -656,7 +657,8 @@
                                 var prev_mins = 0;
                                 var x = setInterval(function() {
                                     var now = new Date().getTime();
-                                    var distance = countDownDate - now;
+                                    // var distance = countDownDate - now;
+                                    var distance = now - countDownDate;
                                     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
                                     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                                     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
