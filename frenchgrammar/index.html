@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IB DP French B Verb Conjugation</title>
+
+    <link rel="icon" href="/images/chnops.JPEG">
+    <link rel="stylesheet" href="/frenchgrammar/style.css">
+</head>
+<body>
+    <!-- <h1>Conjugaison des verbes</h1> -->
+
+    <div class="body">
+        <div class="left">
+            <p id="cnt_total">Réponses correctes: 0/0</p>
+
+            <div class="hints">
+                <p class="hint_hover">Astuce 1</p>
+                <p class="hint_hover">Astuce 2</p>
+            </div>
+
+            <div style="display: none;" id="hint1">Hint on the tense conjugation.</div>
+            <!-- <div id="hint1">Hint on the tense conjugation.</div> -->
+            <div style="display: none;" id="hint2">Hint on the suffix.</div>
+            <!-- <div id="hint2">Hint on the suffix.</div> -->
+        </div>
+        
+        <div class="mid">
+            <h2>Conjuguez le verbe</h2>
+
+            <div class="question">
+                <p class="pronoun">Je <i>parler </i>(present)</p>
+                <input type="text" id="ans" name="ans" value="Je ">
+            </div>
+
+            <div class="btns">
+                <button>✅ Vérifier</button>
+                <button>➡️ Passer</button>
+            </div>
+
+            <p class="result">✅ Correctes!</p>
+        </div>
+
+        <div class="right">
+            <input type="checkbox" name="plus-que-parfait" id="filter-plus-que-parfait" value="plus-que-parfait">
+            <label for="plus-que-parfait">Plus-que-parfait</label>
+            <br>
+
+            <input type="checkbox" name="passe compose" id="filter-passe compose" value="Passe compose">
+            <label for="passe compose">Passé compose</label>
+            <br>
+
+            <input type="checkbox" name="imparfait" id="filter-imparfait" value="imparfait">
+            <label for="imparfait">Imparfait</label>
+            <br>
+
+            <input type="checkbox" name="present" id="filter-present" value="Present">
+            <label for="present">Present</label>
+            <br>
+
+            <input type="checkbox" name="futur proche" id="filter-futur proche" value="futur proche">
+            <label for="futur proche">Futur proche</label>
+            <br>
+
+            <input type="checkbox" name="futur simple" id="filter-futur simple" value="futur simple">
+            <label for="futur simple">Futur simple</label>
+            <br>
+
+            <input type="checkbox" name="futur anterieur" id="filter-futur anterieur" value="futur anterieur">
+            <label for="futur anterieur">Futur anterieur</label>
+            <br>
+
+            <input type="checkbox" name="present conditionnel" id="filter-present conditionnel" value="Present conditionnel">
+            <label for="present conditionnel">Present conditionnel</label>
+            <br>
+
+            <input type="checkbox" name="present subjontif" id="filter- subjontif" value="Present subjontif">
+            <label for="present subjontif">Present subjontif</label>
+            <br>
+
+            <button>Sauver</button>
+        </div>
+
+    </div>
+
+    <script src="/frenchgrammar/script.js"></script>
+</body>
+</html>
