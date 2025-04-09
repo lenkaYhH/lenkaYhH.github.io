@@ -1975,5 +1975,263 @@
               "Ils/Elles": "participèrent"
             }
         }
+    },
+    "protéger": {
+      "exception": true,
+      "frequency": 4,
+      "conjugations": {
+        "present": {
+          "Je": "protège",
+          "Tu": "protèges",
+          "Il/Elle/On": "protège",
+          "Nous": "protégeons",
+          "Vous": "protégez",
+          "Ils/Elles": "protègent"
+        },
+        "passe compose": {
+          "Je": "ai protégé",
+          "Tu": "as protégé",
+          "Il/Elle/On": "a protégé",
+          "Nous": "avons protégé",
+          "Vous": "avez protégé",
+          "Ils/Elles": "ont protégé"
+        },
+        "plus-que-parfait": {
+          "Je": "avais protégé",
+          "Tu": "avais protégé",
+          "Il/Elle/On": "avait protégé",
+          "Nous": "avions protégé",
+          "Vous": "aviez protégé",
+          "Ils/Elles": "avaient protégé"
+        },
+        "imparfait": {
+          "Je": "protégeais",
+          "Tu": "protégeais",
+          "Il/Elle/On": "protégeait",
+          "Nous": "protégions",
+          "Vous": "protégiez",
+          "Ils/Elles": "protégeaient"
+        },
+        "futur proche": {
+          "Je": "vais protéger",
+          "Tu": "vas protéger",
+          "Il/Elle/On": "va protéger",
+          "Nous": "allons protéger",
+          "Vous": "allez protéger",
+          "Ils/Elles": "vont protéger"
+        },
+        "futur simple": {
+          "Je": "protégerai",
+          "Tu": "protégeras",
+          "Il/Elle/On": "protégera",
+          "Nous": "protégerons",
+          "Vous": "protégez",
+          "Ils/Elles": "protégeront"
+        },
+        "futur anterieur": {
+          "Je": "aurai protégé",
+          "Tu": "auras protégé",
+          "Il/Elle/On": "aura protégé",
+          "Nous": "aurons protégé",
+          "Vous": "aurez protégé",
+          "Ils/Elles": "auront protégé"
+        },
+        "present conditionnel": {
+          "Je": "protégerais",
+          "Tu": "protégerais",
+          "Il/Elle/On": "protégerait",
+          "Nous": "protégerions",
+          "Vous": "protégeriez",
+          "Ils/Elles": "protégeraient"
+        },
+        "present subjonctif": {
+          "Je": "protège",
+          "Tu": "protèges",
+          "Il/Elle/On": "protège",
+          "Nous": "protégeons",
+          "Vous": "protégez",
+          "Ils/Elles": "protègent"
+        },
+        "passe simple": {
+          "Je": "protégeai",
+          "Tu": "protégeas",
+          "Il/Elle/On": "protégea",
+          "Nous": "protégeâmes",
+          "Vous": "protégeâtes",
+          "Ils/Elles": "protégèrent"
+        }
+      }
+    },
+    "organiser": {
+      "exception": false,
+      "frequency": 4,
+      "conjugations": {
+        "present": {
+          "Je": "organise",
+          "Tu": "organises",
+          "Il/Elle/On": "organise",
+          "Nous": "organisons",
+          "Vous": "organisez",
+          "Ils/Elles": "organisent"
+        },
+        "passe compose": {
+          "Je": "ai organisé",
+          "Tu": "as organisé",
+          "Il/Elle/On": "a organisé",
+          "Nous": "avons organisé",
+          "Vous": "avez organisé",
+          "Ils/Elles": "ont organisé"
+        },
+        "plus-que-parfait": {
+          "Je": "avais organisé",
+          "Tu": "avais organisé",
+          "Il/Elle/On": "avait organisé",
+          "Nous": "avions organisé",
+          "Vous": "aviez organisé",
+          "Ils/Elles": "avaient organisé"
+        },
+        "imparfait": {
+          "Je": "organisais",
+          "Tu": "organisais",
+          "Il/Elle/On": "organisait",
+          "Nous": "organisions",
+          "Vous": "organisiez",
+          "Ils/Elles": "organisaient"
+        },
+        "futur proche": {
+          "Je": "vais organiser",
+          "Tu": "vas organiser",
+          "Il/Elle/On": "va organiser",
+          "Nous": "allons organiser",
+          "Vous": "allez organiser",
+          "Ils/Elles": "vont organiser"
+        },
+        "futur simple": {
+          "Je": "organiserai",
+          "Tu": "organiseras",
+          "Il/Elle/On": "organisera",
+          "Nous": "organiserons",
+          "Vous": "organiserez",
+          "Ils/Elles": "organiseront"
+        },
+        "futur anterieur": {
+          "Je": "aurai organisé",
+          "Tu": "auras organisé",
+          "Il/Elle/On": "aura organisé",
+          "Nous": "aurons organisé",
+          "Vous": "aurez organisé",
+          "Ils/Elles": "auront organisé"
+        },
+        "present conditionnel": {
+          "Je": "organiserais",
+          "Tu": "organiserais",
+          "Il/Elle/On": "organiserait",
+          "Nous": "organiserions",
+          "Vous": "organiseriez",
+          "Ils/Elles": "organiseraient"
+        },
+        "present subjonctif": {
+          "Je": "organise",
+          "Tu": "organises",
+          "Il/Elle/On": "organise",
+          "Nous": "organisions",
+          "Vous": "organisiez",
+          "Ils/Elles": "organisent"
+        },
+        "passe simple": {
+          "Je": "organisai",
+          "Tu": "organisas",
+          "Il/Elle/On": "organisa",
+          "Nous": "organisâmes",
+          "Vous": "organisâtes",
+          "Ils/Elles": "organisèrent"
+        }
+      }
+    },
+    "nettoyer": {
+      "exception": true,
+      "frequency": 5,
+      "conjugations": {
+        "present": {
+          "Je": "nettoie",
+          "Tu": "nettoies",
+          "Il/Elle/On": "nettoie",
+          "Nous": "nettoyons",
+          "Vous": "nettoyez",
+          "Ils/Elles": "nettoient"
+        },
+        "passe compose": {
+          "Je": "ai nettoyé",
+          "Tu": "as nettoyé",
+          "Il/Elle/On": "a nettoyé",
+          "Nous": "avons nettoyé",
+          "Vous": "avez nettoyé",
+          "Ils/Elles": "ont nettoyé"
+        },
+        "plus-que-parfait": {
+          "Je": "avais nettoyé",
+          "Tu": "avais nettoyé",
+          "Il/Elle/On": "avait nettoyé",
+          "Nous": "avions nettoyé",
+          "Vous": "aviez nettoyé",
+          "Ils/Elles": "avaient nettoyé"
+        },
+        "imparfait": {
+          "Je": "nettoyais",
+          "Tu": "nettoyais",
+          "Il/Elle/On": "nettoyait",
+          "Nous": "nettoyions",
+          "Vous": "nettoyiez",
+          "Ils/Elles": "nettoyaient"
+        },
+        "futur proche": {
+          "Je": "vais nettoyer",
+          "Tu": "vas nettoyer",
+          "Il/Elle/On": "va nettoyer",
+          "Nous": "allons nettoyer",
+          "Vous": "allez nettoyer",
+          "Ils/Elles": "vont nettoyer"
+        },
+        "futur simple": {
+          "Je": "nettoierai",
+          "Tu": "nettoieras",
+          "Il/Elle/On": "nettoiera",
+          "Nous": "nettoierons",
+          "Vous": "nettoierez",
+          "Ils/Elles": "nettoieront"
+        },
+        "futur anterieur": {
+          "Je": "aurai nettoyé",
+          "Tu": "auras nettoyé",
+          "Il/Elle/On": "aura nettoyé",
+          "Nous": "aurons nettoyé",
+          "Vous": "aurez nettoyé",
+          "Ils/Elles": "auront nettoyé"
+        },
+        "present conditionnel": {
+          "Je": "nettoierais",
+          "Tu": "nettoierais",
+          "Il/Elle/On": "nettoierait",
+          "Nous": "nettoierions",
+          "Vous": "nettoieriez",
+          "Ils/Elles": "nettoieraient"
+        },
+        "present subjonctif": {
+          "Je": "nettoie",
+          "Tu": "nettoies",
+          "Il/Elle/On": "nettoie",
+          "Nous": "nettoyions",
+          "Vous": "nettoyiez",
+          "Ils/Elles": "nettoient"
+        },
+        "passe simple": {
+          "Je": "nettoyai",
+          "Tu": "nettoyas",
+          "Il/Elle/On": "nettoya",
+          "Nous": "nettoyâmes",
+          "Vous": "nettoyâtes",
+          "Ils/Elles": "nettoyèrent"
+        }
+      }
     }
 }
