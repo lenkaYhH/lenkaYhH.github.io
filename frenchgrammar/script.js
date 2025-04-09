@@ -1,6 +1,6 @@
 let VERBS_LIST = {};
 
-const TENSES = ["present", "passe compose", "plus-que-parfait", "imparfait", "futur proche", "futur simple", "futur anterieur", "present conditionnel", "present subjonctif"];
+const TENSES = ["present", "passe compose", "plus-que-parfait", "imparfait", "futur proche", "futur simple", "futur anterieur", "present conditionnel", "present subjonctif", "passe simple"];
 
 const PRONOUNS = ["Je", "Tu", "Il/Elle/On", "Nous", "Vous", "Ils/Elles"];
 
@@ -31,6 +31,8 @@ window.addEventListener("load", async () => {
     console.log(VERBS_LIST);
 
     presentQuestion();
+
+    console.log(Object.keys(VERBS_LIST));
 });
 
 function presentQuestion() {

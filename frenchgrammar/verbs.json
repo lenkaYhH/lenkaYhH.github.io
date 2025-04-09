@@ -74,6 +74,14 @@
         "Nous": "soyons",
         "Vous": "soyez",
         "Ils/Elles": "soient"
+      },
+      "passe simple": {
+        "Je": "fus",
+        "Tu": "fus",
+        "Il/Elle/On": "fut",
+        "Nous": "fûmes",
+        "Vous": "fûtes",
+        "Ils/Elles": "furent"
       }
     }
   },
@@ -152,6 +160,14 @@
         "Nous": "ayons",
         "Vous": "ayez",
         "Ils/Elles": "aient"
+      },
+      "passe simple": {
+        "Je": "eus",
+        "Tu": "eus",
+        "Il/Elle/On": "eut",
+        "Nous": "eûmes",
+        "Vous": "eûtes",
+        "Ils/Elles": "eurent"
       }
     }
   },
@@ -230,6 +246,14 @@
         "Nous": "allions",
         "Vous": "alliez",
         "Ils/Elles": "aillent"
+      },
+      "passe simple": {
+        "Je": "allai",
+        "Tu": "allas",
+        "Il/Elle/On": "alla",
+        "Nous": "allâmes",
+        "Vous": "allâtes",
+        "Ils/Elles": "allèrent"
       }
     }
   },
@@ -308,6 +332,14 @@
         "Nous": "fassions",
         "Vous": "fassiez",
         "Ils/Elles": "fassent"
+      },
+      "passe simple": {
+        "Je": "fis",
+        "Tu": "fis",
+        "Il/Elle/On": "fit",
+        "Nous": "fîmes",
+        "Vous": "fîtes",
+        "Ils/Elles": "firent"
       }
     }
   },
@@ -386,6 +418,14 @@
         "Nous": "puissions",
         "Vous": "puissiez",
         "Ils/Elles": "puissent"
+      },
+      "passe simple": {
+        "Je": "pus",
+        "Tu": "pus",
+        "Il/Elle/On": "put",
+        "Nous": "pûmes",
+        "Vous": "pûtes",
+        "Ils/Elles": "purent"
       }
     }
   },
@@ -464,6 +504,14 @@
         "Nous": "voulions",
         "Vous": "vouliez",
         "Ils/Elles": "veuillent"
+      },
+      "passe simple": {
+        "Je": "voulus",
+        "Tu": "voulus",
+        "Il/Elle/On": "voulut",
+        "Nous": "voulûmes",
+        "Vous": "voulûtes",
+        "Ils/Elles": "voulurent"
       }
     }
   },
@@ -542,6 +590,14 @@
         "Nous": "devions",
         "Vous": "deviez",
         "Ils/Elles": "doivent"
+      },
+      "passe simple": {
+        "Je": "dus",
+        "Tu": "dus",
+        "Il/Elle/On": "dut",
+        "Nous": "dûmes",
+        "Vous": "dûtes",
+        "Ils/Elles": "durent"
       }
     }
   },
@@ -620,6 +676,14 @@
         "Nous": "disions",
         "Vous": "disiez",
         "Ils/Elles": "disent"
+      },
+      "passe simple": {
+        "Je": "dis",
+        "Tu": "dis",
+        "Il/Elle/On": "dit",
+        "Nous": "dîmes",
+        "Vous": "dîtes",
+        "Ils/Elles": "dirent"
       }
     }
   },
@@ -698,6 +762,14 @@
         "Nous": "venions",
         "Vous": "veniez",
         "Ils/Elles": "viennent"
+      },
+      "passe simple": {
+        "Je": "vins",
+        "Tu": "vins",
+        "Il/Elle/On": "vint",
+        "Nous": "vînmes",
+        "Vous": "vîntes",
+        "Ils/Elles": "vinrent"
       }
     }
   },
@@ -776,6 +848,14 @@
         "Nous": "prenions",
         "Vous": "preniez",
         "Ils/Elles": "prennent"
+      },
+      "passe simple": {
+        "Je": "pris",
+        "Tu": "pris",
+        "Il/Elle/On": "prit",
+        "Nous": "prîmes",
+        "Vous": "prîtes",
+        "Ils/Elles": "prirent"
       }
     }
   },
@@ -854,6 +934,14 @@
         "Nous": "voyions",
         "Vous": "voyiez",
         "Ils/Elles": "voient"
+      },
+      "passe simple": {
+        "Je": "vis",
+        "Tu": "vis",
+        "Il/Elle/On": "vit",
+        "Nous": "vîmes",
+        "Vous": "vîtes",
+        "Ils/Elles": "virent"
       }
     }
   },
@@ -932,6 +1020,14 @@
         "Nous": "mettions",
         "Vous": "mettiez",
         "Ils/Elles": "mettent"
+      },
+      "passe simple": {
+        "Je": "mis",
+        "Tu": "mis",
+        "Il/Elle/On": "mit",
+        "Nous": "mîmes",
+        "Vous": "mîtes",
+        "Ils/Elles": "mirent"
       }
     }
   },
@@ -1010,6 +1106,14 @@
         "Nous": "sachions",
         "Vous": "sachiez",
         "Ils/Elles": "sachent"
+      },
+      "passe simple": {
+        "Je": "sus",
+        "Tu": "sus",
+        "Il/Elle/On": "sut",
+        "Nous": "sûmes",
+        "Vous": "sûtes",
+        "Ils/Elles": "surent"
       }
     }
   },
@@ -1088,6 +1192,14 @@
         "Nous": "parlions",
         "Vous": "parliez",
         "Ils/Elles": "parlent"
+      },
+      "passe simple": {
+        "Je": "parlai",
+        "Tu": "parlas",
+        "Il/Elle/On": "parla",
+        "Nous": "parlâmes",
+        "Vous": "parlâtes",
+        "Ils/Elles": "parlèrent"
       }
     }
   },
@@ -1166,6 +1278,14 @@
         "Nous": "mangions",
         "Vous": "mangiez",
         "Ils/Elles": "mangent"
+      },
+      "passe simple": {
+        "Je": "mangeai",
+        "Tu": "mangeas",
+        "Il/Elle/On": "mangea",
+        "Nous": "mangeâmes",
+        "Vous": "mangeâtes",
+        "Ils/Elles": "mangèrent"
       }
     }
   },
@@ -1244,6 +1364,14 @@
         "Nous": "choisissions",
         "Vous": "choisissiez",
         "Ils/Elles": "choisissent"
+      },
+      "passe simple": {
+        "Je": "choisis",
+        "Tu": "choisis",
+        "Il/Elle/On": "choisit",
+        "Nous": "choisîmes",
+        "Vous": "choisîtes",
+        "Ils/Elles": "choisirent"
       }
     }
   },
@@ -1322,6 +1450,14 @@
         "Nous": "aimions",
         "Vous": "aimiez",
         "Ils/Elles": "aiment"
+      },
+      "passe simple": {
+        "Je": "aimai",
+        "Tu": "aimas",
+        "Il/Elle/On": "aima",
+        "Nous": "aimâmes",
+        "Vous": "aimâtes",
+        "Ils/Elles": "aimèrent"
       }
     }
   },
@@ -1400,6 +1536,14 @@
         "Nous": "attendions",
         "Vous": "attendiez",
         "Ils/Elles": "attendent"
+      },
+      "passe simple": {
+        "Je": "attendis",
+        "Tu": "attendis",
+        "Il/Elle/On": "attendit",
+        "Nous": "attendîmes",
+        "Vous": "attendîtes",
+        "Ils/Elles": "attendirent"
       }
     }
   },  
@@ -1478,6 +1622,14 @@
         "Nous": "finissions",
         "Vous": "finissiez",
         "Ils/Elles": "finissent"
+      },
+      "passe simple": {
+        "Je": "finis",
+        "Tu": "finis",
+        "Il/Elle/On": "finit",
+        "Nous": "finîmes",
+        "Vous": "finîtes",
+        "Ils/Elles": "finirent"
       }
     }
   },
@@ -1556,6 +1708,14 @@
         "Nous": "écrivions",
         "Vous": "écriviez",
         "Ils/Elles": "écrivent"
+      },
+      "passe simple": {
+        "Je": "écrivis",
+        "Tu": "écrivis",
+        "Il/Elle/On": "écrivit",
+        "Nous": "écrivîmes",
+        "Vous": "écrivîtes",
+        "Ils/Elles": "écrivirent"
       }
     }
   },
@@ -1634,6 +1794,14 @@
               "Nous": "étudiions",
               "Vous": "étudiiez",
               "Ils/Elles": "étudient"
+          },
+          "passe simple": {
+            "Je": "étudiai",
+            "Tu": "étudias",
+            "Il/Elle/On": "étudia",
+            "Nous": "étudiâmes",
+            "Vous": "étudiâtes",
+            "Ils/Elles": "étudièrent"
           }
       }
     },
@@ -1712,6 +1880,14 @@
                 "Nous": "révisions",
                 "Vous": "révisiez",
                 "Ils/Elles": "révisent"
+            },
+            "passe simple": {
+              "Je": "révisai",
+              "Tu": "révisas",
+              "Il/Elle/On": "révisa",
+              "Nous": "révisâmes",
+              "Vous": "révisâtes",
+              "Ils/Elles": "révisèrent"
             }
         }
     },
@@ -1789,6 +1965,14 @@
                 "Nous": "participions",
                 "Vous": "participiez",
                 "Ils/Elles": "participent"
+            },
+            "passe simple": {
+              "Je": "participai",
+              "Tu": "participas",
+              "Il/Elle/On": "participa",
+              "Nous": "participâmes",
+              "Vous": "participâtes",
+              "Ils/Elles": "participèrent"
             }
         }
     }
