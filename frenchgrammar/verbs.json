@@ -4,76 +4,76 @@
     "frequency": 1,
     "conjugations": {
       "present": {
-        "je": "suis",
-        "tu": "es",
-        "il/elle/on": "est",
-        "nous": "sommes",
-        "vous": "êtes",
-        "ils/elles": "sont"
+        "Je": "suis",
+        "Tu": "es",
+        "Il/Elle/On": "est",
+        "Nous": "sommes",
+        "Vous": "êtes",
+        "Ils/Elles": "sont"
       },
-      "passe_compose": {
-        "je": "ai été",
-        "tu": "as été",
-        "il/elle/on": "a été",
-        "nous": "avons été",
-        "vous": "avez été",
-        "ils/elles": "ont été"
+      "passe compose": {
+        "Je": "ai été",
+        "Tu": "as été",
+        "Il/Elle/On": "a été",
+        "Nous": "avons été",
+        "Vous": "avez été",
+        "Ils/Elles": "ont été"
       },
-      "plus_que_parfait": {
-        "je": "avais été",
-        "tu": "avais été",
-        "il/elle/on": "avait été",
-        "nous": "avions été",
-        "vous": "aviez été",
-        "ils/elles": "avaient été"
+      "plus-que-parfait": {
+        "Je": "avais été",
+        "Tu": "avais été",
+        "Il/Elle/On": "avait été",
+        "Nous": "avions été",
+        "Vous": "aviez été",
+        "Ils/Elles": "avaient été"
       },
       "imparfait": {
-        "je": "étais",
-        "tu": "étais",
-        "il/elle/on": "était",
-        "nous": "étions",
-        "vous": "étiez",
-        "ils/elles": "étaient"
+        "Je": "étais",
+        "Tu": "étais",
+        "Il/Elle/On": "était",
+        "Nous": "étions",
+        "Vous": "étiez",
+        "Ils/Elles": "étaient"
       },
-      "futur_proche": {
-        "je": "vais être",
-        "tu": "vas être",
-        "il/elle/on": "va être",
-        "nous": "allons être",
-        "vous": "allez être",
-        "ils/elles": "vont être"
+      "futur proche": {
+        "Je": "vais être",
+        "Tu": "vas être",
+        "Il/Elle/On": "va être",
+        "Nous": "allons être",
+        "Vous": "allez être",
+        "Ils/Elles": "vont être"
       },
-      "futur_simple": {
-        "je": "serai",
-        "tu": "seras",
-        "il/elle/on": "sera",
-        "nous": "serons",
-        "vous": "serez",
-        "ils/elles": "seront"
+      "futur simple": {
+        "Je": "serai",
+        "Tu": "seras",
+        "Il/Elle/On": "sera",
+        "Nous": "serons",
+        "Vous": "serez",
+        "Ils/Elles": "seront"
       },
-      "futur_anterieur": {
-        "je": "aurai été",
-        "tu": "auras été",
-        "il/elle/on": "aura été",
-        "nous": "aurons été",
-        "vous": "aurez été",
-        "ils/elles": "auront été"
+      "futur anterieur": {
+        "Je": "aurai été",
+        "Tu": "auras été",
+        "Il/Elle/On": "aura été",
+        "Nous": "aurons été",
+        "Vous": "aurez été",
+        "Ils/Elles": "auront été"
       },
-      "conditionnel_present": {
-        "je": "serais",
-        "tu": "serais",
-        "il/elle/on": "serait",
-        "nous": "serions",
-        "vous": "seriez",
-        "ils/elles": "seraient"
+      "conditionnel present": {
+        "Je": "serais",
+        "Tu": "serais",
+        "Il/Elle/On": "serait",
+        "Nous": "serions",
+        "Vous": "seriez",
+        "Ils/Elles": "seraient"
       },
-      "subjonctif_present": {
-        "je": "sois",
-        "tu": "sois",
-        "il/elle/on": "soit",
-        "nous": "soyons",
-        "vous": "soyez",
-        "ils/elles": "soient"
+      "subjonctif present": {
+        "Je": "sois",
+        "Tu": "sois",
+        "Il/Elle/On": "soit",
+        "Nous": "soyons",
+        "Vous": "soyez",
+        "Ils/Elles": "soient"
       }
     }
   },
@@ -82,76 +82,76 @@
     "frequency": 1,
     "conjugations": {
       "present": {
-        "je": "ai",
-        "tu": "as",
-        "il/elle/on": "a",
-        "nous": "avons",
-        "vous": "avez",
-        "ils/elles": "ont"
+        "Je": "ai",
+        "Tu": "as",
+        "Il/Elle/On": "a",
+        "Nous": "avons",
+        "Vous": "avez",
+        "Ils/Elles": "ont"
       },
-      "passe_compose": {
-        "je": "ai eu",
-        "tu": "as eu",
-        "il/elle/on": "a eu",
-        "nous": "avons eu",
-        "vous": "avez eu",
-        "ils/elles": "ont eu"
+      "passe compose": {
+        "Je": "ai eu",
+        "Tu": "as eu",
+        "Il/Elle/On": "a eu",
+        "Nous": "avons eu",
+        "Vous": "avez eu",
+        "Ils/Elles": "ont eu"
       },
-      "plus_que_parfait": {
-        "je": "avais eu",
-        "tu": "avais eu",
-        "il/elle/on": "avait eu",
-        "nous": "avions eu",
-        "vous": "aviez eu",
-        "ils/elles": "avaient eu"
+      "plus-que-parfait": {
+        "Je": "avais eu",
+        "Tu": "avais eu",
+        "Il/Elle/On": "avait eu",
+        "Nous": "avions eu",
+        "Vous": "aviez eu",
+        "Ils/Elles": "avaient eu"
       },
       "imparfait": {
-        "je": "avais",
-        "tu": "avais",
-        "il/elle/on": "avait",
-        "nous": "avions",
-        "vous": "aviez",
-        "ils/elles": "avaient"
+        "Je": "avais",
+        "Tu": "avais",
+        "Il/Elle/On": "avait",
+        "Nous": "avions",
+        "Vous": "aviez",
+        "Ils/Elles": "avaient"
       },
-      "futur_proche": {
-        "je": "vais avoir",
-        "tu": "vas avoir",
-        "il/elle/on": "va avoir",
-        "nous": "allons avoir",
-        "vous": "allez avoir",
-        "ils/elles": "vont avoir"
+      "futur proche": {
+        "Je": "vais avoir",
+        "Tu": "vas avoir",
+        "Il/Elle/On": "va avoir",
+        "Nous": "allons avoir",
+        "Vous": "allez avoir",
+        "Ils/Elles": "vont avoir"
       },
-      "futur_simple": {
-        "je": "aurai",
-        "tu": "auras",
-        "il/elle/on": "aura",
-        "nous": "aurons",
-        "vous": "aurez",
-        "ils/elles": "auront"
+      "futur simple": {
+        "Je": "aurai",
+        "Tu": "auras",
+        "Il/Elle/On": "aura",
+        "Nous": "aurons",
+        "Vous": "aurez",
+        "Ils/Elles": "auront"
       },
-      "futur_anterieur": {
-        "je": "aurai eu",
-        "tu": "auras eu",
-        "il/elle/on": "aura eu",
-        "nous": "aurons eu",
-        "vous": "aurez eu",
-        "ils/elles": "auront eu"
+      "futur anterieur": {
+        "Je": "aurai eu",
+        "Tu": "auras eu",
+        "Il/Elle/On": "aura eu",
+        "Nous": "aurons eu",
+        "Vous": "aurez eu",
+        "Ils/Elles": "auront eu"
       },
-      "conditionnel_present": {
-        "je": "aurais",
-        "tu": "aurais",
-        "il/elle/on": "aurait",
-        "nous": "aurions",
-        "vous": "auriez",
-        "ils/elles": "auraient"
+      "conditionnel present": {
+        "Je": "aurais",
+        "Tu": "aurais",
+        "Il/Elle/On": "aurait",
+        "Nous": "aurions",
+        "Vous": "auriez",
+        "Ils/Elles": "auraient"
       },
-      "subjonctif_present": {
-        "je": "aie",
-        "tu": "aies",
-        "il/elle/on": "ait",
-        "nous": "ayons",
-        "vous": "ayez",
-        "ils/elles": "aient"
+      "subjonctif present": {
+        "Je": "aie",
+        "Tu": "aies",
+        "Il/Elle/On": "ait",
+        "Nous": "ayons",
+        "Vous": "ayez",
+        "Ils/Elles": "aient"
       }
     }
   },
@@ -160,76 +160,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "vais",
-        "tu": "vas",
-        "il/elle/on": "va",
-        "nous": "allons",
-        "vous": "allez",
-        "ils/elles": "vont"
+        "Je": "vais",
+        "Tu": "vas",
+        "Il/Elle/On": "va",
+        "Nous": "allons",
+        "Vous": "allez",
+        "Ils/Elles": "vont"
       },
-      "passe_compose": {
-        "je": "suis allé(e)",
-        "tu": "es allé(e)",
-        "il/elle/on": "est allé(e)",
-        "nous": "sommes allé(e)s",
-        "vous": "êtes allé(e)(s)",
-        "ils/elles": "sont allé(e)s"
+      "passe compose": {
+        "Je": "suis allé(e)",
+        "Tu": "es allé(e)",
+        "Il/Elle/On": "est allé(e)",
+        "Nous": "sommes allé(e)s",
+        "Vous": "êtes allé(e)(s)",
+        "Ils/Elles": "sont allé(e)s"
       },
-      "plus_que_parfait": {
-        "je": "étais allé(e)",
-        "tu": "étais allé(e)",
-        "il/elle/on": "était allé(e)",
-        "nous": "étions allé(e)s",
-        "vous": "étiez allé(e)(s)",
-        "ils/elles": "étaient allé(e)s"
+      "plus-que-parfait": {
+        "Je": "étais allé(e)",
+        "Tu": "étais allé(e)",
+        "Il/Elle/On": "était allé(e)",
+        "Nous": "étions allé(e)s",
+        "Vous": "étiez allé(e)(s)",
+        "Ils/Elles": "étaient allé(e)s"
       },
       "imparfait": {
-        "je": "allais",
-        "tu": "allais",
-        "il/elle/on": "allait",
-        "nous": "allions",
-        "vous": "alliez",
-        "ils/elles": "allaient"
+        "Je": "allais",
+        "Tu": "allais",
+        "Il/Elle/On": "allait",
+        "Nous": "allions",
+        "Vous": "alliez",
+        "Ils/Elles": "allaient"
       },
-      "futur_proche": {
-        "je": "vais aller",
-        "tu": "vas aller",
-        "il/elle/on": "va aller",
-        "nous": "allons aller",
-        "vous": "allez aller",
-        "ils/elles": "vont aller"
+      "futur proche": {
+        "Je": "vais aller",
+        "Tu": "vas aller",
+        "Il/Elle/On": "va aller",
+        "Nous": "allons aller",
+        "Vous": "allez aller",
+        "Ils/Elles": "vont aller"
       },
-      "futur_simple": {
-        "je": "irai",
-        "tu": "iras",
-        "il/elle/on": "ira",
-        "nous": "irons",
-        "vous": "irez",
-        "ils/elles": "iront"
+      "futur simple": {
+        "Je": "irai",
+        "Tu": "iras",
+        "Il/Elle/On": "ira",
+        "Nous": "irons",
+        "Vous": "irez",
+        "Ils/Elles": "iront"
       },
-      "futur_anterieur": {
-        "je": "serai allé(e)",
-        "tu": "seras allé(e)",
-        "il/elle/on": "sera allé(e)",
-        "nous": "serons allé(e)s",
-        "vous": "serez allé(e)(s)",
-        "ils/elles": "seront allé(e)s"
+      "futur anterieur": {
+        "Je": "serai allé(e)",
+        "Tu": "seras allé(e)",
+        "Il/Elle/On": "sera allé(e)",
+        "Nous": "serons allé(e)s",
+        "Vous": "serez allé(e)(s)",
+        "Ils/Elles": "seront allé(e)s"
       },
-      "conditionnel_present": {
-        "je": "irais",
-        "tu": "irais",
-        "il/elle/on": "irait",
-        "nous": "irions",
-        "vous": "iriez",
-        "ils/elles": "iraient"
+      "conditionnel present": {
+        "Je": "irais",
+        "Tu": "irais",
+        "Il/Elle/On": "irait",
+        "Nous": "irions",
+        "Vous": "iriez",
+        "Ils/Elles": "iraient"
       },
-      "subjonctif_present": {
-        "je": "aille",
-        "tu": "ailles",
-        "il/elle/on": "aille",
-        "nous": "allions",
-        "vous": "alliez",
-        "ils/elles": "aillent"
+      "subjonctif present": {
+        "Je": "aille",
+        "Tu": "ailles",
+        "Il/Elle/On": "aille",
+        "Nous": "allions",
+        "Vous": "alliez",
+        "Ils/Elles": "aillent"
       }
     }
   },
@@ -238,76 +238,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "fais",
-        "tu": "fais",
-        "il/elle/on": "fait",
-        "nous": "faisons",
-        "vous": "faites",
-        "ils/elles": "font"
+        "Je": "fais",
+        "Tu": "fais",
+        "Il/Elle/On": "fait",
+        "Nous": "faisons",
+        "Vous": "faites",
+        "Ils/Elles": "font"
       },
-      "passe_compose": {
-        "je": "ai fait",
-        "tu": "as fait",
-        "il/elle/on": "a fait",
-        "nous": "avons fait",
-        "vous": "avez fait",
-        "ils/elles": "ont fait"
+      "passe compose": {
+        "Je": "ai fait",
+        "Tu": "as fait",
+        "Il/Elle/On": "a fait",
+        "Nous": "avons fait",
+        "Vous": "avez fait",
+        "Ils/Elles": "ont fait"
       },
-      "plus_que_parfait": {
-        "je": "avais fait",
-        "tu": "avais fait",
-        "il/elle/on": "avait fait",
-        "nous": "avions fait",
-        "vous": "aviez fait",
-        "ils/elles": "avaient fait"
+      "plus-que-parfait": {
+        "Je": "avais fait",
+        "Tu": "avais fait",
+        "Il/Elle/On": "avait fait",
+        "Nous": "avions fait",
+        "Vous": "aviez fait",
+        "Ils/Elles": "avaient fait"
       },
       "imparfait": {
-        "je": "faisais",
-        "tu": "faisais",
-        "il/elle/on": "faisait",
-        "nous": "faisions",
-        "vous": "faisiez",
-        "ils/elles": "faisaient"
+        "Je": "faisais",
+        "Tu": "faisais",
+        "Il/Elle/On": "faisait",
+        "Nous": "faisions",
+        "Vous": "faisiez",
+        "Ils/Elles": "faisaient"
       },
-      "futur_proche": {
-        "je": "vais faire",
-        "tu": "vas faire",
-        "il/elle/on": "va faire",
-        "nous": "allons faire",
-        "vous": "allez faire",
-        "ils/elles": "vont faire"
+      "futur proche": {
+        "Je": "vais faire",
+        "Tu": "vas faire",
+        "Il/Elle/On": "va faire",
+        "Nous": "allons faire",
+        "Vous": "allez faire",
+        "Ils/Elles": "vont faire"
       },
-      "futur_simple": {
-        "je": "ferai",
-        "tu": "feras",
-        "il/elle/on": "fera",
-        "nous": "ferons",
-        "vous": "ferez",
-        "ils/elles": "feront"
+      "futur simple": {
+        "Je": "ferai",
+        "Tu": "feras",
+        "Il/Elle/On": "fera",
+        "Nous": "ferons",
+        "Vous": "ferez",
+        "Ils/Elles": "feront"
       },
-      "futur_anterieur": {
-        "je": "aurai fait",
-        "tu": "auras fait",
-        "il/elle/on": "aura fait",
-        "nous": "aurons fait",
-        "vous": "aurez fait",
-        "ils/elles": "auront fait"
+      "futur anterieur": {
+        "Je": "aurai fait",
+        "Tu": "auras fait",
+        "Il/Elle/On": "aura fait",
+        "Nous": "aurons fait",
+        "Vous": "aurez fait",
+        "Ils/Elles": "auront fait"
       },
-      "conditionnel_present": {
-        "je": "ferais",
-        "tu": "ferais",
-        "il/elle/on": "ferait",
-        "nous": "ferions",
-        "vous": "feriez",
-        "ils/elles": "feraient"
+      "conditionnel present": {
+        "Je": "ferais",
+        "Tu": "ferais",
+        "Il/Elle/On": "ferait",
+        "Nous": "ferions",
+        "Vous": "feriez",
+        "Ils/Elles": "feraient"
       },
-      "subjonctif_present": {
-        "je": "fasse",
-        "tu": "fasses",
-        "il/elle/on": "fasse",
-        "nous": "fassions",
-        "vous": "fassiez",
-        "ils/elles": "fassent"
+      "subjonctif present": {
+        "Je": "fasse",
+        "Tu": "fasses",
+        "Il/Elle/On": "fasse",
+        "Nous": "fassions",
+        "Vous": "fassiez",
+        "Ils/Elles": "fassent"
       }
     }
   },
@@ -316,76 +316,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "peux",
-        "tu": "peux",
-        "il/elle/on": "peut",
-        "nous": "pouvons",
-        "vous": "pouvez",
-        "ils/elles": "peuvent"
+        "Je": "peux",
+        "Tu": "peux",
+        "Il/Elle/On": "peut",
+        "Nous": "pouvons",
+        "Vous": "pouvez",
+        "Ils/Elles": "peuvent"
       },
-      "passe_compose": {
-        "je": "ai pu",
-        "tu": "as pu",
-        "il/elle/on": "a pu",
-        "nous": "avons pu",
-        "vous": "avez pu",
-        "ils/elles": "ont pu"
+      "passe compose": {
+        "Je": "ai pu",
+        "Tu": "as pu",
+        "Il/Elle/On": "a pu",
+        "Nous": "avons pu",
+        "Vous": "avez pu",
+        "Ils/Elles": "ont pu"
       },
-      "plus_que_parfait": {
-        "je": "avais pu",
-        "tu": "avais pu",
-        "il/elle/on": "avait pu",
-        "nous": "avions pu",
-        "vous": "aviez pu",
-        "ils/elles": "avaient pu"
+      "plus-que-parfait": {
+        "Je": "avais pu",
+        "Tu": "avais pu",
+        "Il/Elle/On": "avait pu",
+        "Nous": "avions pu",
+        "Vous": "aviez pu",
+        "Ils/Elles": "avaient pu"
       },
       "imparfait": {
-        "je": "pouvais",
-        "tu": "pouvais",
-        "il/elle/on": "pouvait",
-        "nous": "pouvions",
-        "vous": "pouviez",
-        "ils/elles": "pouvaient"
+        "Je": "pouvais",
+        "Tu": "pouvais",
+        "Il/Elle/On": "pouvait",
+        "Nous": "pouvions",
+        "Vous": "pouviez",
+        "Ils/Elles": "pouvaient"
       },
-      "futur_proche": {
-        "je": "vais pouvoir",
-        "tu": "vas pouvoir",
-        "il/elle/on": "va pouvoir",
-        "nous": "allons pouvoir",
-        "vous": "allez pouvoir",
-        "ils/elles": "vont pouvoir"
+      "futur proche": {
+        "Je": "vais pouvoir",
+        "Tu": "vas pouvoir",
+        "Il/Elle/On": "va pouvoir",
+        "Nous": "allons pouvoir",
+        "Vous": "allez pouvoir",
+        "Ils/Elles": "vont pouvoir"
       },
-      "futur_simple": {
-        "je": "pourrai",
-        "tu": "pourras",
-        "il/elle/on": "pourra",
-        "nous": "pourrons",
-        "vous": "pourrez",
-        "ils/elles": "pourront"
+      "futur simple": {
+        "Je": "pourrai",
+        "Tu": "pourras",
+        "Il/Elle/On": "pourra",
+        "Nous": "pourrons",
+        "Vous": "pourrez",
+        "Ils/Elles": "pourront"
       },
-      "futur_anterieur": {
-        "je": "aurai pu",
-        "tu": "auras pu",
-        "il/elle/on": "aura pu",
-        "nous": "aurons pu",
-        "vous": "aurez pu",
-        "ils/elles": "auront pu"
+      "futur anterieur": {
+        "Je": "aurai pu",
+        "Tu": "auras pu",
+        "Il/Elle/On": "aura pu",
+        "Nous": "aurons pu",
+        "Vous": "aurez pu",
+        "Ils/Elles": "auront pu"
       },
-      "conditionnel_present": {
-        "je": "pourrais",
-        "tu": "pourrais",
-        "il/elle/on": "pourrait",
-        "nous": "pourrions",
-        "vous": "pourriez",
-        "ils/elles": "pourraient"
+      "conditionnel present": {
+        "Je": "pourrais",
+        "Tu": "pourrais",
+        "Il/Elle/On": "pourrait",
+        "Nous": "pourrions",
+        "Vous": "pourriez",
+        "Ils/Elles": "pourraient"
       },
-      "subjonctif_present": {
-        "je": "puisse",
-        "tu": "puisses",
-        "il/elle/on": "puisse",
-        "nous": "puissions",
-        "vous": "puissiez",
-        "ils/elles": "puissent"
+      "subjonctif present": {
+        "Je": "puisse",
+        "Tu": "puisses",
+        "Il/Elle/On": "puisse",
+        "Nous": "puissions",
+        "Vous": "puissiez",
+        "Ils/Elles": "puissent"
       }
     }
   },
@@ -394,76 +394,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "veux",
-        "tu": "veux",
-        "il/elle/on": "veut",
-        "nous": "voulons",
-        "vous": "voulez",
-        "ils/elles": "veulent"
+        "Je": "veux",
+        "Tu": "veux",
+        "Il/Elle/On": "veut",
+        "Nous": "voulons",
+        "Vous": "voulez",
+        "Ils/Elles": "veulent"
       },
-      "passe_compose": {
-        "je": "ai voulu",
-        "tu": "as voulu",
-        "il/elle/on": "a voulu",
-        "nous": "avons voulu",
-        "vous": "avez voulu",
-        "ils/elles": "ont voulu"
+      "passe compose": {
+        "Je": "ai voulu",
+        "Tu": "as voulu",
+        "Il/Elle/On": "a voulu",
+        "Nous": "avons voulu",
+        "Vous": "avez voulu",
+        "Ils/Elles": "ont voulu"
       },
-      "plus_que_parfait": {
-        "je": "avais voulu",
-        "tu": "avais voulu",
-        "il/elle/on": "avait voulu",
-        "nous": "avions voulu",
-        "vous": "aviez voulu",
-        "ils/elles": "avaient voulu"
+      "plus-que-parfait": {
+        "Je": "avais voulu",
+        "Tu": "avais voulu",
+        "Il/Elle/On": "avait voulu",
+        "Nous": "avions voulu",
+        "Vous": "aviez voulu",
+        "Ils/Elles": "avaient voulu"
       },
       "imparfait": {
-        "je": "voulais",
-        "tu": "voulais",
-        "il/elle/on": "voulait",
-        "nous": "voulions",
-        "vous": "vouliez",
-        "ils/elles": "voulaient"
+        "Je": "voulais",
+        "Tu": "voulais",
+        "Il/Elle/On": "voulait",
+        "Nous": "voulions",
+        "Vous": "vouliez",
+        "Ils/Elles": "voulaient"
       },
-      "futur_proche": {
-        "je": "vais vouloir",
-        "tu": "vas vouloir",
-        "il/elle/on": "va vouloir",
-        "nous": "allons vouloir",
-        "vous": "allez vouloir",
-        "ils/elles": "vont vouloir"
+      "futur proche": {
+        "Je": "vais vouloir",
+        "Tu": "vas vouloir",
+        "Il/Elle/On": "va vouloir",
+        "Nous": "allons vouloir",
+        "Vous": "allez vouloir",
+        "Ils/Elles": "vont vouloir"
       },
-      "futur_simple": {
-        "je": "voudrai",
-        "tu": "voudras",
-        "il/elle/on": "voudra",
-        "nous": "voudrons",
-        "vous": "voudrez",
-        "ils/elles": "voudront"
+      "futur simple": {
+        "Je": "voudrai",
+        "Tu": "voudras",
+        "Il/Elle/On": "voudra",
+        "Nous": "voudrons",
+        "Vous": "voudrez",
+        "Ils/Elles": "voudront"
       },
-      "futur_anterieur": {
-        "je": "aurai voulu",
-        "tu": "auras voulu",
-        "il/elle/on": "aura voulu",
-        "nous": "aurons voulu",
-        "vous": "aurez voulu",
-        "ils/elles": "auront voulu"
+      "futur anterieur": {
+        "Je": "aurai voulu",
+        "Tu": "auras voulu",
+        "Il/Elle/On": "aura voulu",
+        "Nous": "aurons voulu",
+        "Vous": "aurez voulu",
+        "Ils/Elles": "auront voulu"
       },
-      "conditionnel_present": {
-        "je": "voudrais",
-        "tu": "voudrais",
-        "il/elle/on": "voudrait",
-        "nous": "voudrions",
-        "vous": "voudriez",
-        "ils/elles": "voudraient"
+      "conditionnel present": {
+        "Je": "voudrais",
+        "Tu": "voudrais",
+        "Il/Elle/On": "voudrait",
+        "Nous": "voudrions",
+        "Vous": "voudriez",
+        "Ils/Elles": "voudraient"
       },
-      "subjonctif_present": {
-        "je": "veuille",
-        "tu": "veuilles",
-        "il/elle/on": "veuille",
-        "nous": "voulions",
-        "vous": "vouliez",
-        "ils/elles": "veuillent"
+      "subjonctif present": {
+        "Je": "veuille",
+        "Tu": "veuilles",
+        "Il/Elle/On": "veuille",
+        "Nous": "voulions",
+        "Vous": "vouliez",
+        "Ils/Elles": "veuillent"
       }
     }
   },
@@ -472,76 +472,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "dois",
-        "tu": "dois",
-        "il/elle/on": "doit",
-        "nous": "devons",
-        "vous": "devez",
-        "ils/elles": "doivent"
+        "Je": "dois",
+        "Tu": "dois",
+        "Il/Elle/On": "doit",
+        "Nous": "devons",
+        "Vous": "devez",
+        "Ils/Elles": "doivent"
       },
-      "passe_compose": {
-        "je": "ai dû",
-        "tu": "as dû",
-        "il/elle/on": "a dû",
-        "nous": "avons dû",
-        "vous": "avez dû",
-        "ils/elles": "ont dû"
+      "passe compose": {
+        "Je": "ai dû",
+        "Tu": "as dû",
+        "Il/Elle/On": "a dû",
+        "Nous": "avons dû",
+        "Vous": "avez dû",
+        "Ils/Elles": "ont dû"
       },
-      "plus_que_parfait": {
-        "je": "avais dû",
-        "tu": "avais dû",
-        "il/elle/on": "avait dû",
-        "nous": "avions dû",
-        "vous": "aviez dû",
-        "ils/elles": "avaient dû"
+      "plus-que-parfait": {
+        "Je": "avais dû",
+        "Tu": "avais dû",
+        "Il/Elle/On": "avait dû",
+        "Nous": "avions dû",
+        "Vous": "aviez dû",
+        "Ils/Elles": "avaient dû"
       },
       "imparfait": {
-        "je": "devais",
-        "tu": "devais",
-        "il/elle/on": "devait",
-        "nous": "devions",
-        "vous": "deviez",
-        "ils/elles": "devaient"
+        "Je": "devais",
+        "Tu": "devais",
+        "Il/Elle/On": "devait",
+        "Nous": "devions",
+        "Vous": "deviez",
+        "Ils/Elles": "devaient"
       },
-      "futur_proche": {
-        "je": "vais devoir",
-        "tu": "vas devoir",
-        "il/elle/on": "va devoir",
-        "nous": "allons devoir",
-        "vous": "allez devoir",
-        "ils/elles": "vont devoir"
+      "futur proche": {
+        "Je": "vais devoir",
+        "Tu": "vas devoir",
+        "Il/Elle/On": "va devoir",
+        "Nous": "allons devoir",
+        "Vous": "allez devoir",
+        "Ils/Elles": "vont devoir"
       },
-      "futur_simple": {
-        "je": "devrai",
-        "tu": "devras",
-        "il/elle/on": "devra",
-        "nous": "devrons",
-        "vous": "devrez",
-        "ils/elles": "devront"
+      "futur simple": {
+        "Je": "devrai",
+        "Tu": "devras",
+        "Il/Elle/On": "devra",
+        "Nous": "devrons",
+        "Vous": "devrez",
+        "Ils/Elles": "devront"
       },
-      "futur_anterieur": {
-        "je": "aurai dû",
-        "tu": "auras dû",
-        "il/elle/on": "aura dû",
-        "nous": "aurons dû",
-        "vous": "aurez dû",
-        "ils/elles": "auront dû"
+      "futur anterieur": {
+        "Je": "aurai dû",
+        "Tu": "auras dû",
+        "Il/Elle/On": "aura dû",
+        "Nous": "aurons dû",
+        "Vous": "aurez dû",
+        "Ils/Elles": "auront dû"
       },
-      "conditionnel_present": {
-        "je": "devrais",
-        "tu": "devrais",
-        "il/elle/on": "devrait",
-        "nous": "devrions",
-        "vous": "devriez",
-        "ils/elles": "devraient"
+      "conditionnel present": {
+        "Je": "devrais",
+        "Tu": "devrais",
+        "Il/Elle/On": "devrait",
+        "Nous": "devrions",
+        "Vous": "devriez",
+        "Ils/Elles": "devraient"
       },
-      "subjonctif_present": {
-        "je": "doive",
-        "tu": "doives",
-        "il/elle/on": "doive",
-        "nous": "devions",
-        "vous": "deviez",
-        "ils/elles": "doivent"
+      "subjonctif present": {
+        "Je": "doive",
+        "Tu": "doives",
+        "Il/Elle/On": "doive",
+        "Nous": "devions",
+        "Vous": "deviez",
+        "Ils/Elles": "doivent"
       }
     }
   },
@@ -550,76 +550,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "dis",
-        "tu": "dis",
-        "il/elle/on": "dit",
-        "nous": "disons",
-        "vous": "dites",
-        "ils/elles": "disent"
+        "Je": "dis",
+        "Tu": "dis",
+        "Il/Elle/On": "dit",
+        "Nous": "disons",
+        "Vous": "dites",
+        "Ils/Elles": "disent"
       },
-      "passe_compose": {
-        "je": "ai dit",
-        "tu": "as dit",
-        "il/elle/on": "a dit",
-        "nous": "avons dit",
-        "vous": "avez dit",
-        "ils/elles": "ont dit"
+      "passe compose": {
+        "Je": "ai dit",
+        "Tu": "as dit",
+        "Il/Elle/On": "a dit",
+        "Nous": "avons dit",
+        "Vous": "avez dit",
+        "Ils/Elles": "ont dit"
       },
-      "plus_que_parfait": {
-        "je": "avais dit",
-        "tu": "avais dit",
-        "il/elle/on": "avait dit",
-        "nous": "avions dit",
-        "vous": "aviez dit",
-        "ils/elles": "avaient dit"
+      "plus-que-parfait": {
+        "Je": "avais dit",
+        "Tu": "avais dit",
+        "Il/Elle/On": "avait dit",
+        "Nous": "avions dit",
+        "Vous": "aviez dit",
+        "Ils/Elles": "avaient dit"
       },
       "imparfait": {
-        "je": "disais",
-        "tu": "disais",
-        "il/elle/on": "disait",
-        "nous": "disions",
-        "vous": "disiez",
-        "ils/elles": "disaient"
+        "Je": "disais",
+        "Tu": "disais",
+        "Il/Elle/On": "disait",
+        "Nous": "disions",
+        "Vous": "disiez",
+        "Ils/Elles": "disaient"
       },
-      "futur_proche": {
-        "je": "vais dire",
-        "tu": "vas dire",
-        "il/elle/on": "va dire",
-        "nous": "allons dire",
-        "vous": "allez dire",
-        "ils/elles": "vont dire"
+      "futur proche": {
+        "Je": "vais dire",
+        "Tu": "vas dire",
+        "Il/Elle/On": "va dire",
+        "Nous": "allons dire",
+        "Vous": "allez dire",
+        "Ils/Elles": "vont dire"
       },
-      "futur_simple": {
-        "je": "dirai",
-        "tu": "diras",
-        "il/elle/on": "dira",
-        "nous": "dirons",
-        "vous": "direz",
-        "ils/elles": "diront"
+      "futur simple": {
+        "Je": "dirai",
+        "Tu": "diras",
+        "Il/Elle/On": "dira",
+        "Nous": "dirons",
+        "Vous": "direz",
+        "Ils/Elles": "diront"
       },
-      "futur_anterieur": {
-        "je": "aurai dit",
-        "tu": "auras dit",
-        "il/elle/on": "aura dit",
-        "nous": "aurons dit",
-        "vous": "aurez dit",
-        "ils/elles": "auront dit"
+      "futur anterieur": {
+        "Je": "aurai dit",
+        "Tu": "auras dit",
+        "Il/Elle/On": "aura dit",
+        "Nous": "aurons dit",
+        "Vous": "aurez dit",
+        "Ils/Elles": "auront dit"
       },
-      "conditionnel_present": {
-        "je": "dirais",
-        "tu": "dirais",
-        "il/elle/on": "dirait",
-        "nous": "dirions",
-        "vous": "diriez",
-        "ils/elles": "diraient"
+      "conditionnel present": {
+        "Je": "dirais",
+        "Tu": "dirais",
+        "Il/Elle/On": "dirait",
+        "Nous": "dirions",
+        "Vous": "diriez",
+        "Ils/Elles": "diraient"
       },
-      "subjonctif_present": {
-        "je": "dise",
-        "tu": "dises",
-        "il/elle/on": "dise",
-        "nous": "disions",
-        "vous": "disiez",
-        "ils/elles": "disent"
+      "subjonctif present": {
+        "Je": "dise",
+        "Tu": "dises",
+        "Il/Elle/On": "dise",
+        "Nous": "disions",
+        "Vous": "disiez",
+        "Ils/Elles": "disent"
       }
     }
   },
@@ -628,76 +628,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "viens",
-        "tu": "viens",
-        "il/elle/on": "vient",
-        "nous": "venons",
-        "vous": "venez",
-        "ils/elles": "viennent"
+        "Je": "viens",
+        "Tu": "viens",
+        "Il/Elle/On": "vient",
+        "Nous": "venons",
+        "Vous": "venez",
+        "Ils/Elles": "viennent"
       },
-      "passe_compose": {
-        "je": "suis venu",
-        "tu": "es venu",
-        "il/elle/on": "est venu",
-        "nous": "sommes venus",
-        "vous": "êtes venus",
-        "ils/elles": "sont venus"
+      "passe compose": {
+        "Je": "suis venu",
+        "Tu": "es venu",
+        "Il/Elle/On": "est venu",
+        "Nous": "sommes venus",
+        "Vous": "êtes venus",
+        "Ils/Elles": "sont venus"
       },
-      "plus_que_parfait": {
-        "je": "étais venu",
-        "tu": "étais venu",
-        "il/elle/on": "était venu",
-        "nous": "étions venus",
-        "vous": "étiez venus",
-        "ils/elles": "étaient venus"
+      "plus-que-parfait": {
+        "Je": "étais venu",
+        "Tu": "étais venu",
+        "Il/Elle/On": "était venu",
+        "Nous": "étions venus",
+        "Vous": "étiez venus",
+        "Ils/Elles": "étaient venus"
       },
       "imparfait": {
-        "je": "venais",
-        "tu": "venais",
-        "il/elle/on": "venait",
-        "nous": "venions",
-        "vous": "veniez",
-        "ils/elles": "venaient"
+        "Je": "venais",
+        "Tu": "venais",
+        "Il/Elle/On": "venait",
+        "Nous": "venions",
+        "Vous": "veniez",
+        "Ils/Elles": "venaient"
       },
-      "futur_proche": {
-        "je": "vais venir",
-        "tu": "vas venir",
-        "il/elle/on": "va venir",
-        "nous": "allons venir",
-        "vous": "allez venir",
-        "ils/elles": "vont venir"
+      "futur proche": {
+        "Je": "vais venir",
+        "Tu": "vas venir",
+        "Il/Elle/On": "va venir",
+        "Nous": "allons venir",
+        "Vous": "allez venir",
+        "Ils/Elles": "vont venir"
       },
-      "futur_simple": {
-        "je": "viendrai",
-        "tu": "viendras",
-        "il/elle/on": "viendra",
-        "nous": "viendrons",
-        "vous": "viendrez",
-        "ils/elles": "viendront"
+      "futur simple": {
+        "Je": "viendrai",
+        "Tu": "viendras",
+        "Il/Elle/On": "viendra",
+        "Nous": "viendrons",
+        "Vous": "viendrez",
+        "Ils/Elles": "viendront"
       },
-      "futur_anterieur": {
-        "je": "serai venu",
-        "tu": "seras venu",
-        "il/elle/on": "sera venu",
-        "nous": "serons venus",
-        "vous": "serez venus",
-        "ils/elles": "seront venus"
+      "futur anterieur": {
+        "Je": "serai venu",
+        "Tu": "seras venu",
+        "Il/Elle/On": "sera venu",
+        "Nous": "serons venus",
+        "Vous": "serez venus",
+        "Ils/Elles": "seront venus"
       },
-      "conditionnel_present": {
-        "je": "viendrais",
-        "tu": "viendrais",
-        "il/elle/on": "viendrait",
-        "nous": "viendrions",
-        "vous": "viendriez",
-        "ils/elles": "viendraient"
+      "conditionnel present": {
+        "Je": "viendrais",
+        "Tu": "viendrais",
+        "Il/Elle/On": "viendrait",
+        "Nous": "viendrions",
+        "Vous": "viendriez",
+        "Ils/Elles": "viendraient"
       },
-      "subjonctif_present": {
-        "je": "vienne",
-        "tu": "viennes",
-        "il/elle/on": "vienne",
-        "nous": "venions",
-        "vous": "veniez",
-        "ils/elles": "viennent"
+      "subjonctif present": {
+        "Je": "vienne",
+        "Tu": "viennes",
+        "Il/Elle/On": "vienne",
+        "Nous": "venions",
+        "Vous": "veniez",
+        "Ils/Elles": "viennent"
       }
     }
   },
@@ -706,76 +706,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "prends",
-        "tu": "prends",
-        "il/elle/on": "prend",
-        "nous": "prenons",
-        "vous": "prenez",
-        "ils/elles": "prennent"
+        "Je": "prends",
+        "Tu": "prends",
+        "Il/Elle/On": "prend",
+        "Nous": "prenons",
+        "Vous": "prenez",
+        "Ils/Elles": "prennent"
       },
-      "passe_compose": {
-        "je": "ai pris",
-        "tu": "as pris",
-        "il/elle/on": "a pris",
-        "nous": "avons pris",
-        "vous": "avez pris",
-        "ils/elles": "ont pris"
+      "passe compose": {
+        "Je": "ai pris",
+        "Tu": "as pris",
+        "Il/Elle/On": "a pris",
+        "Nous": "avons pris",
+        "Vous": "avez pris",
+        "Ils/Elles": "ont pris"
       },
-      "plus_que_parfait": {
-        "je": "avais pris",
-        "tu": "avais pris",
-        "il/elle/on": "avait pris",
-        "nous": "avions pris",
-        "vous": "aviez pris",
-        "ils/elles": "avaient pris"
+      "plus-que-parfait": {
+        "Je": "avais pris",
+        "Tu": "avais pris",
+        "Il/Elle/On": "avait pris",
+        "Nous": "avions pris",
+        "Vous": "aviez pris",
+        "Ils/Elles": "avaient pris"
       },
       "imparfait": {
-        "je": "prenais",
-        "tu": "prenais",
-        "il/elle/on": "prenait",
-        "nous": "prenions",
-        "vous": "preniez",
-        "ils/elles": "prenaient"
+        "Je": "prenais",
+        "Tu": "prenais",
+        "Il/Elle/On": "prenait",
+        "Nous": "prenions",
+        "Vous": "preniez",
+        "Ils/Elles": "prenaient"
       },
-      "futur_proche": {
-        "je": "vais prendre",
-        "tu": "vas prendre",
-        "il/elle/on": "va prendre",
-        "nous": "allons prendre",
-        "vous": "allez prendre",
-        "ils/elles": "vont prendre"
+      "futur proche": {
+        "Je": "vais prendre",
+        "Tu": "vas prendre",
+        "Il/Elle/On": "va prendre",
+        "Nous": "allons prendre",
+        "Vous": "allez prendre",
+        "Ils/Elles": "vont prendre"
       },
-      "futur_simple": {
-        "je": "prendrai",
-        "tu": "prendras",
-        "il/elle/on": "prendra",
-        "nous": "prendrons",
-        "vous": "prendrez",
-        "ils/elles": "prendront"
+      "futur simple": {
+        "Je": "prendrai",
+        "Tu": "prendras",
+        "Il/Elle/On": "prendra",
+        "Nous": "prendrons",
+        "Vous": "prendrez",
+        "Ils/Elles": "prendront"
       },
-      "futur_anterieur": {
-        "je": "aurai pris",
-        "tu": "auras pris",
-        "il/elle/on": "aura pris",
-        "nous": "aurons pris",
-        "vous": "aurez pris",
-        "ils/elles": "auront pris"
+      "futur anterieur": {
+        "Je": "aurai pris",
+        "Tu": "auras pris",
+        "Il/Elle/On": "aura pris",
+        "Nous": "aurons pris",
+        "Vous": "aurez pris",
+        "Ils/Elles": "auront pris"
       },
-      "conditionnel_present": {
-        "je": "prendrais",
-        "tu": "prendrais",
-        "il/elle/on": "prendrait",
-        "nous": "prendrions",
-        "vous": "prendriez",
-        "ils/elles": "prendraient"
+      "conditionnel present": {
+        "Je": "prendrais",
+        "Tu": "prendrais",
+        "Il/Elle/On": "prendrait",
+        "Nous": "prendrions",
+        "Vous": "prendriez",
+        "Ils/Elles": "prendraient"
       },
-      "subjonctif_present": {
-        "je": "prenne",
-        "tu": "prennes",
-        "il/elle/on": "prenne",
-        "nous": "prenions",
-        "vous": "preniez",
-        "ils/elles": "prennent"
+      "subjonctif present": {
+        "Je": "prenne",
+        "Tu": "prennes",
+        "Il/Elle/On": "prenne",
+        "Nous": "prenions",
+        "Vous": "preniez",
+        "Ils/Elles": "prennent"
       }
     }
   },
@@ -784,76 +784,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "vois",
-        "tu": "vois",
-        "il/elle/on": "voit",
-        "nous": "voyons",
-        "vous": "voyez",
-        "ils/elles": "voient"
+        "Je": "vois",
+        "Tu": "vois",
+        "Il/Elle/On": "voit",
+        "Nous": "voyons",
+        "Vous": "voyez",
+        "Ils/Elles": "voient"
       },
-      "passe_compose": {
-        "je": "ai vu",
-        "tu": "as vu",
-        "il/elle/on": "a vu",
-        "nous": "avons vu",
-        "vous": "avez vu",
-        "ils/elles": "ont vu"
+      "passe compose": {
+        "Je": "ai vu",
+        "Tu": "as vu",
+        "Il/Elle/On": "a vu",
+        "Nous": "avons vu",
+        "Vous": "avez vu",
+        "Ils/Elles": "ont vu"
       },
-      "plus_que_parfait": {
-        "je": "avais vu",
-        "tu": "avais vu",
-        "il/elle/on": "avait vu",
-        "nous": "avions vu",
-        "vous": "aviez vu",
-        "ils/elles": "avaient vu"
+      "plus-que-parfait": {
+        "Je": "avais vu",
+        "Tu": "avais vu",
+        "Il/Elle/On": "avait vu",
+        "Nous": "avions vu",
+        "Vous": "aviez vu",
+        "Ils/Elles": "avaient vu"
       },
       "imparfait": {
-        "je": "voyais",
-        "tu": "voyais",
-        "il/elle/on": "voyait",
-        "nous": "voyions",
-        "vous": "voyiez",
-        "ils/elles": "voyaient"
+        "Je": "voyais",
+        "Tu": "voyais",
+        "Il/Elle/On": "voyait",
+        "Nous": "voyions",
+        "Vous": "voyiez",
+        "Ils/Elles": "voyaient"
       },
-      "futur_proche": {
-        "je": "vais voir",
-        "tu": "vas voir",
-        "il/elle/on": "va voir",
-        "nous": "allons voir",
-        "vous": "allez voir",
-        "ils/elles": "vont voir"
+      "futur proche": {
+        "Je": "vais voir",
+        "Tu": "vas voir",
+        "Il/Elle/On": "va voir",
+        "Nous": "allons voir",
+        "Vous": "allez voir",
+        "Ils/Elles": "vont voir"
       },
-      "futur_simple": {
-        "je": "verrai",
-        "tu": "verras",
-        "il/elle/on": "verra",
-        "nous": "verrons",
-        "vous": "verrez",
-        "ils/elles": "verront"
+      "futur simple": {
+        "Je": "verrai",
+        "Tu": "verras",
+        "Il/Elle/On": "verra",
+        "Nous": "verrons",
+        "Vous": "verrez",
+        "Ils/Elles": "verront"
       },
-      "futur_anterieur": {
-        "je": "aurai vu",
-        "tu": "auras vu",
-        "il/elle/on": "aura vu",
-        "nous": "aurons vu",
-        "vous": "aurez vu",
-        "ils/elles": "auront vu"
+      "futur anterieur": {
+        "Je": "aurai vu",
+        "Tu": "auras vu",
+        "Il/Elle/On": "aura vu",
+        "Nous": "aurons vu",
+        "Vous": "aurez vu",
+        "Ils/Elles": "auront vu"
       },
-      "conditionnel_present": {
-        "je": "verrais",
-        "tu": "verrais",
-        "il/elle/on": "verrait",
-        "nous": "verrions",
-        "vous": "verriez",
-        "ils/elles": "verraient"
+      "conditionnel present": {
+        "Je": "verrais",
+        "Tu": "verrais",
+        "Il/Elle/On": "verrait",
+        "Nous": "verrions",
+        "Vous": "verriez",
+        "Ils/Elles": "verraient"
       },
-      "subjonctif_present": {
-        "je": "voie",
-        "tu": "voies",
-        "il/elle/on": "voie",
-        "nous": "voyions",
-        "vous": "voyiez",
-        "ils/elles": "voient"
+      "subjonctif present": {
+        "Je": "voie",
+        "Tu": "voies",
+        "Il/Elle/On": "voie",
+        "Nous": "voyions",
+        "Vous": "voyiez",
+        "Ils/Elles": "voient"
       }
     }
   },
@@ -862,76 +862,76 @@
     "frequency": 4,
     "conjugations": {
       "present": {
-        "je": "mets",
-        "tu": "mets",
-        "il/elle/on": "met",
-        "nous": "mettons",
-        "vous": "mettez",
-        "ils/elles": "mettent"
+        "Je": "mets",
+        "Tu": "mets",
+        "Il/Elle/On": "met",
+        "Nous": "mettons",
+        "Vous": "mettez",
+        "Ils/Elles": "mettent"
       },
-      "passe_compose": {
-        "je": "ai mis",
-        "tu": "as mis",
-        "il/elle/on": "a mis",
-        "nous": "avons mis",
-        "vous": "avez mis",
-        "ils/elles": "ont mis"
+      "passe compose": {
+        "Je": "ai mis",
+        "Tu": "as mis",
+        "Il/Elle/On": "a mis",
+        "Nous": "avons mis",
+        "Vous": "avez mis",
+        "Ils/Elles": "ont mis"
       },
-      "plus_que_parfait": {
-        "je": "avais mis",
-        "tu": "avais mis",
-        "il/elle/on": "avait mis",
-        "nous": "avions mis",
-        "vous": "aviez mis",
-        "ils/elles": "avaient mis"
+      "plus-que-parfait": {
+        "Je": "avais mis",
+        "Tu": "avais mis",
+        "Il/Elle/On": "avait mis",
+        "Nous": "avions mis",
+        "Vous": "aviez mis",
+        "Ils/Elles": "avaient mis"
       },
       "imparfait": {
-        "je": "mettais",
-        "tu": "mettais",
-        "il/elle/on": "mettait",
-        "nous": "mettions",
-        "vous": "mettiez",
-        "ils/elles": "mettaient"
+        "Je": "mettais",
+        "Tu": "mettais",
+        "Il/Elle/On": "mettait",
+        "Nous": "mettions",
+        "Vous": "mettiez",
+        "Ils/Elles": "mettaient"
       },
-      "futur_proche": {
-        "je": "vais mettre",
-        "tu": "vas mettre",
-        "il/elle/on": "va mettre",
-        "nous": "allons mettre",
-        "vous": "allez mettre",
-        "ils/elles": "vont mettre"
+      "futur proche": {
+        "Je": "vais mettre",
+        "Tu": "vas mettre",
+        "Il/Elle/On": "va mettre",
+        "Nous": "allons mettre",
+        "Vous": "allez mettre",
+        "Ils/Elles": "vont mettre"
       },
-      "futur_simple": {
-        "je": "mettrai",
-        "tu": "mettras",
-        "il/elle/on": "mettra",
-        "nous": "mettrons",
-        "vous": "mettrez",
-        "ils/elles": "mettront"
+      "futur simple": {
+        "Je": "mettrai",
+        "Tu": "mettras",
+        "Il/Elle/On": "mettra",
+        "Nous": "mettrons",
+        "Vous": "mettrez",
+        "Ils/Elles": "mettront"
       },
-      "futur_anterieur": {
-        "je": "aurai mis",
-        "tu": "auras mis",
-        "il/elle/on": "aura mis",
-        "nous": "aurons mis",
-        "vous": "aurez mis",
-        "ils/elles": "auront mis"
+      "futur anterieur": {
+        "Je": "aurai mis",
+        "Tu": "auras mis",
+        "Il/Elle/On": "aura mis",
+        "Nous": "aurons mis",
+        "Vous": "aurez mis",
+        "Ils/Elles": "auront mis"
       },
-      "conditionnel_present": {
-        "je": "mettrais",
-        "tu": "mettrais",
-        "il/elle/on": "mettrait",
-        "nous": "mettrions",
-        "vous": "mettriez",
-        "ils/elles": "mettraient"
+      "conditionnel present": {
+        "Je": "mettrais",
+        "Tu": "mettrais",
+        "Il/Elle/On": "mettrait",
+        "Nous": "mettrions",
+        "Vous": "mettriez",
+        "Ils/Elles": "mettraient"
       },
-      "subjonctif_present": {
-        "je": "mette",
-        "tu": "mettes",
-        "il/elle/on": "mette",
-        "nous": "mettions",
-        "vous": "mettiez",
-        "ils/elles": "mettent"
+      "subjonctif present": {
+        "Je": "mette",
+        "Tu": "mettes",
+        "Il/Elle/On": "mette",
+        "Nous": "mettions",
+        "Vous": "mettiez",
+        "Ils/Elles": "mettent"
       }
     }
   },
@@ -940,76 +940,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "sais",
-        "tu": "sais",
-        "il/elle/on": "sait",
-        "nous": "savons",
-        "vous": "savez",
-        "ils/elles": "savent"
+        "Je": "sais",
+        "Tu": "sais",
+        "Il/Elle/On": "sait",
+        "Nous": "savons",
+        "Vous": "savez",
+        "Ils/Elles": "savent"
       },
-      "passe_compose": {
-        "je": "ai su",
-        "tu": "as su",
-        "il/elle/on": "a su",
-        "nous": "avons su",
-        "vous": "avez su",
-        "ils/elles": "ont su"
+      "passe compose": {
+        "Je": "ai su",
+        "Tu": "as su",
+        "Il/Elle/On": "a su",
+        "Nous": "avons su",
+        "Vous": "avez su",
+        "Ils/Elles": "ont su"
       },
-      "plus_que_parfait": {
-        "je": "avais su",
-        "tu": "avais su",
-        "il/elle/on": "avait su",
-        "nous": "avions su",
-        "vous": "aviez su",
-        "ils/elles": "avaient su"
+      "plus-que-parfait": {
+        "Je": "avais su",
+        "Tu": "avais su",
+        "Il/Elle/On": "avait su",
+        "Nous": "avions su",
+        "Vous": "aviez su",
+        "Ils/Elles": "avaient su"
       },
       "imparfait": {
-        "je": "savais",
-        "tu": "savais",
-        "il/elle/on": "savait",
-        "nous": "savions",
-        "vous": "saviez",
-        "ils/elles": "savaient"
+        "Je": "savais",
+        "Tu": "savais",
+        "Il/Elle/On": "savait",
+        "Nous": "savions",
+        "Vous": "saviez",
+        "Ils/Elles": "savaient"
       },
-      "futur_proche": {
-        "je": "vais savoir",
-        "tu": "vas savoir",
-        "il/elle/on": "va savoir",
-        "nous": "allons savoir",
-        "vous": "allez savoir",
-        "ils/elles": "vont savoir"
+      "futur proche": {
+        "Je": "vais savoir",
+        "Tu": "vas savoir",
+        "Il/Elle/On": "va savoir",
+        "Nous": "allons savoir",
+        "Vous": "allez savoir",
+        "Ils/Elles": "vont savoir"
       },
-      "futur_simple": {
-        "je": "saurai",
-        "tu": "sauras",
-        "il/elle/on": "saura",
-        "nous": "saurons",
-        "vous": "saurez",
-        "ils/elles": "sauront"
+      "futur simple": {
+        "Je": "saurai",
+        "Tu": "sauras",
+        "Il/Elle/On": "saura",
+        "Nous": "saurons",
+        "Vous": "saurez",
+        "Ils/Elles": "sauront"
       },
-      "futur_anterieur": {
-        "je": "aurai su",
-        "tu": "auras su",
-        "il/elle/on": "aura su",
-        "nous": "aurons su",
-        "vous": "aurez su",
-        "ils/elles": "auront su"
+      "futur anterieur": {
+        "Je": "aurai su",
+        "Tu": "auras su",
+        "Il/Elle/On": "aura su",
+        "Nous": "aurons su",
+        "Vous": "aurez su",
+        "Ils/Elles": "auront su"
       },
-      "conditionnel_present": {
-        "je": "saurais",
-        "tu": "saurais",
-        "il/elle/on": "saurait",
-        "nous": "saurions",
-        "vous": "sauriez",
-        "ils/elles": "sauraient"
+      "conditionnel present": {
+        "Je": "saurais",
+        "Tu": "saurais",
+        "Il/Elle/On": "saurait",
+        "Nous": "saurions",
+        "Vous": "sauriez",
+        "Ils/Elles": "sauraient"
       },
-      "subjonctif_present": {
-        "je": "sache",
-        "tu": "saches",
-        "il/elle/on": "sache",
-        "nous": "sachions",
-        "vous": "sachiez",
-        "ils/elles": "sachent"
+      "subjonctif present": {
+        "Je": "sache",
+        "Tu": "saches",
+        "Il/Elle/On": "sache",
+        "Nous": "sachions",
+        "Vous": "sachiez",
+        "Ils/Elles": "sachent"
       }
     }
   },
@@ -1018,76 +1018,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "parle",
-        "tu": "parles",
-        "il/elle/on": "parle",
-        "nous": "parlons",
-        "vous": "parlez",
-        "ils/elles": "parlent"
+        "Je": "parle",
+        "Tu": "parles",
+        "Il/Elle/On": "parle",
+        "Nous": "parlons",
+        "Vous": "parlez",
+        "Ils/Elles": "parlent"
       },
-      "passe_compose": {
-        "je": "ai parlé",
-        "tu": "as parlé",
-        "il/elle/on": "a parlé",
-        "nous": "avons parlé",
-        "vous": "avez parlé",
-        "ils/elles": "ont parlé"
+      "passe compose": {
+        "Je": "ai parlé",
+        "Tu": "as parlé",
+        "Il/Elle/On": "a parlé",
+        "Nous": "avons parlé",
+        "Vous": "avez parlé",
+        "Ils/Elles": "ont parlé"
       },
-      "plus_que_parfait": {
-        "je": "avais parlé",
-        "tu": "avais parlé",
-        "il/elle/on": "avait parlé",
-        "nous": "avions parlé",
-        "vous": "aviez parlé",
-        "ils/elles": "avaient parlé"
+      "plus-que-parfait": {
+        "Je": "avais parlé",
+        "Tu": "avais parlé",
+        "Il/Elle/On": "avait parlé",
+        "Nous": "avions parlé",
+        "Vous": "aviez parlé",
+        "Ils/Elles": "avaient parlé"
       },
       "imparfait": {
-        "je": "parlais",
-        "tu": "parlais",
-        "il/elle/on": "parlait",
-        "nous": "parlions",
-        "vous": "parliez",
-        "ils/elles": "parlaient"
+        "Je": "parlais",
+        "Tu": "parlais",
+        "Il/Elle/On": "parlait",
+        "Nous": "parlions",
+        "Vous": "parliez",
+        "Ils/Elles": "parlaient"
       },
-      "futur_proche": {
-        "je": "vais parler",
-        "tu": "vas parler",
-        "il/elle/on": "va parler",
-        "nous": "allons parler",
-        "vous": "allez parler",
-        "ils/elles": "vont parler"
+      "futur proche": {
+        "Je": "vais parler",
+        "Tu": "vas parler",
+        "Il/Elle/On": "va parler",
+        "Nous": "allons parler",
+        "Vous": "allez parler",
+        "Ils/Elles": "vont parler"
       },
-      "futur_simple": {
-        "je": "parlerai",
-        "tu": "parleras",
-        "il/elle/on": "parlera",
-        "nous": "parlerons",
-        "vous": "parlerez",
-        "ils/elles": "parleront"
+      "futur simple": {
+        "Je": "parlerai",
+        "Tu": "parleras",
+        "Il/Elle/On": "parlera",
+        "Nous": "parlerons",
+        "Vous": "parlerez",
+        "Ils/Elles": "parleront"
       },
-      "futur_anterieur": {
-        "je": "aurai parlé",
-        "tu": "auras parlé",
-        "il/elle/on": "aura parlé",
-        "nous": "aurons parlé",
-        "vous": "aurez parlé",
-        "ils/elles": "auront parlé"
+      "futur anterieur": {
+        "Je": "aurai parlé",
+        "Tu": "auras parlé",
+        "Il/Elle/On": "aura parlé",
+        "Nous": "aurons parlé",
+        "Vous": "aurez parlé",
+        "Ils/Elles": "auront parlé"
       },
-      "conditionnel_present": {
-        "je": "parlerais",
-        "tu": "parlerais",
-        "il/elle/on": "parlerait",
-        "nous": "parlerions",
-        "vous": "parleriez",
-        "ils/elles": "parleraient"
+      "conditionnel present": {
+        "Je": "parlerais",
+        "Tu": "parlerais",
+        "Il/Elle/On": "parlerait",
+        "Nous": "parlerions",
+        "Vous": "parleriez",
+        "Ils/Elles": "parleraient"
       },
-      "subjonctif_present": {
-        "je": "parle",
-        "tu": "parles",
-        "il/elle/on": "parle",
-        "nous": "parlions",
-        "vous": "parliez",
-        "ils/elles": "parlent"
+      "subjonctif present": {
+        "Je": "parle",
+        "Tu": "parles",
+        "Il/Elle/On": "parle",
+        "Nous": "parlions",
+        "Vous": "parliez",
+        "Ils/Elles": "parlent"
       }
     }
   },
@@ -1096,76 +1096,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "mange",
-        "tu": "manges",
-        "il/elle/on": "mange",
-        "nous": "mangeons",
-        "vous": "mangez",
-        "ils/elles": "mangent"
+        "Je": "mange",
+        "Tu": "manges",
+        "Il/Elle/On": "mange",
+        "Nous": "mangeons",
+        "Vous": "mangez",
+        "Ils/Elles": "mangent"
       },
-      "passe_compose": {
-        "je": "ai mangé",
-        "tu": "as mangé",
-        "il/elle/on": "a mangé",
-        "nous": "avons mangé",
-        "vous": "avez mangé",
-        "ils/elles": "ont mangé"
+      "passe compose": {
+        "Je": "ai mangé",
+        "Tu": "as mangé",
+        "Il/Elle/On": "a mangé",
+        "Nous": "avons mangé",
+        "Vous": "avez mangé",
+        "Ils/Elles": "ont mangé"
       },
-      "plus_que_parfait": {
-        "je": "avais mangé",
-        "tu": "avais mangé",
-        "il/elle/on": "avait mangé",
-        "nous": "avions mangé",
-        "vous": "aviez mangé",
-        "ils/elles": "avaient mangé"
+      "plus-que-parfait": {
+        "Je": "avais mangé",
+        "Tu": "avais mangé",
+        "Il/Elle/On": "avait mangé",
+        "Nous": "avions mangé",
+        "Vous": "aviez mangé",
+        "Ils/Elles": "avaient mangé"
       },
       "imparfait": {
-        "je": "mangeais",
-        "tu": "mangeais",
-        "il/elle/on": "mangeait",
-        "nous": "mangions",
-        "vous": "mangiez",
-        "ils/elles": "mangeaient"
+        "Je": "mangeais",
+        "Tu": "mangeais",
+        "Il/Elle/On": "mangeait",
+        "Nous": "mangions",
+        "Vous": "mangiez",
+        "Ils/Elles": "mangeaient"
       },
-      "futur_proche": {
-        "je": "vais manger",
-        "tu": "vas manger",
-        "il/elle/on": "va manger",
-        "nous": "allons manger",
-        "vous": "allez manger",
-        "ils/elles": "vont manger"
+      "futur proche": {
+        "Je": "vais manger",
+        "Tu": "vas manger",
+        "Il/Elle/On": "va manger",
+        "Nous": "allons manger",
+        "Vous": "allez manger",
+        "Ils/Elles": "vont manger"
       },
-      "futur_simple": {
-        "je": "mangerai",
-        "tu": "mangeras",
-        "il/elle/on": "mangera",
-        "nous": "mangerons",
-        "vous": "mangerez",
-        "ils/elles": "mangeront"
+      "futur simple": {
+        "Je": "mangerai",
+        "Tu": "mangeras",
+        "Il/Elle/On": "mangera",
+        "Nous": "mangerons",
+        "Vous": "mangerez",
+        "Ils/Elles": "mangeront"
       },
-      "futur_anterieur": {
-        "je": "aurai mangé",
-        "tu": "auras mangé",
-        "il/elle/on": "aura mangé",
-        "nous": "aurons mangé",
-        "vous": "aurez mangé",
-        "ils/elles": "auront mangé"
+      "futur anterieur": {
+        "Je": "aurai mangé",
+        "Tu": "auras mangé",
+        "Il/Elle/On": "aura mangé",
+        "Nous": "aurons mangé",
+        "Vous": "aurez mangé",
+        "Ils/Elles": "auront mangé"
       },
-      "conditionnel_present": {
-        "je": "mangerais",
-        "tu": "mangerais",
-        "il/elle/on": "mangerait",
-        "nous": "mangerions",
-        "vous": "mangeriez",
-        "ils/elles": "mangeraient"
+      "conditionnel present": {
+        "Je": "mangerais",
+        "Tu": "mangerais",
+        "Il/Elle/On": "mangerait",
+        "Nous": "mangerions",
+        "Vous": "mangeriez",
+        "Ils/Elles": "mangeraient"
       },
-      "subjonctif_present": {
-        "je": "mange",
-        "tu": "manges",
-        "il/elle/on": "mange",
-        "nous": "mangions",
-        "vous": "mangiez",
-        "ils/elles": "mangent"
+      "subjonctif present": {
+        "Je": "mange",
+        "Tu": "manges",
+        "Il/Elle/On": "mange",
+        "Nous": "mangions",
+        "Vous": "mangiez",
+        "Ils/Elles": "mangent"
       }
     }
   },
@@ -1174,76 +1174,76 @@
     "frequency": 4,
     "conjugations": {
       "present": {
-        "je": "choisis",
-        "tu": "choisis",
-        "il/elle/on": "choisit",
-        "nous": "choisissons",
-        "vous": "choisissez",
-        "ils/elles": "choisissent"
+        "Je": "choisis",
+        "Tu": "choisis",
+        "Il/Elle/On": "choisit",
+        "Nous": "choisissons",
+        "Vous": "choisissez",
+        "Ils/Elles": "choisissent"
       },
-      "passe_compose": {
-        "je": "ai choisi",
-        "tu": "as choisi",
-        "il/elle/on": "a choisi",
-        "nous": "avons choisi",
-        "vous": "avez choisi",
-        "ils/elles": "ont choisi"
+      "passe compose": {
+        "Je": "ai choisi",
+        "Tu": "as choisi",
+        "Il/Elle/On": "a choisi",
+        "Nous": "avons choisi",
+        "Vous": "avez choisi",
+        "Ils/Elles": "ont choisi"
       },
-      "plus_que_parfait": {
-        "je": "avais choisi",
-        "tu": "avais choisi",
-        "il/elle/on": "avait choisi",
-        "nous": "avions choisi",
-        "vous": "aviez choisi",
-        "ils/elles": "avaient choisi"
+      "plus-que-parfait": {
+        "Je": "avais choisi",
+        "Tu": "avais choisi",
+        "Il/Elle/On": "avait choisi",
+        "Nous": "avions choisi",
+        "Vous": "aviez choisi",
+        "Ils/Elles": "avaient choisi"
       },
       "imparfait": {
-        "je": "choisissais",
-        "tu": "choisissais",
-        "il/elle/on": "choisissait",
-        "nous": "choisissions",
-        "vous": "choisissiez",
-        "ils/elles": "choisissaient"
+        "Je": "choisissais",
+        "Tu": "choisissais",
+        "Il/Elle/On": "choisissait",
+        "Nous": "choisissions",
+        "Vous": "choisissiez",
+        "Ils/Elles": "choisissaient"
       },
-      "futur_proche": {
-        "je": "vais choisir",
-        "tu": "vas choisir",
-        "il/elle/on": "va choisir",
-        "nous": "allons choisir",
-        "vous": "allez choisir",
-        "ils/elles": "vont choisir"
+      "futur proche": {
+        "Je": "vais choisir",
+        "Tu": "vas choisir",
+        "Il/Elle/On": "va choisir",
+        "Nous": "allons choisir",
+        "Vous": "allez choisir",
+        "Ils/Elles": "vont choisir"
       },
-      "futur_simple": {
-        "je": "choisirai",
-        "tu": "choisiras",
-        "il/elle/on": "choisira",
-        "nous": "choisirons",
-        "vous": "choisirez",
-        "ils/elles": "choisiront"
+      "futur simple": {
+        "Je": "choisirai",
+        "Tu": "choisiras",
+        "Il/Elle/On": "choisira",
+        "Nous": "choisirons",
+        "Vous": "choisirez",
+        "Ils/Elles": "choisiront"
       },
-      "futur_anterieur": {
-        "je": "aurai choisi",
-        "tu": "auras choisi",
-        "il/elle/on": "aura choisi",
-        "nous": "aurons choisi",
-        "vous": "aurez choisi",
-        "ils/elles": "auront choisi"
+      "futur anterieur": {
+        "Je": "aurai choisi",
+        "Tu": "auras choisi",
+        "Il/Elle/On": "aura choisi",
+        "Nous": "aurons choisi",
+        "Vous": "aurez choisi",
+        "Ils/Elles": "auront choisi"
       },
-      "conditionnel_present": {
-        "je": "choisirais",
-        "tu": "choisirais",
-        "il/elle/on": "choisirait",
-        "nous": "choisirions",
-        "vous": "choisiriez",
-        "ils/elles": "choisiraient"
+      "conditionnel present": {
+        "Je": "choisirais",
+        "Tu": "choisirais",
+        "Il/Elle/On": "choisirait",
+        "Nous": "choisirions",
+        "Vous": "choisiriez",
+        "Ils/Elles": "choisiraient"
       },
-      "subjonctif_present": {
-        "je": "choisisse",
-        "tu": "choisisses",
-        "il/elle/on": "choisisse",
-        "nous": "choisissions",
-        "vous": "choisissiez",
-        "ils/elles": "choisissent"
+      "subjonctif present": {
+        "Je": "choisisse",
+        "Tu": "choisisses",
+        "Il/Elle/On": "choisisse",
+        "Nous": "choisissions",
+        "Vous": "choisissiez",
+        "Ils/Elles": "choisissent"
       }
     }
   },
@@ -1252,76 +1252,76 @@
     "frequency": 2,
     "conjugations": {
       "present": {
-        "je": "aime",
-        "tu": "aimes",
-        "il/elle/on": "aime",
-        "nous": "aimons",
-        "vous": "aimez",
-        "ils/elles": "aiment"
+        "Je": "aime",
+        "Tu": "aimes",
+        "Il/Elle/On": "aime",
+        "Nous": "aimons",
+        "Vous": "aimez",
+        "Ils/Elles": "aiment"
       },
-      "passe_compose": {
-        "je": "ai aimé",
-        "tu": "as aimé",
-        "il/elle/on": "a aimé",
-        "nous": "avons aimé",
-        "vous": "avez aimé",
-        "ils/elles": "ont aimé"
+      "passe compose": {
+        "Je": "ai aimé",
+        "Tu": "as aimé",
+        "Il/Elle/On": "a aimé",
+        "Nous": "avons aimé",
+        "Vous": "avez aimé",
+        "Ils/Elles": "ont aimé"
       },
-      "plus_que_parfait": {
-        "je": "avais aimé",
-        "tu": "avais aimé",
-        "il/elle/on": "avait aimé",
-        "nous": "avions aimé",
-        "vous": "aviez aimé",
-        "ils/elles": "avaient aimé"
+      "plus-que-parfait": {
+        "Je": "avais aimé",
+        "Tu": "avais aimé",
+        "Il/Elle/On": "avait aimé",
+        "Nous": "avions aimé",
+        "Vous": "aviez aimé",
+        "Ils/Elles": "avaient aimé"
       },
       "imparfait": {
-        "je": "aimais",
-        "tu": "aimais",
-        "il/elle/on": "aimait",
-        "nous": "aimions",
-        "vous": "aimiez",
-        "ils/elles": "aimaient"
+        "Je": "aimais",
+        "Tu": "aimais",
+        "Il/Elle/On": "aimait",
+        "Nous": "aimions",
+        "Vous": "aimiez",
+        "Ils/Elles": "aimaient"
       },
-      "futur_proche": {
-        "je": "vais aimer",
-        "tu": "vas aimer",
-        "il/elle/on": "va aimer",
-        "nous": "allons aimer",
-        "vous": "allez aimer",
-        "ils/elles": "vont aimer"
+      "futur proche": {
+        "Je": "vais aimer",
+        "Tu": "vas aimer",
+        "Il/Elle/On": "va aimer",
+        "Nous": "allons aimer",
+        "Vous": "allez aimer",
+        "Ils/Elles": "vont aimer"
       },
-      "futur_simple": {
-        "je": "aimerai",
-        "tu": "aimeras",
-        "il/elle/on": "aimera",
-        "nous": "aimerons",
-        "vous": "aimerez",
-        "ils/elles": "aimeront"
+      "futur simple": {
+        "Je": "aimerai",
+        "Tu": "aimeras",
+        "Il/Elle/On": "aimera",
+        "Nous": "aimerons",
+        "Vous": "aimerez",
+        "Ils/Elles": "aimeront"
       },
-      "futur_anterieur": {
-        "je": "aurai aimé",
-        "tu": "auras aimé",
-        "il/elle/on": "aura aimé",
-        "nous": "aurons aimé",
-        "vous": "aurez aimé",
-        "ils/elles": "auront aimé"
+      "futur anterieur": {
+        "Je": "aurai aimé",
+        "Tu": "auras aimé",
+        "Il/Elle/On": "aura aimé",
+        "Nous": "aurons aimé",
+        "Vous": "aurez aimé",
+        "Ils/Elles": "auront aimé"
       },
-      "conditionnel_present": {
-        "je": "aimerais",
-        "tu": "aimerais",
-        "il/elle/on": "aimerait",
-        "nous": "aimerions",
-        "vous": "aimeriez",
-        "ils/elles": "aimeraient"
+      "conditionnel present": {
+        "Je": "aimerais",
+        "Tu": "aimerais",
+        "Il/Elle/On": "aimerait",
+        "Nous": "aimerions",
+        "Vous": "aimeriez",
+        "Ils/Elles": "aimeraient"
       },
-      "subjonctif_present": {
-        "je": "aime",
-        "tu": "aimes",
-        "il/elle/on": "aime",
-        "nous": "aimions",
-        "vous": "aimiez",
-        "ils/elles": "aiment"
+      "subjonctif present": {
+        "Je": "aime",
+        "Tu": "aimes",
+        "Il/Elle/On": "aime",
+        "Nous": "aimions",
+        "Vous": "aimiez",
+        "Ils/Elles": "aiment"
       }
     }
   },
@@ -1330,76 +1330,76 @@
     "frequency": 4,
     "conjugations": {
       "present": {
-        "je": "attends",
-        "tu": "attends",
-        "il/elle/on": "attend",
-        "nous": "attendons",
-        "vous": "attendez",
-        "ils/elles": "attendent"
+        "Je": "attends",
+        "Tu": "attends",
+        "Il/Elle/On": "attend",
+        "Nous": "attendons",
+        "Vous": "attendez",
+        "Ils/Elles": "attendent"
       },
-      "passe_compose": {
-        "je": "ai attendu",
-        "tu": "as attendu",
-        "il/elle/on": "a attendu",
-        "nous": "avons attendu",
-        "vous": "avez attendu",
-        "ils/elles": "ont attendu"
+      "passe compose": {
+        "Je": "ai attendu",
+        "Tu": "as attendu",
+        "Il/Elle/On": "a attendu",
+        "Nous": "avons attendu",
+        "Vous": "avez attendu",
+        "Ils/Elles": "ont attendu"
       },
-      "plus_que_parfait": {
-        "je": "avais attendu",
-        "tu": "avais attendu",
-        "il/elle/on": "avait attendu",
-        "nous": "avions attendu",
-        "vous": "aviez attendu",
-        "ils/elles": "avaient attendu"
+      "plus-que-parfait": {
+        "Je": "avais attendu",
+        "Tu": "avais attendu",
+        "Il/Elle/On": "avait attendu",
+        "Nous": "avions attendu",
+        "Vous": "aviez attendu",
+        "Ils/Elles": "avaient attendu"
       },
       "imparfait": {
-        "je": "attendais",
-        "tu": "attendais",
-        "il/elle/on": "attendait",
-        "nous": "attendions",
-        "vous": "attendiez",
-        "ils/elles": "attendaient"
+        "Je": "attendais",
+        "Tu": "attendais",
+        "Il/Elle/On": "attendait",
+        "Nous": "attendions",
+        "Vous": "attendiez",
+        "Ils/Elles": "attendaient"
       },
-      "futur_proche": {
-        "je": "vais attendre",
-        "tu": "vas attendre",
-        "il/elle/on": "va attendre",
-        "nous": "allons attendre",
-        "vous": "allez attendre",
-        "ils/elles": "vont attendre"
+      "futur proche": {
+        "Je": "vais attendre",
+        "Tu": "vas attendre",
+        "Il/Elle/On": "va attendre",
+        "Nous": "allons attendre",
+        "Vous": "allez attendre",
+        "Ils/Elles": "vont attendre"
       },
-      "futur_simple": {
-        "je": "attendrai",
-        "tu": "attendras",
-        "il/elle/on": "attendra",
-        "nous": "attendrons",
-        "vous": "attendrez",
-        "ils/elles": "attendront"
+      "futur simple": {
+        "Je": "attendrai",
+        "Tu": "attendras",
+        "Il/Elle/On": "attendra",
+        "Nous": "attendrons",
+        "Vous": "attendrez",
+        "Ils/Elles": "attendront"
       },
-      "futur_anterieur": {
-        "je": "aurai attendu",
-        "tu": "auras attendu",
-        "il/elle/on": "aura attendu",
-        "nous": "aurons attendu",
-        "vous": "aurez attendu",
-        "ils/elles": "auront attendu"
+      "futur anterieur": {
+        "Je": "aurai attendu",
+        "Tu": "auras attendu",
+        "Il/Elle/On": "aura attendu",
+        "Nous": "aurons attendu",
+        "Vous": "aurez attendu",
+        "Ils/Elles": "auront attendu"
       },
-      "conditionnel_present": {
-        "je": "attendrais",
-        "tu": "attendrais",
-        "il/elle/on": "attendrait",
-        "nous": "attendrions",
-        "vous": "attendriez",
-        "ils/elles": "attendraient"
+      "conditionnel present": {
+        "Je": "attendrais",
+        "Tu": "attendrais",
+        "Il/Elle/On": "attendrait",
+        "Nous": "attendrions",
+        "Vous": "attendriez",
+        "Ils/Elles": "attendraient"
       },
-      "subjonctif_present": {
-        "je": "attende",
-        "tu": "attendes",
-        "il/elle/on": "attende",
-        "nous": "attendions",
-        "vous": "attendiez",
-        "ils/elles": "attendent"
+      "subjonctif present": {
+        "Je": "attende",
+        "Tu": "attendes",
+        "Il/Elle/On": "attende",
+        "Nous": "attendions",
+        "Vous": "attendiez",
+        "Ils/Elles": "attendent"
       }
     }
   },  
@@ -1408,76 +1408,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "finis",
-        "tu": "finis",
-        "il/elle/on": "finit",
-        "nous": "finissons",
-        "vous": "finissez",
-        "ils/elles": "finissent"
+        "Je": "finis",
+        "Tu": "finis",
+        "Il/Elle/On": "finit",
+        "Nous": "finissons",
+        "Vous": "finissez",
+        "Ils/Elles": "finissent"
       },
-      "passe_compose": {
-        "je": "ai fini",
-        "tu": "as fini",
-        "il/elle/on": "a fini",
-        "nous": "avons fini",
-        "vous": "avez fini",
-        "ils/elles": "ont fini"
+      "passe compose": {
+        "Je": "ai fini",
+        "Tu": "as fini",
+        "Il/Elle/On": "a fini",
+        "Nous": "avons fini",
+        "Vous": "avez fini",
+        "Ils/Elles": "ont fini"
       },
-      "plus_que_parfait": {
-        "je": "avais fini",
-        "tu": "avais fini",
-        "il/elle/on": "avait fini",
-        "nous": "avions fini",
-        "vous": "aviez fini",
-        "ils/elles": "avaient fini"
+      "plus-que-parfait": {
+        "Je": "avais fini",
+        "Tu": "avais fini",
+        "Il/Elle/On": "avait fini",
+        "Nous": "avions fini",
+        "Vous": "aviez fini",
+        "Ils/Elles": "avaient fini"
       },
       "imparfait": {
-        "je": "finissais",
-        "tu": "finissais",
-        "il/elle/on": "finissait",
-        "nous": "finissions",
-        "vous": "finissiez",
-        "ils/elles": "finissaient"
+        "Je": "finissais",
+        "Tu": "finissais",
+        "Il/Elle/On": "finissait",
+        "Nous": "finissions",
+        "Vous": "finissiez",
+        "Ils/Elles": "finissaient"
       },
-      "futur_proche": {
-        "je": "vais finir",
-        "tu": "vas finir",
-        "il/elle/on": "va finir",
-        "nous": "allons finir",
-        "vous": "allez finir",
-        "ils/elles": "vont finir"
+      "futur proche": {
+        "Je": "vais finir",
+        "Tu": "vas finir",
+        "Il/Elle/On": "va finir",
+        "Nous": "allons finir",
+        "Vous": "allez finir",
+        "Ils/Elles": "vont finir"
       },
-      "futur_simple": {
-        "je": "finirai",
-        "tu": "finiras",
-        "il/elle/on": "finira",
-        "nous": "finirons",
-        "vous": "finirez",
-        "ils/elles": "finiront"
+      "futur simple": {
+        "Je": "finirai",
+        "Tu": "finiras",
+        "Il/Elle/On": "finira",
+        "Nous": "finirons",
+        "Vous": "finirez",
+        "Ils/Elles": "finiront"
       },
-      "futur_anterieur": {
-        "je": "aurai fini",
-        "tu": "auras fini",
-        "il/elle/on": "aura fini",
-        "nous": "aurons fini",
-        "vous": "aurez fini",
-        "ils/elles": "auront fini"
+      "futur anterieur": {
+        "Je": "aurai fini",
+        "Tu": "auras fini",
+        "Il/Elle/On": "aura fini",
+        "Nous": "aurons fini",
+        "Vous": "aurez fini",
+        "Ils/Elles": "auront fini"
       },
-      "conditionnel_present": {
-        "je": "finirais",
-        "tu": "finirais",
-        "il/elle/on": "finirait",
-        "nous": "finirions",
-        "vous": "finiriez",
-        "ils/elles": "finiraient"
+      "conditionnel present": {
+        "Je": "finirais",
+        "Tu": "finirais",
+        "Il/Elle/On": "finirait",
+        "Nous": "finirions",
+        "Vous": "finiriez",
+        "Ils/Elles": "finiraient"
       },
-      "subjonctif_present": {
-        "je": "finisse",
-        "tu": "finisses",
-        "il/elle/on": "finisse",
-        "nous": "finissions",
-        "vous": "finissiez",
-        "ils/elles": "finissent"
+      "subjonctif present": {
+        "Je": "finisse",
+        "Tu": "finisses",
+        "Il/Elle/On": "finisse",
+        "Nous": "finissions",
+        "Vous": "finissiez",
+        "Ils/Elles": "finissent"
       }
     }
   },
@@ -1486,76 +1486,76 @@
     "frequency": 3,
     "conjugations": {
       "present": {
-        "je": "écris",
-        "tu": "écris",
-        "il/elle/on": "écrit",
-        "nous": "écrivons",
-        "vous": "écrivez",
-        "ils/elles": "écrivent"
+        "Je": "écris",
+        "Tu": "écris",
+        "Il/Elle/On": "écrit",
+        "Nous": "écrivons",
+        "Vous": "écrivez",
+        "Ils/Elles": "écrivent"
       },
-      "passe_compose": {
-        "je": "ai écrit",
-        "tu": "as écrit",
-        "il/elle/on": "a écrit",
-        "nous": "avons écrit",
-        "vous": "avez écrit",
-        "ils/elles": "ont écrit"
+      "passe compose": {
+        "Je": "ai écrit",
+        "Tu": "as écrit",
+        "Il/Elle/On": "a écrit",
+        "Nous": "avons écrit",
+        "Vous": "avez écrit",
+        "Ils/Elles": "ont écrit"
       },
-      "plus_que_parfait": {
-        "je": "avais écrit",
-        "tu": "avais écrit",
-        "il/elle/on": "avait écrit",
-        "nous": "avions écrit",
-        "vous": "aviez écrit",
-        "ils/elles": "avaient écrit"
+      "plus-que-parfait": {
+        "Je": "avais écrit",
+        "Tu": "avais écrit",
+        "Il/Elle/On": "avait écrit",
+        "Nous": "avions écrit",
+        "Vous": "aviez écrit",
+        "Ils/Elles": "avaient écrit"
       },
       "imparfait": {
-        "je": "écrivais",
-        "tu": "écrivais",
-        "il/elle/on": "écrivait",
-        "nous": "écrivions",
-        "vous": "écriviez",
-        "ils/elles": "écrivaient"
+        "Je": "écrivais",
+        "Tu": "écrivais",
+        "Il/Elle/On": "écrivait",
+        "Nous": "écrivions",
+        "Vous": "écriviez",
+        "Ils/Elles": "écrivaient"
       },
-      "futur_proche": {
-        "je": "vais écrire",
-        "tu": "vas écrire",
-        "il/elle/on": "va écrire",
-        "nous": "allons écrire",
-        "vous": "allez écrire",
-        "ils/elles": "vont écrire"
+      "futur proche": {
+        "Je": "vais écrire",
+        "Tu": "vas écrire",
+        "Il/Elle/On": "va écrire",
+        "Nous": "allons écrire",
+        "Vous": "allez écrire",
+        "Ils/Elles": "vont écrire"
       },
-      "futur_simple": {
-        "je": "écrirai",
-        "tu": "écriras",
-        "il/elle/on": "écrira",
-        "nous": "écrirons",
-        "vous": "écrirez",
-        "ils/elles": "écriront"
+      "futur simple": {
+        "Je": "écrirai",
+        "Tu": "écriras",
+        "Il/Elle/On": "écrira",
+        "Nous": "écrirons",
+        "Vous": "écrirez",
+        "Ils/Elles": "écriront"
       },
-      "futur_anterieur": {
-        "je": "aurai écrit",
-        "tu": "auras écrit",
-        "il/elle/on": "aura écrit",
-        "nous": "aurons écrit",
-        "vous": "aurez écrit",
-        "ils/elles": "auront écrit"
+      "futur anterieur": {
+        "Je": "aurai écrit",
+        "Tu": "auras écrit",
+        "Il/Elle/On": "aura écrit",
+        "Nous": "aurons écrit",
+        "Vous": "aurez écrit",
+        "Ils/Elles": "auront écrit"
       },
-      "conditionnel_present": {
-        "je": "écrirais",
-        "tu": "écrirais",
-        "il/elle/on": "écrirait",
-        "nous": "écririons",
-        "vous": "écririez",
-        "ils/elles": "écriraient"
+      "conditionnel present": {
+        "Je": "écrirais",
+        "Tu": "écrirais",
+        "Il/Elle/On": "écrirait",
+        "Nous": "écririons",
+        "Vous": "écririez",
+        "Ils/Elles": "écriraient"
       },
-      "subjonctif_present": {
-        "je": "écrive",
-        "tu": "écrives",
-        "il/elle/on": "écrive",
-        "nous": "écrivions",
-        "vous": "écriviez",
-        "ils/elles": "écrivent"
+      "subjonctif present": {
+        "Je": "écrive",
+        "Tu": "écrives",
+        "Il/Elle/On": "écrive",
+        "Nous": "écrivions",
+        "Vous": "écriviez",
+        "Ils/Elles": "écrivent"
       }
     }
   },
@@ -1564,76 +1564,76 @@
       "frequency": 4,
       "conjugations": {
           "present": {
-              "je": "étudie",
-              "tu": "étudies",
-              "il/elle/on": "étudie",
-              "nous": "étudions",
-              "vous": "étudiez",
-              "ils/elles": "étudient"
+              "Je": "étudie",
+              "Tu": "étudies",
+              "Il/Elle/On": "étudie",
+              "Nous": "étudions",
+              "Vous": "étudiez",
+              "Ils/Elles": "étudient"
           },
-          "passe_compose": {
-              "je": "ai étudié",
-              "tu": "as étudié",
-              "il/elle/on": "a étudié",
-              "nous": "avons étudié",
-              "vous": "avez étudié",
-              "ils/elles": "ont étudié"
+          "passe compose": {
+              "Je": "ai étudié",
+              "Tu": "as étudié",
+              "Il/Elle/On": "a étudié",
+              "Nous": "avons étudié",
+              "Vous": "avez étudié",
+              "Ils/Elles": "ont étudié"
           },
-          "plus_que_parfait": {
-              "je": "avais étudié",
-              "tu": "avais étudié",
-              "il/elle/on": "avait étudié",
-              "nous": "avions étudié",
-              "vous": "aviez étudié",
-              "ils/elles": "avaient étudié"
+          "plus-que-parfait": {
+              "Je": "avais étudié",
+              "Tu": "avais étudié",
+              "Il/Elle/On": "avait étudié",
+              "Nous": "avions étudié",
+              "Vous": "aviez étudié",
+              "Ils/Elles": "avaient étudié"
           },
           "imparfait": {
-              "je": "étudiais",
-              "tu": "étudiais",
-              "il/elle/on": "étudiait",
-              "nous": "étudiions",
-              "vous": "étudiiez",
-              "ils/elles": "étudiaient"
+              "Je": "étudiais",
+              "Tu": "étudiais",
+              "Il/Elle/On": "étudiait",
+              "Nous": "étudiions",
+              "Vous": "étudiiez",
+              "Ils/Elles": "étudiaient"
           },
-          "futur_proche": {
-              "je": "vais étudier",
-              "tu": "vas étudier",
-              "il/elle/on": "va étudier",
-              "nous": "allons étudier",
-              "vous": "allez étudier",
-              "ils/elles": "vont étudier"
+          "futur proche": {
+              "Je": "vais étudier",
+              "Tu": "vas étudier",
+              "Il/Elle/On": "va étudier",
+              "Nous": "allons étudier",
+              "Vous": "allez étudier",
+              "Ils/Elles": "vont étudier"
           },
-          "futur_simple": {
-              "je": "étudierai",
-              "tu": "étudieras",
-              "il/elle/on": "étudiera",
-              "nous": "étudierons",
-              "vous": "étudierez",
-              "ils/elles": "étudieront"
+          "futur simple": {
+              "Je": "étudierai",
+              "Tu": "étudieras",
+              "Il/Elle/On": "étudiera",
+              "Nous": "étudierons",
+              "Vous": "étudierez",
+              "Ils/Elles": "étudieront"
           },
-          "futur_anterieur": {
-              "je": "aurai étudié",
-              "tu": "auras étudié",
-              "il/elle/on": "aura étudié",
-              "nous": "aurons étudié",
-              "vous": "aurez étudié",
-              "ils/elles": "auront étudié"
+          "futur anterieur": {
+              "Je": "aurai étudié",
+              "Tu": "auras étudié",
+              "Il/Elle/On": "aura étudié",
+              "Nous": "aurons étudié",
+              "Vous": "aurez étudié",
+              "Ils/Elles": "auront étudié"
           },
-          "conditionnel_present": {
-              "je": "étudierais",
-              "tu": "étudierais",
-              "il/elle/on": "étudierait",
-              "nous": "étudierions",
-              "vous": "étudieriez",
-              "ils/elles": "étudieraient"
+          "conditionnel present": {
+              "Je": "étudierais",
+              "Tu": "étudierais",
+              "Il/Elle/On": "étudierait",
+              "Nous": "étudierions",
+              "Vous": "étudieriez",
+              "Ils/Elles": "étudieraient"
           },
-          "subjonctif_present": {
-              "je": "étudie",
-              "tu": "étudies",
-              "il/elle/on": "étudie",
-              "nous": "étudiions",
-              "vous": "étudiiez",
-              "ils/elles": "étudient"
+          "subjonctif present": {
+              "Je": "étudie",
+              "Tu": "étudies",
+              "Il/Elle/On": "étudie",
+              "Nous": "étudiions",
+              "Vous": "étudiiez",
+              "Ils/Elles": "étudient"
           }
       }
     },
@@ -1642,76 +1642,76 @@
         "frequency": 5,
         "conjugations": {
             "present": {
-                "je": "révise",
-                "tu": "révises",
-                "il/elle/on": "révise",
-                "nous": "révisons",
-                "vous": "révisez",
-                "ils/elles": "révisent"
+                "Je": "révise",
+                "Tu": "révises",
+                "Il/Elle/On": "révise",
+                "Nous": "révisons",
+                "Vous": "révisez",
+                "Ils/Elles": "révisent"
             },
-            "passe_compose": {
-                "je": "ai révisé",
-                "tu": "as révisé",
-                "il/elle/on": "a révisé",
-                "nous": "avons révisé",
-                "vous": "avez révisé",
-                "ils/elles": "ont révisé"
+            "passe compose": {
+                "Je": "ai révisé",
+                "Tu": "as révisé",
+                "Il/Elle/On": "a révisé",
+                "Nous": "avons révisé",
+                "Vous": "avez révisé",
+                "Ils/Elles": "ont révisé"
             },
-            "plus_que_parfait": {
-                "je": "avais révisé",
-                "tu": "avais révisé",
-                "il/elle/on": "avait révisé",
-                "nous": "avions révisé",
-                "vous": "aviez révisé",
-                "ils/elles": "avaient révisé"
+            "plus-que-parfait": {
+                "Je": "avais révisé",
+                "Tu": "avais révisé",
+                "Il/Elle/On": "avait révisé",
+                "Nous": "avions révisé",
+                "Vous": "aviez révisé",
+                "Ils/Elles": "avaient révisé"
             },
             "imparfait": {
-                "je": "révisais",
-                "tu": "révisais",
-                "il/elle/on": "révisait",
-                "nous": "révisions",
-                "vous": "révisiez",
-                "ils/elles": "révisaient"
+                "Je": "révisais",
+                "Tu": "révisais",
+                "Il/Elle/On": "révisait",
+                "Nous": "révisions",
+                "Vous": "révisiez",
+                "Ils/Elles": "révisaient"
             },
-            "futur_proche": {
-                "je": "vais réviser",
-                "tu": "vas réviser",
-                "il/elle/on": "va réviser",
-                "nous": "allons réviser",
-                "vous": "allez réviser",
-                "ils/elles": "vont réviser"
+            "futur proche": {
+                "Je": "vais réviser",
+                "Tu": "vas réviser",
+                "Il/Elle/On": "va réviser",
+                "Nous": "allons réviser",
+                "Vous": "allez réviser",
+                "Ils/Elles": "vont réviser"
             },
-            "futur_simple": {
-                "je": "réviserai",
-                "tu": "réviseras",
-                "il/elle/on": "révisera",
-                "nous": "réviserons",
-                "vous": "réviserez",
-                "ils/elles": "réviseront"
+            "futur simple": {
+                "Je": "réviserai",
+                "Tu": "réviseras",
+                "Il/Elle/On": "révisera",
+                "Nous": "réviserons",
+                "Vous": "réviserez",
+                "Ils/Elles": "réviseront"
             },
-            "futur_anterieur": {
-                "je": "aurai révisé",
-                "tu": "auras révisé",
-                "il/elle/on": "aura révisé",
-                "nous": "aurons révisé",
-                "vous": "aurez révisé",
-                "ils/elles": "auront révisé"
+            "futur anterieur": {
+                "Je": "aurai révisé",
+                "Tu": "auras révisé",
+                "Il/Elle/On": "aura révisé",
+                "Nous": "aurons révisé",
+                "Vous": "aurez révisé",
+                "Ils/Elles": "auront révisé"
             },
-            "conditionnel_present": {
-                "je": "réviserais",
-                "tu": "réviserais",
-                "il/elle/on": "réviserait",
-                "nous": "réviserions",
-                "vous": "réviseriez",
-                "ils/elles": "réviseraient"
+            "conditionnel present": {
+                "Je": "réviserais",
+                "Tu": "réviserais",
+                "Il/Elle/On": "réviserait",
+                "Nous": "réviserions",
+                "Vous": "réviseriez",
+                "Ils/Elles": "réviseraient"
             },
-            "subjonctif_present": {
-                "je": "révise",
-                "tu": "révises",
-                "il/elle/on": "révise",
-                "nous": "révisions",
-                "vous": "révisiez",
-                "ils/elles": "révisent"
+            "subjonctif present": {
+                "Je": "révise",
+                "Tu": "révises",
+                "Il/Elle/On": "révise",
+                "Nous": "révisions",
+                "Vous": "révisiez",
+                "Ils/Elles": "révisent"
             }
         }
     },
@@ -1719,76 +1719,76 @@
         "frequency": 4,
         "conjugations": {
             "present": {
-                "je": "participe",
-                "tu": "participes",
-                "il/elle/on": "participe",
-                "nous": "participons",
-                "vous": "participez",
-                "ils/elles": "participent"
+                "Je": "participe",
+                "Tu": "participes",
+                "Il/Elle/On": "participe",
+                "Nous": "participons",
+                "Vous": "participez",
+                "Ils/Elles": "participent"
             },
-            "passe_compose": {
-                "je": "ai participé",
-                "tu": "as participé",
-                "il/elle/on": "a participé",
-                "nous": "avons participé",
-                "vous": "avez participé",
-                "ils/elles": "ont participé"
+            "passe compose": {
+                "Je": "ai participé",
+                "Tu": "as participé",
+                "Il/Elle/On": "a participé",
+                "Nous": "avons participé",
+                "Vous": "avez participé",
+                "Ils/Elles": "ont participé"
             },
-            "plus_que_parfait": {
-                "je": "avais participé",
-                "tu": "avais participé",
-                "il/elle/on": "avait participé",
-                "nous": "avions participé",
-                "vous": "aviez participé",
-                "ils/elles": "avaient participé"
+            "plus-que-parfait": {
+                "Je": "avais participé",
+                "Tu": "avais participé",
+                "Il/Elle/On": "avait participé",
+                "Nous": "avions participé",
+                "Vous": "aviez participé",
+                "Ils/Elles": "avaient participé"
             },
             "imparfait": {
-                "je": "participais",
-                "tu": "participais",
-                "il/elle/on": "participait",
-                "nous": "participions",
-                "vous": "participiez",
-                "ils/elles": "participaient"
+                "Je": "participais",
+                "Tu": "participais",
+                "Il/Elle/On": "participait",
+                "Nous": "participions",
+                "Vous": "participiez",
+                "Ils/Elles": "participaient"
             },
-            "futur_proche": {
-                "je": "vais participer",
-                "tu": "vas participer",
-                "il/elle/on": "va participer",
-                "nous": "allons participer",
-                "vous": "allez participer",
-                "ils/elles": "vont participer"
+            "futur proche": {
+                "Je": "vais participer",
+                "Tu": "vas participer",
+                "Il/Elle/On": "va participer",
+                "Nous": "allons participer",
+                "Vous": "allez participer",
+                "Ils/Elles": "vont participer"
             },
-            "futur_simple": {
-                "je": "participerai",
-                "tu": "participeras",
-                "il/elle/on": "participera",
-                "nous": "participerons",
-                "vous": "participerez",
-                "ils/elles": "participeront"
+            "futur simple": {
+                "Je": "participerai",
+                "Tu": "participeras",
+                "Il/Elle/On": "participera",
+                "Nous": "participerons",
+                "Vous": "participerez",
+                "Ils/Elles": "participeront"
             },
-            "futur_anterieur": {
-                "je": "aurai participé",
-                "tu": "auras participé",
-                "il/elle/on": "aura participé",
-                "nous": "aurons participé",
-                "vous": "aurez participé",
-                "ils/elles": "auront participé"
+            "futur anterieur": {
+                "Je": "aurai participé",
+                "Tu": "auras participé",
+                "Il/Elle/On": "aura participé",
+                "Nous": "aurons participé",
+                "Vous": "aurez participé",
+                "Ils/Elles": "auront participé"
             },
-            "conditionnel_present": {
-                "je": "participerais",
-                "tu": "participerais",
-                "il/elle/on": "participerait",
-                "nous": "participerions",
-                "vous": "participeriez",
-                "ils/elles": "participeraient"
+            "conditionnel present": {
+                "Je": "participerais",
+                "Tu": "participerais",
+                "Il/Elle/On": "participerait",
+                "Nous": "participerions",
+                "Vous": "participeriez",
+                "Ils/Elles": "participeraient"
             },
-            "subjonctif_present": {
-                "je": "participe",
-                "tu": "participes",
-                "il/elle/on": "participe",
-                "nous": "participions",
-                "vous": "participiez",
-                "ils/elles": "participent"
+            "subjonctif present": {
+                "Je": "participe",
+                "Tu": "participes",
+                "Il/Elle/On": "participe",
+                "Nous": "participions",
+                "Vous": "participiez",
+                "Ils/Elles": "participent"
             }
         }
     }

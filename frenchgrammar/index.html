@@ -29,17 +29,17 @@
         <div class="mid">
             <h2>Conjuguez le verbe</h2>
 
-            <div class="question">
-                <p class="pronoun">Je <i>parler </i>(present)</p>
+            <div id="question">
+                <p>Je <i>parler </i>(present)</p>
                 <input type="text" id="ans" name="ans" value="Je ">
             </div>
 
             <div class="btns">
-                <button>✅ Vérifier</button>
-                <button>➡️ Passer</button>
+                <button onclick="checkAnswer()">✅ Vérifier</button>
+                <button onclick="presentQuestion()">➡️ Passer</button>
             </div>
 
-            <p class="result">✅ Correctes!</p>
+            <p id="result"></p>
         </div>
 
         <div class="right">
