@@ -53,8 +53,13 @@ function presentQuestion() {
     }
     
     let random_pronoun = PRONOUNS[Math.floor(Math.random()*Object.keys(PRONOUNS).length)];
+
+    if (random_pronoun == "Je" && VERBS_LIST[random_verb]["conjugations"][random_tense][random_pronoun][0] in ['a', 'e', 'i', 'o', 'u', 'é']) {
+        answer = `J'${VERBS_LIST[random_verb]["conjugations"][random_tense][random_pronoun]}`;
+    } else {
+        answer = `${random_pronoun} ${VERBS_LIST[random_verb]["conjugations"][random_tense][random_pronoun]}`;
+    }
     
-    answer = `${random_pronoun} ${VERBS_LIST[random_verb]["conjugations"][random_tense][random_pronoun]}`;
     
     // console.log(`Verb: ${random_verb}`);
     // console.log(`Tense: ${random_tense}`);
