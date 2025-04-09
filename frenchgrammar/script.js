@@ -1,12 +1,31 @@
 let VERBS_LIST = {};
 
-const TENSES = ["present", "passe compose", "plus-que-parfait", "imparfait", "futur proche", "futur simple", "futur anterieur", "conditionnel present", "subjonctif present"];
+const TENSES = ["present", "passe compose", "plus-que-parfait", "imparfait", "futur proche", "futur simple", "futur anterieur", "present conditionnel", "present subjonctif"];
 
 const PRONOUNS = ["Je", "Tu", "Il/Elle/On", "Nous", "Vous", "Ils/Elles"];
+
+let filter  = {
+    "present": true,
+    "passe compose": true, 
+    "plus-que-parfait": true, 
+    "imparfait": true, 
+    "futur proche": true, 
+    "futur simple": true, 
+    "futur anterieur": true, 
+    "present conditionnel": true, 
+    "present subjonctif": true
+}
 
 let answer = '';
 
 window.addEventListener("load", async () => {
+
+    const filterEls = document.getElementsByClassName("filter");
+
+    for (let i=0; i<filterEls.length; i++) {
+        filterEls[i].checked = true;
+    }
+
     const response = await fetch('/frenchgrammar/verbs.json');
     VERBS_LIST = await response.json();
     console.log(VERBS_LIST);
@@ -29,14 +48,18 @@ function presentQuestion() {
     
     let random_tense = TENSES[Math.floor(Math.random()*Object.keys(TENSES).length)]
     
+    while (!filter[random_tense]) {
+        random_tense = TENSES[Math.floor(Math.random()*Object.keys(TENSES).length)]
+    }
+    
     let random_pronoun = PRONOUNS[Math.floor(Math.random()*Object.keys(PRONOUNS).length)];
     
     answer = `${random_pronoun} ${VERBS_LIST[random_verb]["conjugations"][random_tense][random_pronoun]}`;
     
-    console.log(`Verb: ${random_verb}`);
-    console.log(`Tense: ${random_tense}`);
-    console.log(`Pronoun: ${random_pronoun}`);
-    console.log(`Expected answer: ${answer}`);
+    // console.log(`Verb: ${random_verb}`);
+    // console.log(`Tense: ${random_tense}`);
+    // console.log(`Pronoun: ${random_pronoun}`);
+    // console.log(`Expected answer: ${answer}`);
 
     // update to the html
     const questionEl = document.getElementById("question");
@@ -71,6 +94,12 @@ function checkAnswer() {
     cntEl.innerHTML = `<p id="cnt_total">Réponses correctes: ${localStorage.getItem("score")}/${localStorage.getItem("total")}</p>`;
 }
 
-function updateStats() {
+function updateFilter() {
+    const filterEls = document.getElementsByClassName("filter");
+    for (let i=0; i<filterEls.length; i++) {
+        filter[filterEls[i].value] = filterEls[i].checked;
+    }
 
+    console.log(`Filters applied:`);
+    console.log(filter);
 }

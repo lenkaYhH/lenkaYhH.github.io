@@ -59,7 +59,7 @@
         "Vous": "aurez été",
         "Ils/Elles": "auront été"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "serais",
         "Tu": "serais",
         "Il/Elle/On": "serait",
@@ -67,7 +67,7 @@
         "Vous": "seriez",
         "Ils/Elles": "seraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "sois",
         "Tu": "sois",
         "Il/Elle/On": "soit",
@@ -137,7 +137,7 @@
         "Vous": "aurez eu",
         "Ils/Elles": "auront eu"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "aurais",
         "Tu": "aurais",
         "Il/Elle/On": "aurait",
@@ -145,7 +145,7 @@
         "Vous": "auriez",
         "Ils/Elles": "auraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "aie",
         "Tu": "aies",
         "Il/Elle/On": "ait",
@@ -215,7 +215,7 @@
         "Vous": "serez allé(e)(s)",
         "Ils/Elles": "seront allé(e)s"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "irais",
         "Tu": "irais",
         "Il/Elle/On": "irait",
@@ -223,7 +223,7 @@
         "Vous": "iriez",
         "Ils/Elles": "iraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "aille",
         "Tu": "ailles",
         "Il/Elle/On": "aille",
@@ -293,7 +293,7 @@
         "Vous": "aurez fait",
         "Ils/Elles": "auront fait"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "ferais",
         "Tu": "ferais",
         "Il/Elle/On": "ferait",
@@ -301,7 +301,7 @@
         "Vous": "feriez",
         "Ils/Elles": "feraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "fasse",
         "Tu": "fasses",
         "Il/Elle/On": "fasse",
@@ -371,7 +371,7 @@
         "Vous": "aurez pu",
         "Ils/Elles": "auront pu"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "pourrais",
         "Tu": "pourrais",
         "Il/Elle/On": "pourrait",
@@ -379,7 +379,7 @@
         "Vous": "pourriez",
         "Ils/Elles": "pourraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "puisse",
         "Tu": "puisses",
         "Il/Elle/On": "puisse",
@@ -449,7 +449,7 @@
         "Vous": "aurez voulu",
         "Ils/Elles": "auront voulu"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "voudrais",
         "Tu": "voudrais",
         "Il/Elle/On": "voudrait",
@@ -457,7 +457,7 @@
         "Vous": "voudriez",
         "Ils/Elles": "voudraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "veuille",
         "Tu": "veuilles",
         "Il/Elle/On": "veuille",
@@ -527,7 +527,7 @@
         "Vous": "aurez dû",
         "Ils/Elles": "auront dû"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "devrais",
         "Tu": "devrais",
         "Il/Elle/On": "devrait",
@@ -535,7 +535,7 @@
         "Vous": "devriez",
         "Ils/Elles": "devraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "doive",
         "Tu": "doives",
         "Il/Elle/On": "doive",
@@ -605,7 +605,7 @@
         "Vous": "aurez dit",
         "Ils/Elles": "auront dit"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "dirais",
         "Tu": "dirais",
         "Il/Elle/On": "dirait",
@@ -613,7 +613,7 @@
         "Vous": "diriez",
         "Ils/Elles": "diraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "dise",
         "Tu": "dises",
         "Il/Elle/On": "dise",
@@ -683,7 +683,7 @@
         "Vous": "serez venus",
         "Ils/Elles": "seront venus"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "viendrais",
         "Tu": "viendrais",
         "Il/Elle/On": "viendrait",
@@ -691,7 +691,7 @@
         "Vous": "viendriez",
         "Ils/Elles": "viendraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "vienne",
         "Tu": "viennes",
         "Il/Elle/On": "vienne",
@@ -761,7 +761,7 @@
         "Vous": "aurez pris",
         "Ils/Elles": "auront pris"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "prendrais",
         "Tu": "prendrais",
         "Il/Elle/On": "prendrait",
@@ -769,7 +769,7 @@
         "Vous": "prendriez",
         "Ils/Elles": "prendraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "prenne",
         "Tu": "prennes",
         "Il/Elle/On": "prenne",
@@ -839,7 +839,7 @@
         "Vous": "aurez vu",
         "Ils/Elles": "auront vu"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "verrais",
         "Tu": "verrais",
         "Il/Elle/On": "verrait",
@@ -847,7 +847,7 @@
         "Vous": "verriez",
         "Ils/Elles": "verraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "voie",
         "Tu": "voies",
         "Il/Elle/On": "voie",
@@ -917,7 +917,7 @@
         "Vous": "aurez mis",
         "Ils/Elles": "auront mis"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "mettrais",
         "Tu": "mettrais",
         "Il/Elle/On": "mettrait",
@@ -925,7 +925,7 @@
         "Vous": "mettriez",
         "Ils/Elles": "mettraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "mette",
         "Tu": "mettes",
         "Il/Elle/On": "mette",
@@ -995,7 +995,7 @@
         "Vous": "aurez su",
         "Ils/Elles": "auront su"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "saurais",
         "Tu": "saurais",
         "Il/Elle/On": "saurait",
@@ -1003,7 +1003,7 @@
         "Vous": "sauriez",
         "Ils/Elles": "sauraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "sache",
         "Tu": "saches",
         "Il/Elle/On": "sache",
@@ -1073,7 +1073,7 @@
         "Vous": "aurez parlé",
         "Ils/Elles": "auront parlé"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "parlerais",
         "Tu": "parlerais",
         "Il/Elle/On": "parlerait",
@@ -1081,7 +1081,7 @@
         "Vous": "parleriez",
         "Ils/Elles": "parleraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "parle",
         "Tu": "parles",
         "Il/Elle/On": "parle",
@@ -1151,7 +1151,7 @@
         "Vous": "aurez mangé",
         "Ils/Elles": "auront mangé"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "mangerais",
         "Tu": "mangerais",
         "Il/Elle/On": "mangerait",
@@ -1159,7 +1159,7 @@
         "Vous": "mangeriez",
         "Ils/Elles": "mangeraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "mange",
         "Tu": "manges",
         "Il/Elle/On": "mange",
@@ -1229,7 +1229,7 @@
         "Vous": "aurez choisi",
         "Ils/Elles": "auront choisi"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "choisirais",
         "Tu": "choisirais",
         "Il/Elle/On": "choisirait",
@@ -1237,7 +1237,7 @@
         "Vous": "choisiriez",
         "Ils/Elles": "choisiraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "choisisse",
         "Tu": "choisisses",
         "Il/Elle/On": "choisisse",
@@ -1307,7 +1307,7 @@
         "Vous": "aurez aimé",
         "Ils/Elles": "auront aimé"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "aimerais",
         "Tu": "aimerais",
         "Il/Elle/On": "aimerait",
@@ -1315,7 +1315,7 @@
         "Vous": "aimeriez",
         "Ils/Elles": "aimeraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "aime",
         "Tu": "aimes",
         "Il/Elle/On": "aime",
@@ -1385,7 +1385,7 @@
         "Vous": "aurez attendu",
         "Ils/Elles": "auront attendu"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "attendrais",
         "Tu": "attendrais",
         "Il/Elle/On": "attendrait",
@@ -1393,7 +1393,7 @@
         "Vous": "attendriez",
         "Ils/Elles": "attendraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "attende",
         "Tu": "attendes",
         "Il/Elle/On": "attende",
@@ -1463,7 +1463,7 @@
         "Vous": "aurez fini",
         "Ils/Elles": "auront fini"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "finirais",
         "Tu": "finirais",
         "Il/Elle/On": "finirait",
@@ -1471,7 +1471,7 @@
         "Vous": "finiriez",
         "Ils/Elles": "finiraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "finisse",
         "Tu": "finisses",
         "Il/Elle/On": "finisse",
@@ -1541,7 +1541,7 @@
         "Vous": "aurez écrit",
         "Ils/Elles": "auront écrit"
       },
-      "conditionnel present": {
+      "present conditionnel": {
         "Je": "écrirais",
         "Tu": "écrirais",
         "Il/Elle/On": "écrirait",
@@ -1549,7 +1549,7 @@
         "Vous": "écririez",
         "Ils/Elles": "écriraient"
       },
-      "subjonctif present": {
+      "present subjonctif": {
         "Je": "écrive",
         "Tu": "écrives",
         "Il/Elle/On": "écrive",
@@ -1619,7 +1619,7 @@
               "Vous": "aurez étudié",
               "Ils/Elles": "auront étudié"
           },
-          "conditionnel present": {
+          "present conditionnel": {
               "Je": "étudierais",
               "Tu": "étudierais",
               "Il/Elle/On": "étudierait",
@@ -1627,7 +1627,7 @@
               "Vous": "étudieriez",
               "Ils/Elles": "étudieraient"
           },
-          "subjonctif present": {
+          "present subjonctif": {
               "Je": "étudie",
               "Tu": "étudies",
               "Il/Elle/On": "étudie",
@@ -1697,7 +1697,7 @@
                 "Vous": "aurez révisé",
                 "Ils/Elles": "auront révisé"
             },
-            "conditionnel present": {
+            "present conditionnel": {
                 "Je": "réviserais",
                 "Tu": "réviserais",
                 "Il/Elle/On": "réviserait",
@@ -1705,7 +1705,7 @@
                 "Vous": "réviseriez",
                 "Ils/Elles": "réviseraient"
             },
-            "subjonctif present": {
+            "present subjonctif": {
                 "Je": "révise",
                 "Tu": "révises",
                 "Il/Elle/On": "révise",
@@ -1774,7 +1774,7 @@
                 "Vous": "aurez participé",
                 "Ils/Elles": "auront participé"
             },
-            "conditionnel present": {
+            "present conditionnel": {
                 "Je": "participerais",
                 "Tu": "participerais",
                 "Il/Elle/On": "participerait",
@@ -1782,7 +1782,7 @@
                 "Vous": "participeriez",
                 "Ils/Elles": "participeraient"
             },
-            "subjonctif present": {
+            "present subjonctif": {
                 "Je": "participe",
                 "Tu": "participes",
                 "Il/Elle/On": "participe",
