@@ -66,6 +66,19 @@ function presentQuestion() {
     questionEl.innerHTML = `<p id="question">${random_pronoun} <i>${random_verb}</i> (${random_tense})</p>
     <input type="text" id="ans" name="ans" value="${random_pronoun} ">`;
 
+    // update stats for the total
+    if (localStorage.getItem("score") === null) {
+        localStorage.setItem("score", 0);
+    }
+    if (localStorage.getItem("total") === null) {
+        localStorage.setItem("total", 0);
+    }
+
+    localStorage.setItem("total", parseInt(localStorage.getItem("total"))+1);
+
+    const cntEl = document.getElementById("cnt_total");
+    cntEl.innerHTML = `<p id="cnt_total">Réponses correctes: ${localStorage.getItem("score")}/${localStorage.getItem("total")}</p>`;
+
 }
 
 function checkAnswer() {
@@ -76,18 +89,12 @@ function checkAnswer() {
         localStorage.setItem("score", 0);
     }
 
-    if (localStorage.getItem("total") === null) {
-        localStorage.setItem("total", 0);
-    }
-
     if (inputEl.value == answer) {
         resultEl.innerHTML = "✅ Correctes!";
         localStorage.setItem("score", parseInt(localStorage.getItem("score"))+1);
-        localStorage.setItem("total", parseInt(localStorage.getItem("total"))+1);
         
     } else {
         resultEl.innerHTML = "Mauvaise réponse ❌";
-        localStorage.setItem("total", parseInt(localStorage.getItem("total"))+1);
     }
 
     const cntEl = document.getElementById("cnt_total");
