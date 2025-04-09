@@ -113,3 +113,15 @@ p {
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .body {
+      flex-wrap: wrap;
+      flex-direction: column;
+      height: fit-content;
+
+      .left, .mid, .right {
+        width: 100%;
+      }
+    }
+  }
