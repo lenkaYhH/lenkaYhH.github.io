@@ -1,9 +1,9 @@
+// CONSTANTS
 let VERBS_LIST = {};
-
 const TENSES = ["present", "passe compose", "plus-que-parfait", "imparfait", "futur proche", "futur simple", "futur anterieur", "present conditionnel", "present subjonctif", "passe simple"];
-
 const PRONOUNS = ["Je", "Tu", "Il/Elle/On", "Nous", "Vous", "Ils/Elles"];
 
+// SETTINGS
 let filter  = {
     "present": true,
     "passe compose": true, 
@@ -18,6 +18,7 @@ let filter  = {
 
 let answer = '';
 
+// ONLOAD, load JSON
 window.addEventListener("load", async () => {
 
     const filterEls = document.getElementsByClassName("filter");
@@ -71,7 +72,7 @@ function presentQuestion() {
     // update to the html
     const questionEl = document.getElementById("question");
     questionEl.innerHTML = `<p id="question">${random_pronoun} <i>${random_verb}</i> (${random_tense})</p>
-    <input type="text" id="ans" name="ans" value="${random_pronoun} ">`;
+    <input type="text" id="ans" name="ans" value="${random_pronoun} " onkeypress="enter(event)">`;
 
     // update stats for the total
     if (localStorage.getItem("score") === null) {
@@ -84,7 +85,7 @@ function presentQuestion() {
     localStorage.setItem("total", parseInt(localStorage.getItem("total"))+1);
 
     const cntEl = document.getElementById("cnt_total");
-    cntEl.innerHTML = `<p id="cnt_total">Réponses correctes: ${localStorage.getItem("score")}/${localStorage.getItem("total")}</p>`;
+    cntEl.innerHTML = `<p id="cnt_total">Réponse correct: ${localStorage.getItem("score")}/${localStorage.getItem("total")}</p>`;
 
 }
 
@@ -116,4 +117,12 @@ function updateFilter() {
 
     console.log(`Filters applied:`);
     console.log(filter);
+}
+
+// allow enter key support
+function enter(event) {
+    if (event.key === "Enter") {
+        event.preventDefault();
+        checkAnswer();
+    }
 }
