@@ -2663,5 +2663,435 @@
         "Ils/Elles": "empêchèrent"
       }
     }
+  },
+  "utiliser": {
+    "exception": false,
+    "frequency": 4,
+    "conjugations": {
+      "present": {
+        "Je": "utilise",
+        "Tu": "utilises",
+        "Il/Elle/On": "utilise",
+        "Nous": "utilisons",
+        "Vous": "utilisez",
+        "Ils/Elles": "utilisent"
+      },
+      "passe compose": {
+        "Je": "ai utilisé",
+        "Tu": "as utilisé",
+        "Il/Elle/On": "a utilisé",
+        "Nous": "avons utilisé",
+        "Vous": "avez utilisé",
+        "Ils/Elles": "ont utilisé"
+      },
+      "plus-que-parfait": {
+        "Je": "avais utilisé",
+        "Tu": "avais utilisé",
+        "Il/Elle/On": "avait utilisé",
+        "Nous": "avions utilisé",
+        "Vous": "aviez utilisé",
+        "Ils/Elles": "avaient utilisé"
+      },
+      "imparfait": {
+        "Je": "utilisais",
+        "Tu": "utilisais",
+        "Il/Elle/On": "utilisait",
+        "Nous": "utilisions",
+        "Vous": "utilisiez",
+        "Ils/Elles": "utilisaient"
+      },
+      "futur proche": {
+        "Je": "vais utiliser",
+        "Tu": "vas utiliser",
+        "Il/Elle/On": "va utiliser",
+        "Nous": "allons utiliser",
+        "Vous": "allez utiliser",
+        "Ils/Elles": "vont utiliser"
+      },
+      "futur simple": {
+        "Je": "utiliserai",
+        "Tu": "utiliseras",
+        "Il/Elle/On": "utilisera",
+        "Nous": "utiliserons",
+        "Vous": "utiliserez",
+        "Ils/Elles": "utiliseront"
+      },
+      "futur anterieur": {
+        "Je": "aurai utilisé",
+        "Tu": "auras utilisé",
+        "Il/Elle/On": "aura utilisé",
+        "Nous": "aurons utilisé",
+        "Vous": "aurez utilisé",
+        "Ils/Elles": "auront utilisé"
+      },
+      "present conditionnel": {
+        "Je": "utiliserais",
+        "Tu": "utiliserais",
+        "Il/Elle/On": "utiliserait",
+        "Nous": "utiliserions",
+        "Vous": "utiliseriez",
+        "Ils/Elles": "utiliseraient"
+      },
+      "present subjonctif": {
+        "Je": "utilise",
+        "Tu": "utilises",
+        "Il/Elle/On": "utilise",
+        "Nous": "utilisions",
+        "Vous": "utilisiez",
+        "Ils/Elles": "utilisent"
+      },
+      "passe simple": {
+        "Je": "utilisai",
+        "Tu": "utilisas",
+        "Il/Elle/On": "utilisa",
+        "Nous": "utilisâmes",
+        "Vous": "utilisâtes",
+        "Ils/Elles": "utilisèrent"
+      }
+    }
+  },
+  "écouter": {
+    "exception": false,
+    "frequency": 3,
+    "conjugations": {
+      "present": {
+        "Je": "écoute",
+        "Tu": "écoutes",
+        "Il/Elle/On": "écoute",
+        "Nous": "écoutons",
+        "Vous": "écoutez",
+        "Ils/Elles": "écoutent"
+      },
+      "passe compose": {
+        "Je": "ai écouté",
+        "Tu": "as écouté",
+        "Il/Elle/On": "a écouté",
+        "Nous": "avons écouté",
+        "Vous": "avez écouté",
+        "Ils/Elles": "ont écouté"
+      },
+      "plus-que-parfait": {
+        "Je": "avais écouté",
+        "Tu": "avais écouté",
+        "Il/Elle/On": "avait écouté",
+        "Nous": "avions écouté",
+        "Vous": "aviez écouté",
+        "Ils/Elles": "avaient écouté"
+      },
+      "imparfait": {
+        "Je": "écoutais",
+        "Tu": "écoutais",
+        "Il/Elle/On": "écoutait",
+        "Nous": "écoutions",
+        "Vous": "écoutiez",
+        "Ils/Elles": "écoutaient"
+      },
+      "futur proche": {
+        "Je": "vais écouter",
+        "Tu": "vas écouter",
+        "Il/Elle/On": "va écouter",
+        "Nous": "allons écouter",
+        "Vous": "allez écouter",
+        "Ils/Elles": "vont écouter"
+      },
+      "futur simple": {
+        "Je": "écouterai",
+        "Tu": "écouteras",
+        "Il/Elle/On": "écoutera",
+        "Nous": "écouterons",
+        "Vous": "écouterez",
+        "Ils/Elles": "écouteront"
+      },
+      "futur anterieur": {
+        "Je": "aurai écouté",
+        "Tu": "auras écouté",
+        "Il/Elle/On": "aura écouté",
+        "Nous": "aurons écouté",
+        "Vous": "aurez écouté",
+        "Ils/Elles": "auront écouté"
+      },
+      "present conditionnel": {
+        "Je": "écouterais",
+        "Tu": "écouterais",
+        "Il/Elle/On": "écouterait",
+        "Nous": "écouterions",
+        "Vous": "écouteriez",
+        "Ils/Elles": "écouteraient"
+      },
+      "present subjonctif": {
+        "Je": "écoute",
+        "Tu": "écoutes",
+        "Il/Elle/On": "écoute",
+        "Nous": "écoutions",
+        "Vous": "écoutiez",
+        "Ils/Elles": "écoutent"
+      },
+      "passe simple": {
+        "Je": "écoutai",
+        "Tu": "écoutas",
+        "Il/Elle/On": "écouta",
+        "Nous": "écoutâmes",
+        "Vous": "écoutâtes",
+        "Ils/Elles": "écoutèrent"
+      }
+    }
+  },
+  "perdre": {
+    "exception": false,
+    "frequency": 4,
+    "conjugations": {
+      "present": {
+        "Je": "perds",
+        "Tu": "perds",
+        "Il/Elle/On": "perd",
+        "Nous": "perdons",
+        "Vous": "perdez",
+        "Ils/Elles": "perdent"
+      },
+      "passe compose": {
+        "Je": "ai perdu",
+        "Tu": "as perdu",
+        "Il/Elle/On": "a perdu",
+        "Nous": "avons perdu",
+        "Vous": "avez perdu",
+        "Ils/Elles": "ont perdu"
+      },
+      "plus-que-parfait": {
+        "Je": "avais perdu",
+        "Tu": "avais perdu",
+        "Il/Elle/On": "avait perdu",
+        "Nous": "avions perdu",
+        "Vous": "aviez perdu",
+        "Ils/Elles": "avaient perdu"
+      },
+      "imparfait": {
+        "Je": "perdais",
+        "Tu": "perdais",
+        "Il/Elle/On": "perdait",
+        "Nous": "perdions",
+        "Vous": "perdiez",
+        "Ils/Elles": "perdaient"
+      },
+      "futur proche": {
+        "Je": "vais perdre",
+        "Tu": "vas perdre",
+        "Il/Elle/On": "va perdre",
+        "Nous": "allons perdre",
+        "Vous": "allez perdre",
+        "Ils/Elles": "vont perdre"
+      },
+      "futur simple": {
+        "Je": "perdrai",
+        "Tu": "perdras",
+        "Il/Elle/On": "perdra",
+        "Nous": "perdrons",
+        "Vous": "perdrez",
+        "Ils/Elles": "perdront"
+      },
+      "futur anterieur": {
+        "Je": "aurai perdu",
+        "Tu": "auras perdu",
+        "Il/Elle/On": "aura perdu",
+        "Nous": "aurons perdu",
+        "Vous": "aurez perdu",
+        "Ils/Elles": "auront perdu"
+      },
+      "present conditionnel": {
+        "Je": "perdrais",
+        "Tu": "perdrais",
+        "Il/Elle/On": "perdrait",
+        "Nous": "perdrions",
+        "Vous": "perdriez",
+        "Ils/Elles": "perdraient"
+      },
+      "present subjonctif": {
+        "Je": "perde",
+        "Tu": "perdes",
+        "Il/Elle/On": "perde",
+        "Nous": "perdions",
+        "Vous": "perdiez",
+        "Ils/Elles": "perdent"
+      },
+      "passe simple": {
+        "Je": "perdis",
+        "Tu": "perdis",
+        "Il/Elle/On": "perdit",
+        "Nous": "perdîmes",
+        "Vous": "perdîtes",
+        "Ils/Elles": "perdirent"
+      }
+    }
+  },
+  "retrouver": {
+    "exception": false,
+    "frequency": 4,
+    "conjugations": {
+      "present": {
+        "Je": "retrouve",
+        "Tu": "retrouves",
+        "Il/Elle/On": "retrouve",
+        "Nous": "retrouvons",
+        "Vous": "retrouvez",
+        "Ils/Elles": "retrouvent"
+      },
+      "passe compose": {
+        "Je": "ai retrouvé",
+        "Tu": "as retrouvé",
+        "Il/Elle/On": "a retrouvé",
+        "Nous": "avons retrouvé",
+        "Vous": "avez retrouvé",
+        "Ils/Elles": "ont retrouvé"
+      },
+      "plus-que-parfait": {
+        "Je": "avais retrouvé",
+        "Tu": "avais retrouvé",
+        "Il/Elle/On": "avait retrouvé",
+        "Nous": "avions retrouvé",
+        "Vous": "aviez retrouvé",
+        "Ils/Elles": "avaient retrouvé"
+      },
+      "imparfait": {
+        "Je": "retrouvais",
+        "Tu": "retrouvais",
+        "Il/Elle/On": "retrouvait",
+        "Nous": "retrouvions",
+        "Vous": "retrouviez",
+        "Ils/Elles": "retrouvaient"
+      },
+      "futur proche": {
+        "Je": "vais retrouver",
+        "Tu": "vas retrouver",
+        "Il/Elle/On": "va retrouver",
+        "Nous": "allons retrouver",
+        "Vous": "allez retrouver",
+        "Ils/Elles": "vont retrouver"
+      },
+      "futur simple": {
+        "Je": "retrouverai",
+        "Tu": "retrouveras",
+        "Il/Elle/On": "retrouvera",
+        "Nous": "retrouverons",
+        "Vous": "retrouverez",
+        "Ils/Elles": "retrouveront"
+      },
+      "futur anterieur": {
+        "Je": "aurai retrouvé",
+        "Tu": "auras retrouvé",
+        "Il/Elle/On": "aura retrouvé",
+        "Nous": "aurons retrouvé",
+        "Vous": "aurez retrouvé",
+        "Ils/Elles": "auront retrouvé"
+      },
+      "present conditionnel": {
+        "Je": "retrouverais",
+        "Tu": "retrouverais",
+        "Il/Elle/On": "retrouverait",
+        "Nous": "retrouverions",
+        "Vous": "retrouveriez",
+        "Ils/Elles": "retrouveraient"
+      },
+      "present subjonctif": {
+        "Je": "retrouve",
+        "Tu": "retrouves",
+        "Il/Elle/On": "retrouve",
+        "Nous": "retrouvions",
+        "Vous": "retrouviez",
+        "Ils/Elles": "retrouvent"
+      },
+      "passe simple": {
+        "Je": "retrouvai",
+        "Tu": "retrouvas",
+        "Il/Elle/On": "retrouva",
+        "Nous": "retrouvâmes",
+        "Vous": "retrouvâtes",
+        "Ils/Elles": "retrouvèrent"
+      }
+    }
+  },
+  "résister": {
+    "exception": false,
+    "frequency": 3,
+    "conjugations": {
+      "present": {
+        "Je": "résiste",
+        "Tu": "résistes",
+        "Il/Elle/On": "résiste",
+        "Nous": "résistons",
+        "Vous": "résistez",
+        "Ils/Elles": "résistent"
+      },
+      "passe compose": {
+        "Je": "ai résisté",
+        "Tu": "as résisté",
+        "Il/Elle/On": "a résisté",
+        "Nous": "avons résisté",
+        "Vous": "avez résisté",
+        "Ils/Elles": "ont résisté"
+      },
+      "plus-que-parfait": {
+        "Je": "avais résisté",
+        "Tu": "avais résisté",
+        "Il/Elle/On": "avait résisté",
+        "Nous": "avions résisté",
+        "Vous": "aviez résisté",
+        "Ils/Elles": "avaient résisté"
+      },
+      "imparfait": {
+        "Je": "résistais",
+        "Tu": "résistais",
+        "Il/Elle/On": "résistait",
+        "Nous": "résistions",
+        "Vous": "résistiez",
+        "Ils/Elles": "résistaient"
+      },
+      "futur proche": {
+        "Je": "vais résister",
+        "Tu": "vas résister",
+        "Il/Elle/On": "va résister",
+        "Nous": "allons résister",
+        "Vous": "allez résister",
+        "Ils/Elles": "vont résister"
+      },
+      "futur simple": {
+        "Je": "résisterai",
+        "Tu": "résisteras",
+        "Il/Elle/On": "résistera",
+        "Nous": "résisterons",
+        "Vous": "résisterez",
+        "Ils/Elles": "résisteront"
+      },
+      "futur anterieur": {
+        "Je": "aurai résisté",
+        "Tu": "auras résisté",
+        "Il/Elle/On": "aura résisté",
+        "Nous": "aurons résisté",
+        "Vous": "aurez résisté",
+        "Ils/Elles": "auront résisté"
+      },
+      "present conditionnel": {
+        "Je": "résisterais",
+        "Tu": "résisterais",
+        "Il/Elle/On": "résisterait",
+        "Nous": "résisterions",
+        "Vous": "résisteriez",
+        "Ils/Elles": "résisteraient"
+      },
+      "present subjonctif": {
+        "Je": "résiste",
+        "Tu": "résistes",
+        "Il/Elle/On": "résiste",
+        "Nous": "résistions",
+        "Vous": "résistiez",
+        "Ils/Elles": "résistent"
+      },
+      "passe simple": {
+        "Je": "résistai",
+        "Tu": "résistas",
+        "Il/Elle/On": "résista",
+        "Nous": "résistâmes",
+        "Vous": "résistâtes",
+        "Ils/Elles": "résistèrent"
+      }
+    }
   }
 }
