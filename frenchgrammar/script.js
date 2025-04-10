@@ -16,7 +16,9 @@ let filter  = {
     "present subjonctif": true
 }
 
+// each question
 let answer = '';
+let answerTrue = false;
 
 // ONLOAD, load JSON
 window.addEventListener("load", async () => {
@@ -40,6 +42,7 @@ function presentQuestion() {
 
     // clear results
     document.getElementById("result").innerHTML = "";
+    answerTrue = false;
 
     if (Object.keys(VERBS_LIST).length === 0) {
         console.warn("VERBS_LIST not loaded yet. Try again shortly.");
@@ -99,7 +102,12 @@ function checkAnswer() {
 
     if (inputEl.value == answer) {
         resultEl.innerHTML = "✅ Correctes!";
-        localStorage.setItem("score", parseInt(localStorage.getItem("score"))+1);
+
+        if (!answerTrue) {
+            localStorage.setItem("score", parseInt(localStorage.getItem("score"))+1);
+        }
+
+        answerTrue = true;
         
     } else {
         resultEl.innerHTML = "Mauvaise réponse ❌";
@@ -123,6 +131,11 @@ function updateFilter() {
 function enter(event) {
     if (event.key === "Enter") {
         event.preventDefault();
-        checkAnswer();
+
+        if (!answerTrue) {
+            checkAnswer();
+        } else {
+            presentQuestion();
+        }
     }
 }
