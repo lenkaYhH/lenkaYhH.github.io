@@ -100,7 +100,7 @@ function checkAnswer() {
         localStorage.setItem("score", 0);
     }
 
-    if (inputEl.value == answer) {
+    if (inputEl.value.trim() == answer) {
         resultEl.innerHTML = "✅ Correctes!";
 
         if (!answerTrue) {
