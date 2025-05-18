@@ -19,6 +19,7 @@ let filter  = {
 // each question
 let answer = '';
 let answerTrue = false;
+let chekcedTimes = 0;
 
 // ONLOAD, load JSON
 window.addEventListener("load", async () => {
@@ -43,6 +44,11 @@ function presentQuestion() {
     // clear results
     document.getElementById("result").innerHTML = "";
     answerTrue = false;
+
+    // hide buttones
+    checkedTimes = 0;
+    document.getElementById("showAnswer-btn").style.display = "none";
+    document.getElementById("answer").innerHTML = "";
 
     if (Object.keys(VERBS_LIST).length === 0) {
         console.warn("VERBS_LIST not loaded yet. Try again shortly.");
@@ -100,6 +106,12 @@ function checkAnswer() {
         localStorage.setItem("score", 0);
     }
 
+    checkedTimes++; 
+
+    if (checkedTimes >= 3) {
+        document.getElementById("showAnswer-btn").style.display = "inline";
+    }
+
     if (inputEl.value.trim() == answer) {
         resultEl.innerHTML = "✅ Correctes!";
 
@@ -115,6 +127,10 @@ function checkAnswer() {
 
     const cntEl = document.getElementById("cnt_total");
     cntEl.innerHTML = `<p id="cnt_total">Réponses correctes: ${localStorage.getItem("score")}/${localStorage.getItem("total")}</p>`;
+}
+
+function showAnswer() {
+    document.getElementById("answer").innerHTML = `La bonne réponse: <b>${answer}</b>`;
 }
 
 function updateFilter() {

@@ -90,6 +90,11 @@ p {
         .btns {
             margin: 10px 0;  
         }
+
+        #answer {
+            color: black;
+            font-style: italic;
+        }
     }
 
     .right {
