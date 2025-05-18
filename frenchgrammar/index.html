@@ -92,6 +92,18 @@
 
     </div>
 
+    <div class="verbs">
+        <div id="expand" onclick="toggleSearch()">
+            <h2>Verbes pris en charge - Cliquez ici</h2>
+        </div>
+        <div id="content" class="content" style="display: none">
+            <input autocomplete="off" oninput="searchInputChange()" type="text" id="search-verb" placeholder="Tapez votre verbe...">
+            <div id="suggestions-div"></div>
+
+            <div id="results-grid"></div>
+        </div>
+    </div>
+
     <script src="/frenchgrammar/script.js"></script>
 </body>
 </html>

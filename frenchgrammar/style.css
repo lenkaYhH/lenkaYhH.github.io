@@ -27,7 +27,7 @@ p {
     align-content: center;
     justify-content: center;
     /* flex-wrap: wrap; */
-    height: calc(100vh - 20px);
+    height: calc(80vh - 20px);
 
     /* padding: auto 0; */
 
@@ -119,6 +119,74 @@ p {
     }
 }
 
+.verbs {
+    padding: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+    display: flex;
+
+    flex-direction: column;
+    
+    #expand {
+        background-color: var(--light-white);
+        padding: 10px;
+        border-radius: 10px;
+        width: calc(100% - 20px);
+
+        cursor: pointer;
+    }
+
+    #content {
+        width: calc(100% - 20px);
+        padding: 10px;
+        background-color: var(--light-white);
+        border-radius: 0 0 10px 10px;
+
+        /* for transition --- */
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-out;
+
+        input {
+            font-size: 16px;
+            padding: 5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #suggestions-div {
+            display: flex;
+            justify-content: center;
+            /* overflow-x: scroll; */
+
+            .search-suggestion {
+                display: flex;
+                width: fit-content;
+                background-color: var(--light-blue);
+                padding: 5px;
+                margin: 5px;
+                border-radius: 5%;
+                cursor: pointer;
+            }
+
+            .search-suggestion:hover {
+                background-color: var(--mid-blue);
+                color: var(--light-white);
+            }
+        }
+
+        #results-grid {
+            display: grid;
+
+            grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+
+            gap: 10px;
+            justify-items: center;
+            align-items: center;
+        }
+
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .body {
       flex-wrap: wrap;
@@ -128,5 +196,20 @@ p {
       .left, .mid, .right {
         width: 100%;
       }
+    }
+
+    .verbs {
+        #content {
+            #suggestions-div {
+                flex-wrap: wrap;
+                max-width: 100%;
+                height: fit-content;
+            }
+    
+            #results-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(5, 1fr);
+            }
+        }
     }
   }

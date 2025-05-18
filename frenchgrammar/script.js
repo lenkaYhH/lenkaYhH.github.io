@@ -13,7 +13,8 @@ let filter  = {
     "futur simple": true, 
     "futur anterieur": true, 
     "present conditionnel": true, 
-    "present subjonctif": true
+    "present subjonctif": true,
+    "passe simple": true
 }
 
 // each question
@@ -154,4 +155,106 @@ function enter(event) {
             presentQuestion();
         }
     }
+}
+
+// toggle search function
+function toggleSearch() {
+    const headingEl = document.getElementById("expand");
+    const contentEl = document.getElementById("content");
+
+    if (contentEl.style.display === "none") {
+        // open
+        contentEl.style.display = "block";
+        contentEl.style.height = contentEl.scrollHeight + "px";
+        headingEl.style.borderRadius = "10px 10px 0 0";
+
+    } else {
+        // close
+        contentEl.style.height = 0;
+        
+        setTimeout(() => {
+            contentEl.style.display = "none";
+            headingEl.style.borderRadius = "10px";
+        }, 200, contentEl);
+        
+    }
+}
+
+// search function -----------------
+// suggestion list is Object.keys(VERBS_LIST)
+function searchInputChange() {
+    const inputEl = document.getElementById("search-verb");
+    const suggestionDivEl = document.getElementById("suggestions-div");
+
+    let query = inputEl.value.trim().toLowerCase();
+    
+    
+    if (query === "" || query.length <= 1) {
+        suggestionDivEl.innerHTML = "";
+        return;
+    }
+
+    let filteredList = Object.keys(VERBS_LIST).filter(item => item.toLowerCase().includes(query));
+
+    suggestionDivEl.innerHTML = "";
+
+    filteredList.forEach(item => {
+        const div = document.createElement("div");
+        div.textContent = item;
+        div.classList.add("search-suggestion");
+        div.addEventListener("click", () => displayResults(item));
+
+        suggestionDivEl.appendChild(div);
+    })
+
+    document.getElementById("content").style.height = document.getElementById("content").scrollHeight + "px";
+}
+
+// closes suggestions if elsewhere clicked
+document.addEventListener("click", e => {
+    const inputEl = document.getElementById("search-verb");
+    const suggestionDivEl = document.getElementById("suggestions-div");
+
+    if (!suggestionDivEl.contains(e.target) && e.taret !== inputEl) {
+        suggestionDivEl.innerHTML = "";
+    }
+})
+
+function displayResults(verb) {
+    const inputEl = document.getElementById("search-verb");
+    const suggestionDivEl = document.getElementById("suggestions-div");
+    const resultsGridEl = document.getElementById("results-grid");
+    
+    // clear
+    resultsGridEl.innerHTML = "";
+    inputEl.value = verb;
+    suggestionDivEl.innerHTML = "";
+
+    TENSES.forEach(tense => {
+        const thisDiv = document.createElement("div");
+        thisDiv.id = tense;
+
+        thisDiv.innerHTML += `<p><b>${tense}</b></p>`
+
+        PRONOUNS.forEach(pronoun => {
+            const thisLine = document.createElement("p");
+
+            let line;
+
+            if (pronoun == "Je" && ['a', 'e', 'i', 'o', 'u', 'é'].includes(VERBS_LIST[verb]["conjugations"][tense][pronoun][0])) {
+                line = `J'${VERBS_LIST[verb]["conjugations"][tense][pronoun]}`;
+            } else {
+                line = `${pronoun} ${VERBS_LIST[verb]["conjugations"][tense][pronoun]}`;
+            }
+
+            thisLine.innerHTML = line;
+
+            thisDiv.appendChild(thisLine);
+        })
+
+        resultsGridEl.appendChild(thisDiv);
+    })
+
+    document.getElementById("content").style.height = document.getElementById("content").scrollHeight + "px";
+
 }
