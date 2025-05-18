@@ -207,6 +207,7 @@ function searchInputChange() {
         suggestionDivEl.appendChild(div);
     })
 
+    // expand white box further to accomodate extra height
     document.getElementById("content").style.height = document.getElementById("content").scrollHeight + "px";
 }
 
@@ -255,6 +256,7 @@ function displayResults(verb) {
         resultsGridEl.appendChild(thisDiv);
     })
 
+    // expand white box further to accomodate extra height
     document.getElementById("content").style.height = document.getElementById("content").scrollHeight + "px";
 
 }
