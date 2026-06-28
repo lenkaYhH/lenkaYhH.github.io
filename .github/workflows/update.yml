@@ -31,7 +31,7 @@ jobs:
           CUTTLE_PHPSESSID: ${{ secrets.CUTTLE_PHPSESSID }}
           CUTTLE_STATUS:    ${{ secrets.CUTTLE_STATUS }}
         # run: python egoi-leaderboard/fetch_submissions.py
-        run: cd egoi-aoc-leaderboard && python fetch_submissions.py
+        run: cd egoi-leaderboard && python fetch_submissions.py
 
       - name: Commit and push data.json if changed
         run: |
