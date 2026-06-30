@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Summer AoC 2026 — Leaderboard</title>
+<meta name="description" content="Live leaderboard for the Summer AoC 2026 challenge." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ===== Top bar ===== -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <span class="brand-mark">☀</span>
+      <div class="brand-text">
+        <h1>Summer AoC <span class="brand-year">2026</span></h1>
+        <p id="brand-sub" class="brand-sub">8 weeks · 40 workdays</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <a id="cuttle-link" href="https://informatica.cuttle.org/index.php?action=login" target="_blank" rel="noopener" class="btn-cuttle">Solve on Cuttle ↗</a>
+      <span id="last-synced" class="sync-label">Not synced yet</span>
+      <button id="refresh-btn" class="btn-refresh" type="button" aria-label="Refresh leaderboard data">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+        Refresh
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Setup / error banners ===== -->
+  <div id="setup-banner" class="banner banner--setup hidden">
+    <strong>One quick setup step.</strong>
+    <p>Open <code>script.js</code> and fill in the <code>CONFIG</code> block at the top with your Google Sheet ID
+       (or a published CSV link). See <code>README.md</code> for the two‑minute walkthrough.</p>
+  </div>
+
+  <div id="error-banner" class="banner banner--error hidden">
+    <strong id="error-title">Couldn't load the sheet.</strong>
+    <p id="error-message"></p>
+    <button id="error-retry" class="btn-text" type="button">Try again</button>
+  </div>
+
+  <!-- ===== Office hour banner — edit details in script.js → CONFIG.OFFICE_HOURS ===== -->
+  <section class="office-banner" aria-label="Next office hour">
+    <div class="office-icon" aria-hidden="true">🗓</div>
+    <div class="office-info">
+      <p class="office-eyebrow">Next office hour</p>
+      <p id="office-datetime" class="office-datetime">Not set — edit CONFIG.OFFICE_HOURS in script.js</p>
+      <p id="office-notes" class="office-notes"></p>
+    </div>
+    <a id="office-join" class="btn-join" href="#" target="_blank" rel="noopener">Join meeting ↗</a>
+  </section>
+
+  <!-- ===== Main layout ===== -->
+  <main class="layout">
+
+    <section class="panel leaderboard-panel" aria-labelledby="leaderboard-heading">
+      <div class="panel-head">
+        <h2 id="leaderboard-heading">Leaderboard</h2>
+        <input id="student-search" class="search-input" type="search" placeholder="Find a name…" aria-label="Filter students by name" />
+      </div>
+      <ol id="leaderboard-list" class="leaderboard-list">
+        <li class="lb-empty">Loading…</li>
+      </ol>
+    </section>
+
+    <section class="panel calendar-panel" aria-labelledby="calendar-heading">
+      <div class="panel-head">
+        <h2 id="calendar-heading">Problem Calendar</h2>
+        <span id="calendar-hint" class="panel-hint">tap a day for details</span>
+      </div>
+      <div id="calendar-grid" class="calendar-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>Pulled straight from the contest sheet · tagged <code id="tag-name">summer-aoc-2026</code></span>
+  </footer>
+
+</div>
+
+<!-- ===== Day detail modal ===== -->
+<div id="day-modal" class="modal hidden" aria-hidden="true">
+  <div id="day-modal-backdrop" class="modal-backdrop"></div>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="day-modal-title">
+    <button id="day-modal-close" class="modal-close" type="button" aria-label="Close">✕</button>
+    <p id="day-modal-eyebrow" class="modal-eyebrow"></p>
+    <h3 id="day-modal-title"></h3>
+    <div id="day-modal-links" class="modal-links"></div>
+    <div id="day-modal-hint" class="modal-hint"></div>
+    <p id="day-modal-meta" class="modal-meta"></p>
+    <div id="day-modal-solvers" class="modal-solvers"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
