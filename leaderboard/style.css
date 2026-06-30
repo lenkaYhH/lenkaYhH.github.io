@@ -138,6 +138,14 @@ code{
 }
 .btn-cuttle:hover{ filter: brightness(1.05); transform: translateY(-1px); }
 
+.btn-cuttle--alt{
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  box-shadow: none;
+}
+.btn-cuttle--alt:hover{ border-color: var(--accent); filter: none; }
+
 .btn-refresh{
   display: inline-flex;
   align-items: center;
