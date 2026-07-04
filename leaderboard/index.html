@@ -16,17 +16,16 @@
 
 <div class="page">
 
-  <!-- ===== Top bar ===== -->
   <header class="topbar">
     <div class="topbar-left">
       <span class="brand-mark">☀</span>
       <div class="brand-text">
-        <h1>Summer Advent of Code <span class="brand-year">2026</span></h1>
+        <h1>Zomer Advent of Code <span class="brand-year">2026</span></h1>
         <p id="brand-sub" class="brand-sub">8 weeks · 40 workdays</p>
       </div>
     </div>
     <div class="topbar-right">
-      <a id="cuttle-link" href="https://informatica.cuttle.org/index.php?action=login" target="_blank" rel="noopener" class="btn-cuttle">Solve on Cuttle ↗</a>
+      <a id="cuttle-link" href="https://informatica.cuttle.org/index.php?action=login" target="_blank" rel="noopener" class="btn-cuttle">Cuttle ↗</a>
       <a href="https://girls.gitbook.io/c++-cursus" target="_blank" rel="noopener" class="btn-cuttle btn-cuttle--alt">Open Cursus ↗</a>
       <span id="last-synced" class="sync-label">Not synced yet</span>
       <button id="refresh-btn" class="btn-refresh" type="button" aria-label="Refresh leaderboard data">
@@ -36,12 +35,6 @@
     </div>
   </header>
 
-  <!-- ===== Setup / error banners ===== -->
-  <div id="setup-banner" class="banner banner--setup hidden">
-    <strong>One quick setup step.</strong>
-    <p>Open <code>script.js</code> and fill in the <code>CONFIG</code> block at the top with your Google Sheet ID
-       (or a published CSV link). See <code>README.md</code> for the two‑minute walkthrough.</p>
-  </div>
 
   <div id="error-banner" class="banner banner--error hidden">
     <strong id="error-title">Couldn't load the sheet.</strong>
@@ -49,18 +42,16 @@
     <button id="error-retry" class="btn-text" type="button">Try again</button>
   </div>
 
-  <!-- ===== Office hour banner — edit details in script.js → CONFIG.OFFICE_HOURS ===== -->
   <section class="office-banner" aria-label="Next office hour">
     <div class="office-icon" aria-hidden="true">🗓</div>
     <div class="office-info">
-      <p class="office-eyebrow">Next office hour</p>
+      <p class="office-eyebrow">Volgende office hour</p>
       <p id="office-datetime" class="office-datetime">Not set — edit CONFIG.OFFICE_HOURS in script.js</p>
       <p id="office-notes" class="office-notes"></p>
     </div>
     <a id="office-join" class="btn-join" href="#" target="_blank" rel="noopener">Join meeting ↗</a>
   </section>
 
-  <!-- ===== Main layout ===== -->
   <main class="layout">
 
     <section class="panel leaderboard-panel" aria-labelledby="leaderboard-heading">
@@ -89,7 +80,6 @@
 
 </div>
 
-<!-- ===== Day detail modal ===== -->
 <div id="day-modal" class="modal hidden" aria-hidden="true">
   <div id="day-modal-backdrop" class="modal-backdrop"></div>
   <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="day-modal-title">
