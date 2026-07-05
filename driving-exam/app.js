@@ -6,6 +6,8 @@
    ========================================================= */
 
 const STORAGE_KEY = "traffic_quiz_stats_v1";
+const BOOKMARK_KEY = "traffic_quiz_bookmarks_v1";
+const THEME_KEY = "quiz_theme_v1";
 
 let DB = [];
 let DB_BY_ID = {};
@@ -13,10 +15,15 @@ let IMAGE_DATA = {};
 let STRUCTURES = [];
 let CATEGORIES = [];
 let stats = loadStats();
+let bookmarks = loadBookmarks();
+let currentQuestion = null;
+let listViewIds = [];
+let listViewType = null;
+let quizWasOpenBeforeList = false;
 
 const el = (id) => document.getElementById(id);
 
-/* ---------------- localStorage ---------------- */
+/* ---------------- localStorage：作答紀錄 ---------------- */
 function loadStats() {
   try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
   catch (e) { return {}; }
@@ -24,6 +31,22 @@ function loadStats() {
 function saveStats() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(stats));
 }
+
+/* ---------------- localStorage：收藏題目 ---------------- */
+function loadBookmarks() {
+  try { return JSON.parse(localStorage.getItem(BOOKMARK_KEY)) || {}; }
+  catch (e) { return {}; }
+}
+function saveBookmarks() {
+  localStorage.setItem(BOOKMARK_KEY, JSON.stringify(bookmarks));
+}
+function isBookmarked(id) { return !!bookmarks[id]; }
+function toggleBookmark(id) {
+  if (bookmarks[id]) delete bookmarks[id];
+  else bookmarks[id] = true;
+  saveBookmarks();
+}
+function bookmarkCount() { return Object.keys(bookmarks).filter(id => bookmarks[id]).length; }
 
 /* ---------------- 小工具 ---------------- */
 function uniqueInOrder(arr) {
@@ -50,6 +73,7 @@ function reviewCount() {
 function poolForValue(value) {
   if (value === "all") return DB;
   if (value === "review") return DB.filter(q => stats[q.id] && stats[q.id].needsReview);
+  if (value === "bookmark") return DB.filter(q => isBookmarked(q.id));
   const [type, ...rest] = value.split(":");
   const name = rest.join(":");
   if (type === "structure") return DB.filter(q => q.structure === name);
@@ -86,6 +110,7 @@ async function init() {
 
 function buildScopeSelect() {
   const sel = el("scope-select");
+  const previousValue = sel.value || "all";
   sel.innerHTML = "";
 
   const optAll = document.createElement("option");
@@ -116,14 +141,26 @@ function buildScopeSelect() {
   sel.appendChild(gCat);
 
   const gReview = document.createElement("optgroup");
-  gReview.label = "複習";
+  gReview.label = "複習與收藏";
+
   const optReview = document.createElement("option");
   optReview.value = "review";
   const rc = reviewCount();
   optReview.textContent = `只考答錯過的題目（${rc} 題）`;
   if (rc === 0) optReview.disabled = true;
   gReview.appendChild(optReview);
+
+  const optBookmark = document.createElement("option");
+  optBookmark.value = "bookmark";
+  const bc = bookmarkCount();
+  optBookmark.textContent = `只練習已收藏的題目（${bc} 題）`;
+  if (bc === 0) optBookmark.disabled = true;
+  gReview.appendChild(optBookmark);
+
   sel.appendChild(gReview);
+
+  const stillExists = Array.from(sel.options).some(o => o.value === previousValue && !o.disabled);
+  sel.value = stillExists ? previousValue : "all";
 }
 
 function renderLifetimeBar() {
@@ -135,6 +172,9 @@ function renderLifetimeBar() {
   el("lt-attempted").textContent = attempted;
   el("lt-accuracy").textContent = acc;
   el("lt-review").textContent = reviewCount();
+  el("lt-bookmarks").textContent = bookmarkCount();
+  el("wrong-count").textContent = reviewCount();
+  el("bookmark-count").textContent = bookmarkCount();
 }
 
 el("reset-btn").addEventListener("click", () => {
@@ -178,6 +218,7 @@ el("start-btn").addEventListener("click", () => startSession());
 
 function renderQuestion() {
   const q = DB_BY_ID[session.queue[session.index]];
+  currentQuestion = q;
   answered = false;
 
   el("q-index").textContent = session.index + 1;
@@ -189,6 +230,11 @@ function renderQuestion() {
 
   const wasWrong = stats[q.id] && stats[q.id].needsReview;
   el("q-review-flag").classList.toggle("hidden", !wasWrong);
+
+  const bookmarkBtn = el("bookmark-toggle");
+  const isBm = isBookmarked(q.id);
+  bookmarkBtn.textContent = isBm ? "★" : "☆";
+  bookmarkBtn.setAttribute("aria-pressed", String(isBm));
 
   const imgWrap = el("q-image-wrap");
   if (q.has_image) {
@@ -309,6 +355,128 @@ el("review-wrong-btn").addEventListener("click", () => {
 el("restart-btn").addEventListener("click", () => {
   el("summary").classList.add("hidden");
   document.querySelector(".toolbar").scrollIntoView({ behavior: "smooth", block: "start" });
+});
+
+el("bookmark-toggle").addEventListener("click", () => {
+  if (!currentQuestion) return;
+  toggleBookmark(currentQuestion.id);
+  const isBm = isBookmarked(currentQuestion.id);
+  el("bookmark-toggle").textContent = isBm ? "★" : "☆";
+  el("bookmark-toggle").setAttribute("aria-pressed", String(isBm));
+  el("lt-bookmarks").textContent = bookmarkCount();
+  el("bookmark-count").textContent = bookmarkCount();
+});
+
+/* =========================================================
+   深色模式
+   ========================================================= */
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  localStorage.setItem(THEME_KEY, theme);
+  const metaTheme = document.querySelector('meta[name="theme-color"]');
+  if (metaTheme) metaTheme.setAttribute("content", theme === "dark" ? "#15171a" : "#1e7b45");
+}
+el("theme-toggle").addEventListener("click", () => {
+  const current = document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  applyTheme(current === "dark" ? "light" : "dark");
+});
+
+/* =========================================================
+   清單瀏覽：答錯待複習 ／ 已收藏題目
+   ========================================================= */
+function currentListPool() {
+  if (listViewType === "wrong") return DB.filter(q => stats[q.id] && stats[q.id].needsReview);
+  if (listViewType === "bookmark") return DB.filter(q => isBookmarked(q.id));
+  return [];
+}
+
+function openListView(type) {
+  listViewType = type;
+  quizWasOpenBeforeList = !el("quiz").classList.contains("hidden");
+  el("quiz").classList.add("hidden");
+  el("summary").classList.add("hidden");
+  el("list-view-title").textContent = type === "wrong" ? "答錯待複習" : "已收藏題目";
+  renderListView();
+  el("list-view").classList.remove("hidden");
+  el("list-view").scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function renderListView() {
+  const pool = currentListPool();
+  listViewIds = pool.map(q => q.id);
+  const wrap = el("list-view-items");
+  wrap.innerHTML = "";
+
+  el("list-view-empty").classList.toggle("hidden", pool.length > 0);
+  el("list-view-practice-btn").classList.toggle("hidden", pool.length === 0);
+
+  pool.forEach(q => {
+    const card = document.createElement("div");
+    card.className = "list-item";
+
+    const head = document.createElement("div");
+    head.className = "list-item-head";
+    head.innerHTML = `<span class="quiz-category">${escapeHtml(q.category)}</span><span>#${q.id}</span>`;
+    const removeBtn = document.createElement("button");
+    removeBtn.type = "button";
+    removeBtn.className = "list-item-remove";
+    removeBtn.textContent = listViewType === "wrong" ? "標記已掌握" : "取消收藏";
+    removeBtn.addEventListener("click", () => {
+      if (listViewType === "wrong") {
+        if (stats[q.id]) stats[q.id].needsReview = false;
+        saveStats();
+      } else {
+        toggleBookmark(q.id);
+      }
+      renderListView();
+      renderLifetimeBar();
+      buildScopeSelect();
+    });
+    head.appendChild(removeBtn);
+    card.appendChild(head);
+
+    if (q.has_image) {
+      const fig = document.createElement("div");
+      fig.className = "list-item-image";
+      const img = document.createElement("img");
+      img.src = IMAGE_DATA[q.image_file] || "";
+      img.alt = "第 " + q.id + " 題附圖";
+      fig.appendChild(img);
+      card.appendChild(fig);
+    }
+
+    if (q.question) {
+      const p = document.createElement("p");
+      p.className = "list-item-text";
+      p.textContent = q.question;
+      card.appendChild(p);
+    }
+
+    const choicesWrap = document.createElement("div");
+    choicesWrap.className = "list-item-choices";
+    ["1", "2", "3"].forEach(num => {
+      const row = document.createElement("div");
+      row.className = "list-item-choice" + (Number(num) === q.answer ? " is-answer" : "");
+      const text = q.choices[num] || (q.has_image ? "（如圖所示）" : "");
+      row.textContent = `${num}. ${text}`;
+      choicesWrap.appendChild(row);
+    });
+    card.appendChild(choicesWrap);
+
+    wrap.appendChild(card);
+  });
+}
+
+el("open-wrong-btn").addEventListener("click", () => openListView("wrong"));
+el("open-bookmarks-btn").addEventListener("click", () => openListView("bookmark"));
+el("list-view-close").addEventListener("click", () => {
+  el("list-view").classList.add("hidden");
+  if (quizWasOpenBeforeList) el("quiz").classList.remove("hidden");
+});
+el("list-view-practice-btn").addEventListener("click", () => {
+  if (listViewIds.length === 0) return;
+  el("list-view").classList.add("hidden");
+  startSession(listViewIds.slice());
 });
 
 init();
