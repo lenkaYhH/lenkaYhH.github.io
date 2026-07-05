@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>汽車筆試題庫 · 練習頁面</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <p class="eyebrow">115 年新版 · 汽車駕照筆試題庫</p>
+  <h1>題庫練習</h1>
+  <p class="intro">共 <strong id="stat-total">1090</strong> 題，隨機出題、即時對答案。可依架構或分類練習，答錯的題目會自動記住，方便你回來複習。</p>
+</header>
+
+<p id="load-message" class="load-message"></p>
+
+<main id="app" class="app hidden">
+
+  <section class="toolbar" aria-label="練習設定">
+    <div class="field">
+      <label for="scope-select">練習範圍</label>
+      <select id="scope-select"></select>
+    </div>
+    <div class="field">
+      <label for="count-select">題數</label>
+      <select id="count-select">
+        <option value="10">10 題</option>
+        <option value="20" selected>20 題</option>
+        <option value="30">30 題</option>
+        <option value="50">50 題</option>
+        <option value="100">100 題</option>
+        <option value="all">全部</option>
+      </select>
+    </div>
+    <button id="start-btn" class="btn-primary" type="button">開始 / 換一批題目</button>
+  </section>
+
+  <section class="lifetime-bar" aria-label="累計成績">
+    <span><strong id="lt-attempted">0</strong> 題已作答</span>
+    <span><strong id="lt-accuracy">--</strong> 累計正確率</span>
+    <span><strong id="lt-review">0</strong> 題待複習</span>
+    <button id="reset-btn" type="button" class="link-btn">清除紀錄</button>
+  </section>
+
+  <section id="quiz" class="quiz hidden" aria-live="polite">
+    <div class="quiz-meta">
+      <span class="quiz-progress">第 <strong id="q-index">1</strong> / <span id="q-total">10</span> 題</span>
+      <span class="quiz-category" id="q-category"></span>
+      <span class="quiz-tag quiz-tag--review hidden" id="q-review-flag">曾經答錯</span>
+      <span class="quiz-score">
+        <span class="score-correct" id="score-correct">0</span> 對
+        ／
+        <span class="score-wrong" id="score-wrong">0</span> 錯
+      </span>
+    </div>
+
+    <div class="progress-bar"><div class="progress-bar-fill" id="progress-fill"></div></div>
+
+    <figure class="q-image hidden" id="q-image-wrap">
+      <img id="q-image" alt="題目附圖">
+    </figure>
+
+    <p class="q-text" id="q-text"></p>
+
+    <div class="choices" id="choices"></div>
+
+    <div class="quiz-actions">
+      <button id="next-btn" class="btn-secondary" type="button" disabled>下一題</button>
+    </div>
+  </section>
+
+  <section id="summary" class="summary hidden" aria-live="polite">
+    <h2 id="summary-title">本回合結束</h2>
+    <p class="summary-score" id="summary-score">0 / 0</p>
+    <p class="summary-sub" id="summary-sub"></p>
+    <div class="wrong-list" id="wrong-list"></div>
+    <div class="summary-actions">
+      <button id="review-wrong-btn" class="btn-secondary" type="button">只複習這些錯題</button>
+      <button id="restart-btn" class="btn-primary" type="button">回到設定</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>鍵盤操作：按 1／2／3 選答案，Enter 或 → 進下一題。作答紀錄僅保存在你目前的瀏覽器裡。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
