@@ -38,7 +38,7 @@ const CONFIG = {
   // 'DMY'  -> 03/08/2026 means 3 August 2026 (default, NL-style)
   // 'MDY'  -> 03/08/2026 means March 8, 2026 (US-style)
   // 'ISO'  -> 2026-08-03 is handled automatically either way
-  DATE_FORMAT: 'MDY',
+  DATE_FORMAT: 'DMY',
 
   // Auto-refresh cadence.
   REFRESH_INTERVAL_MINUTES: 10,
