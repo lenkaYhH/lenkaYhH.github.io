@@ -50,9 +50,9 @@ const CONFIG = {
   // Edit these by hand whenever the next office hour changes — this is
   // not pulled from the sheet, just plain config.
   OFFICE_HOURS: {
-    when: 'To be announced',       // e.g. 'Thursday 3 July · 16:00–17:00 CET'
+    when: 'Zaterdag 11 juli, 10:00-12:00',       // e.g. 'Thursday 3 July · 16:00–17:00 CET'
     note: '',                       // optional, e.g. a topic for the session
-    link: '',                       // meeting URL; leave '' to hide the button
+    link: 'https://meet.google.com/szj-groy-fpb',                       // meeting URL; leave '' to hide the button
   },
 
   // Problem statements live in a GitHub repo as
