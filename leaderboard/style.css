@@ -71,7 +71,7 @@ code{
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-bottom: 22px;
 }
 
@@ -108,6 +108,8 @@ code{
   margin: 2px 0 0;
   color: var(--ink-soft);
   font-size: .85rem;
+  /* width: 70%;
+  text-wrap: wrap; */
 }
 
 .topbar-right{
@@ -135,6 +137,7 @@ code{
   text-decoration: none;
   box-shadow: var(--shadow-card);
   transition: transform .15s ease, filter .15s ease;
+  white-space: nowrap;
 }
 .btn-cuttle:hover{ filter: brightness(1.05); transform: translateY(-1px); }
 

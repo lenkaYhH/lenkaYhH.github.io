@@ -403,19 +403,19 @@ function buildLeaderboardData(problemsRows, schedule) {
    Rendering
    ================================================================ */
 function renderAll() {
-  renderHeaderProgress();
+  // renderHeaderProgress();
   renderLeaderboard();
   renderCalendar();
 }
 
-function renderHeaderProgress() {
-  const el = document.getElementById('brand-sub');
-  if (!el) return;
-  const total = state.schedule.length;
-  el.textContent = total
-    ? `Day ${state.eligibleDays} of ${total} · 8 weeks, 5 workdays`
-    : '8 weeks · 40 problems · one streak worth keeping';
-}
+// function renderHeaderProgress() {
+//   const el = document.getElementById('brand-sub');
+//   if (!el) return;
+//   const total = state.schedule.length;
+//   el.textContent = total
+//     ? `Day ${state.eligibleDays} of ${total} · 8 weeks, 5 workdays`
+//     : '8 weeks · 40 problems · one streak worth keeping';
+// }
 
 function renderLeaderboard() {
   const list = document.getElementById('leaderboard-list');
