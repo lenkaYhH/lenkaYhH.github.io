@@ -221,20 +221,29 @@ a{color:var(--cyan);}
 }
 .lane-add:hover{color:var(--text); border-color:var(--text-faint);}
 
-/* ============ COLLAPSED LANES (dot-only spine, no card text) ============ */
-.lane.lane-collapsed{min-width:92px; max-width:92px;}
+/* ============ COLLAPSED LANES (vertical name label + dot-only spine) ============ */
+.lane.lane-collapsed{position:relative; min-width:104px; max-width:104px;}
 .lane.lane-collapsed .lane-cat,
 .lane.lane-collapsed .lane-desc,
 .lane.lane-collapsed .lane-count,
 .lane.lane-collapsed .lane-add{display:none;}
-.lane.lane-collapsed .lane-head h3{max-width:56px; font-size:11.5px;}
+.lane.lane-collapsed .lane-head{margin-bottom:10px;}
+.lane.lane-collapsed .lane-head h3{
+  position:absolute; top:32px; left:4px; bottom:12px;
+  writing-mode:vertical-rl; transform:rotate(180deg);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+  max-width:none; font-size:11.5px; font-weight:500; color:var(--text-dim);
+  letter-spacing:.01em;
+}
 .lane.lane-collapsed .station-card{display:none;}
-.lane.lane-collapsed .rail{padding-left:16px;}
+.lane.lane-collapsed .rail{padding-left:16px; margin-left:22px;}
 .lane.lane-collapsed .rail:empty::after{display:none;}
 .lane.lane-collapsed .station-node{left:-16px;}
 .lane.lane-collapsed .station.mark .station-node{left:-13.5px;}
 .lane.lane-collapsed .station{padding-bottom:10px;}
 .board.list .lane.lane-collapsed{min-width:100%; max-width:100%;}
+.board.list .lane.lane-collapsed .lane-head h3{position:static; writing-mode:horizontal-tb; transform:none; bottom:auto;}
+.board.list .lane.lane-collapsed .rail{margin-left:0;}
 
 /* ============ MODALS ============ */
 .modal-overlay{
