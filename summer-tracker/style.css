@@ -104,11 +104,22 @@ a{color:var(--cyan);}
 
 /* ============ ACTIVITY STRIP ============ */
 .activity-strip{
-  display:flex; gap:24px; align-items:center; padding:14px 24px; flex-wrap:wrap;
+  display:flex; gap:24px; align-items:flex-start; padding:14px 24px; flex-wrap:wrap;
   border-bottom:1px solid var(--border-soft);
 }
+.activity-col{display:flex; flex-direction:column; gap:8px;}
 .activity-heat{display:grid; grid-auto-flow:column; grid-template-rows:repeat(7,10px); gap:3px; overflow-x:auto; padding:2px;}
-.heat-cell{width:10px; height:10px; border-radius:2px; background:var(--surface-2);}
+.heat-cell{width:10px; height:10px; border-radius:2px; background:var(--surface-2); cursor:pointer; transition:transform .1s;}
+.heat-cell:hover{transform:scale(1.35);}
+.heat-filters{display:flex; gap:6px; flex-wrap:wrap; max-width:420px;}
+.heat-chip{
+  display:inline-flex; align-items:center; gap:5px;
+  font-size:10.5px; padding:4px 9px 4px 7px; border-radius:999px; border:1px solid var(--border);
+  color:var(--text-faint); cursor:pointer; user-select:none; font-family:var(--mono);
+  opacity:.45; transition:opacity .15s, border-color .15s;
+}
+.heat-chip.active{opacity:1; color:var(--text-dim); border-color:var(--text-faint);}
+.heat-chip .chip-dot{width:7px; height:7px; border-radius:50%; background:var(--chip-color, var(--text-faint)); flex-shrink:0;}
 .activity-meta{display:flex; align-items:center; gap:20px; margin-left:auto; flex-wrap:wrap;}
 .streak{display:flex; align-items:baseline; gap:6px; font-family:var(--mono);}
 .streak-num{font-size:20px; color:var(--amber); font-weight:600;}
@@ -277,6 +288,16 @@ a{color:var(--cyan);}
 .detail-code-lang{position:absolute; top:8px; right:10px; font-size:10px; color:var(--text-faint); text-transform:uppercase;}
 .detail-links{display:flex; flex-direction:column; gap:6px;}
 .detail-links a{font-size:12.5px; word-break:break-all;}
+
+.day-entry{
+  display:flex; align-items:flex-start; gap:10px; padding:9px 10px;
+  border-radius:8px; border:1px solid var(--border-soft); background:var(--surface-2);
+  cursor:pointer; margin-bottom:6px;
+}
+.day-entry:hover{border-color:var(--text-faint); background:var(--surface-3);}
+.day-entry-dot{width:9px; height:9px; border-radius:50%; margin-top:4px; flex-shrink:0;}
+.day-entry-title{font-size:13px;}
+.day-entry-meta{font-size:10.5px; color:var(--text-faint); font-family:var(--mono); margin-top:2px;}
 
 /* ============ MISC ============ */
 .empty-hint{text-align:center; color:var(--text-faint); font-size:13px; margin-top:60px; font-family:var(--mono);}

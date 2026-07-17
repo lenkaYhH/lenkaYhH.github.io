@@ -56,7 +56,10 @@
 
   <!-- ===== ACTIVITY STRIP ===== -->
   <section class="activity-strip">
-    <div class="activity-heat" id="heatmap"></div>
+    <div class="activity-col">
+      <div class="activity-heat" id="heatmap"></div>
+      <div class="heat-filters" id="heatProjectFilters"></div>
+    </div>
     <div class="activity-meta">
       <div class="streak" id="streakBox">
         <span class="streak-num" id="streakNum">0</span>
@@ -259,6 +262,17 @@
       <div class="spacer"></div>
       <button class="btn btn-ghost" id="detailEdit">Edit</button>
     </div>
+  </div>
+</div>
+
+<!-- ===== MODAL: Day detail (from heatmap click) ===== -->
+<div class="modal-overlay" id="modalDayDetail" hidden>
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="dayDetailTitle">Day</h2>
+      <button class="modal-close" data-close="modalDayDetail">×</button>
+    </div>
+    <div class="modal-body" id="dayDetailBody"></div>
   </div>
 </div>
 

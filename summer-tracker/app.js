@@ -19,7 +19,7 @@ function defaultState(){
     projects: [],
     entries: [],
     todoist: { token:'', sources:[] },
-    ui: { view:'rails', statusFilter:'all', colorCursor:0 }
+    ui: { view:'rails', statusFilter:'all', colorCursor:0, heatmapExcluded:[] }
   };
 }
 
@@ -28,7 +28,9 @@ function loadState(){
     const raw = localStorage.getItem(STORAGE_KEY);
     if(!raw) return seedState();
     const parsed = JSON.parse(raw);
-    return Object.assign(defaultState(), parsed);
+    const merged = Object.assign(defaultState(), parsed);
+    merged.ui = Object.assign(defaultState().ui, parsed.ui || {});
+    return merged;
   }catch(e){
     console.error('Failed to load state', e);
     return defaultState();
@@ -105,7 +107,9 @@ function renderHeatmap(){
   const days = 105; // ~15 weeks
   const counts = {};
   state.entries.forEach(e => {
-    if(e.date){ counts[e.date] = (counts[e.date]||0) + 1; }
+    if(e.date && !state.ui.heatmapExcluded.includes(e.projectId)){
+      counts[e.date] = (counts[e.date]||0) + 1;
+    }
   });
   const today = new Date();
   today.setHours(0,0,0,0);
@@ -128,6 +132,7 @@ function renderHeatmap(){
     let alpha = 0;
     if(c.count > 0) alpha = Math.min(1, 0.28 + c.count*0.22);
     div.style.background = alpha ? `rgba(79,209,197,${alpha})` : 'var(--surface-2)';
+    div.addEventListener('click', () => openDayDetail(c.iso));
     container.appendChild(div);
   });
 
@@ -140,6 +145,59 @@ function renderHeatmap(){
     else break;
   }
   $('#streakNum').textContent = streak;
+}
+
+/* ============ RENDER: HEATMAP PROJECT FILTERS ============ */
+function renderHeatmapFilters(){
+  const wrap = $('#heatProjectFilters');
+  wrap.innerHTML = state.projects.map(p => {
+    const active = !state.ui.heatmapExcluded.includes(p.id);
+    return `<span class="heat-chip ${active?'active':''}" data-project="${p.id}" style="--chip-color:${colorVar(p)}">
+      <span class="chip-dot"></span>${escapeHtml(p.name)}
+    </span>`;
+  }).join('');
+  $$('.heat-chip', wrap).forEach(chip => {
+    chip.addEventListener('click', () => {
+      const pid = chip.dataset.project;
+      const idx = state.ui.heatmapExcluded.indexOf(pid);
+      if(idx === -1) state.ui.heatmapExcluded.push(pid);
+      else state.ui.heatmapExcluded.splice(idx, 1);
+      saveState();
+      renderHeatmapFilters();
+      renderHeatmap();
+    });
+  });
+}
+
+/* ============ DAY DETAIL (from heatmap click) ============ */
+function openDayDetail(iso){
+  $('#dayDetailTitle').textContent = fmtDate(iso) || iso;
+  const visible = state.entries
+    .filter(e => e.date === iso && !state.ui.heatmapExcluded.includes(e.projectId))
+    .sort((a,b) => (projectById(a.projectId)?.name||'').localeCompare(projectById(b.projectId)?.name||''));
+
+  const body = $('#dayDetailBody');
+  if(!visible.length){
+    body.innerHTML = `<p class="hint">No entries logged this day${state.ui.heatmapExcluded.length ? ' among the currently visible tracks.' : '.'}</p>`;
+  } else {
+    body.innerHTML = visible.map(e => {
+      const p = projectById(e.projectId);
+      return `<div class="day-entry" data-entry="${e.id}">
+        <span class="day-entry-dot" style="background:${colorVar(p)}"></span>
+        <div>
+          <div class="day-entry-title">${escapeHtml(e.title)}</div>
+          <div class="day-entry-meta">${escapeHtml(p ? p.name : 'unknown track')} · ${e.kind === 'milestone' ? 'milestone' : 'mark'}</div>
+        </div>
+      </div>`;
+    }).join('');
+    $$('.day-entry', body).forEach(row => {
+      row.addEventListener('click', () => {
+        closeModal('modalDayDetail');
+        openDetail(row.dataset.entry);
+      });
+    });
+  }
+  openModal('modalDayDetail');
 }
 
 /* ============ RENDER: STATUS FILTERS ============ */
@@ -279,6 +337,7 @@ function refreshProjectSelects(){
 /* ============ FULL RENDER ============ */
 function renderAll(){
   renderHeader();
+  renderHeatmapFilters();
   renderHeatmap();
   renderFilters();
   refreshProjectSelects();
