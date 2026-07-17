@@ -237,17 +237,27 @@ function renderBoard(){
 
 function renderLane(project){
   const lane = document.createElement('div');
-  lane.className = `lane status-${project.status}`;
+  lane.className = `lane status-${project.status} ${project.collapsed ? 'lane-collapsed' : ''}`;
   const color = colorVar(project);
 
   const head = document.createElement('div');
   head.className = 'lane-head';
   head.innerHTML = `
+    <button class="lane-toggle" type="button" title="${project.collapsed ? 'Expand' : 'Collapse'} track">${project.collapsed ? '▸' : '▾'}</button>
     <span class="lane-dot" style="background:${color}"></span>
-    <h3>${escapeHtml(project.name)}</h3>
+    <h3 title="${escapeHtml(project.name)}">${escapeHtml(project.name)}</h3>
     <span class="lane-cat">${escapeHtml(project.category)}</span>
   `;
-  head.addEventListener('click', () => openProjectModal(project.id));
+  head.addEventListener('click', (e) => {
+    if(e.target.closest('.lane-toggle')) return;
+    openProjectModal(project.id);
+  });
+  head.querySelector('.lane-toggle').addEventListener('click', (e) => {
+    e.stopPropagation();
+    project.collapsed = !project.collapsed;
+    saveState();
+    renderBoard();
+  });
   lane.appendChild(head);
 
   if(project.desc){
