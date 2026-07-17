@@ -267,8 +267,13 @@ function escapeHtml(str){
 /* ============ RENDER: QUICK ADD PROJECT SELECT ============ */
 function refreshProjectSelects(){
   const opts = state.projects.map(p => `<option value="${p.id}">${escapeHtml(p.name)}</option>`).join('');
-  $('#qaProject').innerHTML = opts || '<option disabled>No tracks yet</option>';
-  $('#enProject').innerHTML = opts || '<option disabled>No tracks yet</option>';
+  [$('#qaProject'), $('#enProject')].forEach(sel => {
+    const prev = sel.value;
+    sel.innerHTML = opts || '<option disabled>No tracks yet</option>';
+    if(prev && state.projects.some(p => p.id === prev)){
+      sel.value = prev;
+    }
+  });
 }
 
 /* ============ FULL RENDER ============ */
@@ -667,9 +672,21 @@ async function todoistFetchAll(path, token){
 $('#btnTodoist').addEventListener('click', () => {
   refreshTodoistImportList();
   openModal('modalTodoist');
+  // Auto-refresh so the panel is never showing stale data without an extra click.
+  if(state.todoist.token && state.todoist.sources.length){
+    syncTodoist();
+  }
 });
 
 $('#tdSync').addEventListener('click', syncTodoist);
+
+$('#tdSelectAll').addEventListener('click', () => {
+  const boxes = $$('.imp-check', $('#tdImportList'));
+  if(!boxes.length) return;
+  const allChecked = boxes.every(b => b.checked);
+  boxes.forEach(b => { b.checked = !allChecked; });
+  $('#tdSelectAll').textContent = allChecked ? '☑ Select all' : '☐ Select none';
+});
 
 async function syncTodoist(){
   const token = state.todoist.token;
@@ -723,6 +740,7 @@ async function syncTodoist(){
 function refreshTodoistImportList(){
   const wrap = $('#tdImportList');
   wrap.innerHTML = '';
+  $('#tdSelectAll').textContent = '☑ Select all';
   if(!todoistCache.tasks.length){
     wrap.innerHTML = '<p class="hint">No synced tasks yet — hit "Sync now".</p>';
     return;
@@ -793,6 +811,18 @@ $('#tdImportSelected').addEventListener('click', () => {
   closeModal('modalTodoist');
   toast(`Imported ${checked.length} task(s)`);
 });
+
+/* ============ WHEEL → HORIZONTAL SCROLL (rails view) ============ */
+$('#board').addEventListener('wheel', (e) => {
+  if(state.ui.view === 'list') return; // list view scrolls vertically as normal
+  const board = e.currentTarget;
+  if(board.scrollWidth <= board.clientWidth) return; // nothing to scroll
+  // Trackpads already send meaningful deltaX; only hijack when the gesture is
+  // predominantly vertical (a plain mouse wheel).
+  if(Math.abs(e.deltaY) <= Math.abs(e.deltaX)) return;
+  e.preventDefault();
+  board.scrollLeft += e.deltaY;
+}, { passive: false });
 
 /* ============ INIT ============ */
 $('#btnList').textContent = state.ui.view === 'list' ? '▤ Rails' : '☰ List';
