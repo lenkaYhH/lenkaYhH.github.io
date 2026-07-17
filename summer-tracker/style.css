@@ -166,7 +166,11 @@ a{color:var(--cyan);}
 .lane-desc{font-size:11px; color:var(--text-faint); margin:2px 0 14px; line-height:1.4;}
 .lane-count{font-family:var(--mono); font-size:10px; color:var(--text-faint); margin-bottom:14px;}
 
-.rail{position:relative; padding-left:22px;}
+.rail{position:relative; padding-left:22px; min-height:28px;}
+.rail:empty::after{
+  content:"drag a card here"; position:absolute; left:22px; top:2px;
+  font-family:var(--mono); font-size:10.5px; color:var(--text-faint); font-style:italic;
+}
 .rail::before{
   content:""; position:absolute; left:5px; top:6px; bottom:6px; width:2px;
   background:var(--border);

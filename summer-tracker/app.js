@@ -274,7 +274,7 @@ function renderLane(project){
   });
   lane.appendChild(rail);
 
-  rail.addEventListener('dragover', (e) => {
+  lane.addEventListener('dragover', (e) => {
     if(!draggedEntryId) return;
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
@@ -289,13 +289,13 @@ function renderLane(project){
     if(target){ target.classList.add('drag-over'); dragOverEl = target; }
     else{ rail.classList.add('drag-over-end'); }
   });
-  rail.addEventListener('dragleave', (e) => {
-    if(!rail.contains(e.relatedTarget)){
+  lane.addEventListener('dragleave', (e) => {
+    if(!lane.contains(e.relatedTarget)){
       clearDragOverHighlight();
       rail.classList.remove('drag-over-end');
     }
   });
-  rail.addEventListener('drop', (e) => {
+  lane.addEventListener('drop', (e) => {
     e.preventDefault();
     const entryId = draggedEntryId || e.dataTransfer.getData('text/plain');
     clearDragOverHighlight();
