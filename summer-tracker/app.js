@@ -883,6 +883,54 @@ $('#board').addEventListener('wheel', (e) => {
   board.scrollLeft += e.deltaY;
 }, { passive: false });
 
+/* ============ HOTKEYS ============ */
+function anyModalOpen(){ return $$('.modal-overlay').some(m => !m.hidden); }
+
+document.addEventListener('keydown', (e) => {
+  const active = document.activeElement;
+  const isEditable = active && ['INPUT','TEXTAREA','SELECT'].includes(active.tagName);
+
+  // Tab while typing a title cycles the paired project select instead of
+  // jumping focus to the next form field.
+  if(e.key === 'Tab' && (active === $('#qaTitle') || active === $('#enTitle'))){
+    const sel = active === $('#qaTitle') ? $('#qaProject') : $('#enProject');
+    if(sel.options.length){
+      e.preventDefault();
+      const dir = e.shiftKey ? -1 : 1;
+      sel.selectedIndex = (sel.selectedIndex + dir + sel.options.length) % sel.options.length;
+    }
+    return;
+  }
+
+  if(isEditable) return;      // don't hijack normal typing in any field
+  if(anyModalOpen()) return;  // only fire page-level shortcuts when nothing's open
+  if(e.ctrlKey || e.metaKey || e.altKey) return;
+
+  const key = e.key.toLowerCase();
+
+  if(key === 'l' && e.shiftKey){          // Shift+L — quick-add a mark
+    e.preventDefault();
+    $('#qaKind').value = 'mark';
+    $('#qaTitle').focus();
+  } else if(key === 'm' && e.shiftKey){   // Shift+M — quick-add a milestone
+    e.preventDefault();
+    $('#qaKind').value = 'milestone';
+    $('#qaTitle').focus();
+  } else if(key === 't' && !e.shiftKey){  // T — stamp today's date
+    e.preventDefault();
+    $('#qaDate').value = todayISO();
+    toast('Date set to today');
+  } else if(key === 'r' && e.shiftKey){   // Shift+R — refresh Todoist
+    e.preventDefault();
+    if(state.todoist.token && state.todoist.sources.length){
+      syncTodoist();
+      toast('Syncing Todoist…');
+    } else {
+      toast('Add a Todoist token + source in Settings first');
+    }
+  }
+});
+
 /* ============ INIT ============ */
 $('#btnList').textContent = state.ui.view === 'list' ? '▤ Rails' : '☰ List';
 renderAll();
