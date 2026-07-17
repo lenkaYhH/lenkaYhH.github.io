@@ -887,6 +887,8 @@ $('#board').addEventListener('wheel', (e) => {
 function anyModalOpen(){ return $$('.modal-overlay').some(m => !m.hidden); }
 
 document.addEventListener('keydown', (e) => {
+  if(e.isComposing) return; // don't interfere mid-IME-composition (e.g. Chinese input)
+
   const active = document.activeElement;
   const isEditable = active && ['INPUT','TEXTAREA','SELECT'].includes(active.tagName);
 
@@ -904,23 +906,22 @@ document.addEventListener('keydown', (e) => {
 
   if(isEditable) return;      // don't hijack normal typing in any field
   if(anyModalOpen()) return;  // only fire page-level shortcuts when nothing's open
-  if(e.ctrlKey || e.metaKey || e.altKey) return;
+
+  // Everything below requires Alt (never produced while typing text in any
+  // language/IME, unlike Shift) and no other modifiers.
+  if(!e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) return;
 
   const key = e.key.toLowerCase();
 
-  if(key === 'l' && e.shiftKey){          // Shift+L — quick-add a mark
+  if(key === 'l'){          // Alt+L — quick-add a mark
     e.preventDefault();
     $('#qaKind').value = 'mark';
     $('#qaTitle').focus();
-  } else if(key === 'm' && e.shiftKey){   // Shift+M — quick-add a milestone
+  } else if(key === 'm'){   // Alt+M — quick-add a milestone
     e.preventDefault();
     $('#qaKind').value = 'milestone';
     $('#qaTitle').focus();
-  } else if(key === 't' && !e.shiftKey){  // T — stamp today's date
-    e.preventDefault();
-    $('#qaDate').value = todayISO();
-    toast('Date set to today');
-  } else if(key === 'r' && e.shiftKey){   // Shift+R — refresh Todoist
+  } else if(key === 'r'){   // Alt+R — refresh Todoist
     e.preventDefault();
     if(state.todoist.token && state.todoist.sources.length){
       syncTodoist();
@@ -928,6 +929,22 @@ document.addEventListener('keydown', (e) => {
     } else {
       toast('Add a Todoist token + source in Settings first');
     }
+  }
+});
+
+// T — stamp today's date. Kept modifier-free (safe: it's already gated to
+// "not editable, no modal open" above, and there's no way to type a bare
+// lowercase "t" as a shortcut while actually typing text into a field).
+document.addEventListener('keydown', (e) => {
+  if(e.isComposing) return;
+  const active = document.activeElement;
+  const isEditable = active && ['INPUT','TEXTAREA','SELECT'].includes(active.tagName);
+  if(isEditable || anyModalOpen()) return;
+  if(e.ctrlKey || e.metaKey || e.altKey || e.shiftKey) return;
+  if(e.key.toLowerCase() === 't'){
+    e.preventDefault();
+    $('#qaDate').value = todayISO();
+    toast('Date set to today');
   }
 });
 
