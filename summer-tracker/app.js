@@ -638,6 +638,16 @@ $('#detailEdit').addEventListener('click', () => {
   openEntryModal(detailEntryId);
 });
 
+$('#detailSetToday').addEventListener('click', () => {
+  const e = state.entries.find(x => x.id === detailEntryId);
+  if(!e) return;
+  e.date = todayISO();
+  saveState();
+  renderAll();
+  openDetail(detailEntryId);
+  toast('Date set to today');
+});
+
 $('#detailMoveUp').addEventListener('click', () => moveEntry(detailEntryId, -1));
 $('#detailMoveDown').addEventListener('click', () => moveEntry(detailEntryId, 1));
 
