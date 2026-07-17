@@ -7,7 +7,17 @@ const STORAGE_KEY = 'trackline.v1';
 const COLORS = ['amber','cyan','violet','rose','green','blue','orange'];
 
 const uid = () => (crypto.randomUUID ? crypto.randomUUID() : 'id-' + Date.now() + '-' + Math.random().toString(16).slice(2));
-const todayISO = () => new Date().toISOString().slice(0,10);
+// Formats a Date as a local-calendar YYYY-MM-DD string. Deliberately NOT
+// using toISOString() here — that converts to UTC first, which silently
+// shifts the date by a day for any timezone ahead of UTC (e.g. Taipei,
+// UTC+8: local midnight is 16:00 the previous day in UTC).
+const toLocalISO = (d) => {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+};
+const todayISO = () => toLocalISO(new Date());
 const $ = (sel, root=document) => root.querySelector(sel);
 const $$ = (sel, root=document) => Array.from(root.querySelectorAll(sel));
 
@@ -121,7 +131,7 @@ function renderHeatmap(){
   const cells = [];
   const cur = new Date(start);
   while(cur <= today){
-    const iso = cur.toISOString().slice(0,10);
+    const iso = toLocalISO(cur);
     cells.push({ iso, count: counts[iso] || 0, future: cur > today });
     cur.setDate(cur.getDate() + 1);
   }
@@ -140,7 +150,7 @@ function renderHeatmap(){
   let streak = 0;
   let d = new Date(today);
   while(true){
-    const iso = d.toISOString().slice(0,10);
+    const iso = toLocalISO(d);
     if(counts[iso] > 0){ streak++; d.setDate(d.getDate()-1); }
     else break;
   }
