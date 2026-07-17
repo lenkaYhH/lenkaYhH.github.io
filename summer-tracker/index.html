@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trackline — Summer Ops Log</title>
+<meta name="theme-color" content="#0B0E14">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B0E14%22/><circle cx=%2230%22 cy=%2230%22 r=%228%22 fill=%22%23F2A93B%22/><circle cx=%2270%22 cy=%2270%22 r=%228%22 fill=%22%234FD1C5%22/><path d=%22M30 30 L70 70%22 stroke=%22%238B93A6%22 stroke-width=%224%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" width="26" height="26">
+        <circle cx="9" cy="9" r="4.5" fill="var(--accent-amber)"/>
+        <circle cx="23" cy="23" r="4.5" fill="var(--accent-cyan)"/>
+        <path d="M9 9 L23 23" stroke="var(--text-faint)" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div class="brand-text">
+        <h1>TRACKLINE</h1>
+        <p>summer ops log · <span id="dateToday"></span></p>
+      </div>
+    </div>
+
+    <div class="topbar-stats" id="topStats"></div>
+
+    <div class="topbar-actions">
+      <button class="btn btn-ghost" id="btnList" title="Toggle rail / list view">☰ List</button>
+      <button class="btn btn-ghost" id="btnTodoist">⇄ Todoist</button>
+      <button class="btn btn-ghost" id="btnSettings">⚙</button>
+      <button class="btn btn-primary" id="btnNewProject">+ Project</button>
+    </div>
+  </header>
+
+  <!-- ===== QUICK ADD ===== -->
+  <div class="quickbar">
+    <select id="qaProject" class="qa-select"></select>
+    <select id="qaKind" class="qa-select qa-kind">
+      <option value="milestone">● Milestone</option>
+      <option value="mark">· Mark</option>
+    </select>
+    <input id="qaTitle" class="qa-input" type="text" placeholder="Log something — 'solved CSES range queries', 'v0.2 nav telemetry parsing'…" maxlength="140">
+    <div class="qa-date-wrap">
+      <input id="qaDate" class="qa-date" type="date">
+      <button class="btn btn-tiny" id="qaToday">Today</button>
+    </div>
+    <button class="btn btn-primary" id="qaAdd">Add</button>
+  </div>
+
+  <!-- ===== ACTIVITY STRIP ===== -->
+  <section class="activity-strip">
+    <div class="activity-heat" id="heatmap"></div>
+    <div class="activity-meta">
+      <div class="streak" id="streakBox">
+        <span class="streak-num" id="streakNum">0</span>
+        <span class="streak-label">day streak</span>
+      </div>
+      <div class="filters" id="statusFilters"></div>
+    </div>
+  </section>
+
+  <!-- ===== BOARD (rails) ===== -->
+  <main class="board" id="board"></main>
+
+  <p class="empty-hint" id="emptyHint" hidden>No tracks yet. Hit <strong>+ Project</strong> to lay your first rail.</p>
+
+</div>
+
+<!-- ===== MODAL: New / Edit Project ===== -->
+<div class="modal-overlay" id="modalProject" hidden>
+  <div class="modal">
+    <div class="modal-head">
+      <h2 id="projModalTitle">New Track</h2>
+      <button class="modal-close" data-close="modalProject">×</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="pjId">
+      <label class="field">
+        <span>Name</span>
+        <input id="pjName" type="text" placeholder="e.g. Flight Software" maxlength="60">
+      </label>
+      <label class="field">
+        <span>Category</span>
+        <select id="pjCategory">
+          <option>Informatics</option>
+          <option>Uni</option>
+          <option>Teams</option>
+          <option>Personal</option>
+          <option>Design</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Status</span>
+        <select id="pjStatus">
+          <option value="active">Active</option>
+          <option value="paused">Paused</option>
+          <option value="done">Done</option>
+        </select>
+      </label>
+      <label class="field">
+        <span>Description <em>(optional)</em></span>
+        <textarea id="pjDesc" rows="2" placeholder="What is this track about?"></textarea>
+      </label>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-danger" id="pjDelete" hidden>Delete track</button>
+      <div class="spacer"></div>
+      <button class="btn btn-ghost" data-close="modalProject">Cancel</button>
+      <button class="btn btn-primary" id="pjSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL: New / Edit Entry ===== -->
+<div class="modal-overlay" id="modalEntry" hidden>
+  <div class="modal modal-wide">
+    <div class="modal-head">
+      <h2 id="entryModalTitle">New Entry</h2>
+      <button class="modal-close" data-close="modalEntry">×</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="enId">
+      <div class="field-row">
+        <label class="field">
+          <span>Track</span>
+          <select id="enProject"></select>
+        </label>
+        <label class="field field-narrow">
+          <span>Weight</span>
+          <select id="enKind">
+            <option value="milestone">● Milestone</option>
+            <option value="mark">· Mark</option>
+          </select>
+        </label>
+      </div>
+      <label class="field">
+        <span>Title</span>
+        <input id="enTitle" type="text" placeholder="What happened?" maxlength="140">
+      </label>
+      <label class="field">
+        <span>Date <em>(optional — leave blank if unsure when)</em></span>
+        <div class="qa-date-wrap">
+          <input id="enDate" type="date">
+          <button class="btn btn-tiny" id="enToday">Today</button>
+          <button class="btn btn-tiny btn-ghost" id="enClearDate">Clear</button>
+        </div>
+      </label>
+      <label class="field">
+        <span>Notes</span>
+        <textarea id="enNotes" rows="3" placeholder="Reflections, context, what's next…"></textarea>
+      </label>
+      <label class="field">
+        <span>Code / snippet <em>(optional)</em></span>
+        <div class="field-row">
+          <input id="enCodeLang" type="text" placeholder="language (e.g. cpp)" class="lang-input">
+        </div>
+        <textarea id="enCode" rows="4" class="code-area" placeholder="Paste a snippet, formula, command…"></textarea>
+      </label>
+      <label class="field">
+        <span>Links</span>
+        <div id="enLinks" class="links-list"></div>
+        <button class="btn btn-tiny btn-ghost" id="enAddLink">+ add link</button>
+      </label>
+    </div>
+    <div class="modal-foot">
+      <button class="btn btn-danger" id="enDelete" hidden>Delete</button>
+      <div class="spacer"></div>
+      <button class="btn btn-ghost" data-close="modalEntry">Cancel</button>
+      <button class="btn btn-primary" id="enSave">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL: Settings ===== -->
+<div class="modal-overlay" id="modalSettings" hidden>
+  <div class="modal modal-wide">
+    <div class="modal-head">
+      <h2>Settings</h2>
+      <button class="modal-close" data-close="modalSettings">×</button>
+    </div>
+    <div class="modal-body">
+      <h3 class="section-title">Data</h3>
+      <p class="hint">Everything lives in this browser's local storage — nothing leaves your machine except optional Todoist calls. Back up regularly.</p>
+      <div class="btn-row">
+        <button class="btn btn-ghost" id="btnExport">↓ Export JSON</button>
+        <button class="btn btn-ghost" id="btnImportTrigger">↑ Import JSON</button>
+        <input type="file" id="fileImport" accept="application/json" hidden>
+        <button class="btn btn-danger" id="btnWipe">Wipe all data</button>
+      </div>
+
+      <h3 class="section-title">Todoist integration</h3>
+      <p class="hint">Uses the Todoist REST API directly from your browser. Create a token at
+        <a href="https://todoist.com/app/settings/integrations/developer" target="_blank" rel="noopener">todoist.com → Settings → Integrations → Developer</a>.
+        Stored only in local storage.</p>
+      <label class="field">
+        <span>API token</span>
+        <input id="tdToken" type="password" placeholder="paste your Todoist API token">
+      </label>
+      <h4 class="subsection-title">Sources</h4>
+      <p class="hint">Point Trackline at specific Todoist projects/sections — e.g. project "Informatics" section "Olympiad", or project "Uni" (whole project).</p>
+      <div id="tdSources" class="sources-list"></div>
+      <button class="btn btn-tiny btn-ghost" id="tdAddSource">+ add source</button>
+    </div>
+    <div class="modal-foot">
+      <div class="spacer"></div>
+      <button class="btn btn-primary" id="tdSave">Save settings</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODAL: Todoist import ===== -->
+<div class="modal-overlay" id="modalTodoist" hidden>
+  <div class="modal modal-wide">
+    <div class="modal-head">
+      <h2>Import from Todoist</h2>
+      <button class="modal-close" data-close="modalTodoist">×</button>
+    </div>
+    <div class="modal-body">
+      <div id="tdImportStatus" class="hint">Configure sources in Settings, then sync.</div>
+      <button class="btn btn-ghost" id="tdSync">⇄ Sync now</button>
+      <div id="tdImportList" class="import-list"></div>
+    </div>
+    <div class="modal-foot">
+      <div class="spacer"></div>
+      <label class="field field-narrow" style="min-width:160px">
+        <span>Import as</span>
+        <select id="tdImportKind">
+          <option value="milestone">● Milestone</option>
+          <option value="mark">· Mark</option>
+        </select>
+      </label>
+      <button class="btn btn-primary" id="tdImportSelected">Import selected →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== ENTRY DETAIL DRAWER ===== -->
+<div class="modal-overlay" id="modalDetail" hidden>
+  <div class="modal modal-wide" id="detailModalBox">
+    <div class="modal-head">
+      <h2 id="detailTitle">Entry</h2>
+      <button class="modal-close" data-close="modalDetail">×</button>
+    </div>
+    <div class="modal-body" id="detailBody"></div>
+    <div class="modal-foot">
+      <button class="btn btn-ghost" id="detailMoveUp">↑ move up</button>
+      <button class="btn btn-ghost" id="detailMoveDown">↓ move down</button>
+      <div class="spacer"></div>
+      <button class="btn btn-ghost" id="detailEdit">Edit</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="app.js"></script>
+</body>
+</html>
