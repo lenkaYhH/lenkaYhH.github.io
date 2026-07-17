@@ -274,6 +274,45 @@ function renderLane(project){
   });
   lane.appendChild(rail);
 
+  rail.addEventListener('dragover', (e) => {
+    if(!draggedEntryId) return;
+    e.preventDefault();
+    e.dataTransfer.dropEffect = 'move';
+    const stations = $$('.station', rail).filter(s => s.dataset.entryId !== draggedEntryId);
+    let target = null;
+    for(const s of stations){
+      const rect = s.getBoundingClientRect();
+      if(e.clientY < rect.top + rect.height / 2){ target = s; break; }
+    }
+    clearDragOverHighlight();
+    rail.classList.remove('drag-over-end');
+    if(target){ target.classList.add('drag-over'); dragOverEl = target; }
+    else{ rail.classList.add('drag-over-end'); }
+  });
+  rail.addEventListener('dragleave', (e) => {
+    if(!rail.contains(e.relatedTarget)){
+      clearDragOverHighlight();
+      rail.classList.remove('drag-over-end');
+    }
+  });
+  rail.addEventListener('drop', (e) => {
+    e.preventDefault();
+    const entryId = draggedEntryId || e.dataTransfer.getData('text/plain');
+    clearDragOverHighlight();
+    rail.classList.remove('drag-over-end');
+    if(!entryId) return;
+    const stations = $$('.station', rail).filter(s => s.dataset.entryId !== entryId);
+    let beforeId = null;
+    for(const s of stations){
+      const rect = s.getBoundingClientRect();
+      if(e.clientY < rect.top + rect.height / 2){ beforeId = s.dataset.entryId; break; }
+    }
+    const movedProject = state.entries.find(x => x.id === entryId)?.projectId;
+    moveEntryToPosition(entryId, project.id, beforeId);
+    renderAll();
+    toast(movedProject === project.id ? 'Reordered' : `Moved to ${project.name}`);
+  });
+
   const addBtn = document.createElement('button');
   addBtn.className = 'lane-add';
   addBtn.textContent = '+ add entry';
@@ -283,10 +322,31 @@ function renderLane(project){
   return lane;
 }
 
+/* ============ DRAG STATE (move/reorder entries) ============ */
+let draggedEntryId = null;
+let dragOverEl = null;
+function clearDragOverHighlight(){
+  if(dragOverEl){ dragOverEl.classList.remove('drag-over'); dragOverEl = null; }
+}
+
 function renderStation(entry, project, color){
   const el = document.createElement('div');
   el.className = `station ${entry.kind === 'mark' ? 'mark' : ''} ${entry.date ? 'dated' : ''}`;
   el.style.setProperty('--dot-color', color);
+  el.draggable = true;
+  el.dataset.entryId = entry.id;
+
+  el.addEventListener('dragstart', (e) => {
+    draggedEntryId = entry.id;
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', entry.id);
+    setTimeout(() => el.classList.add('dragging'), 0);
+  });
+  el.addEventListener('dragend', () => {
+    el.classList.remove('dragging');
+    clearDragOverHighlight();
+    draggedEntryId = null;
+  });
 
   const node = document.createElement('div');
   node.className = 'station-node';
@@ -574,6 +634,24 @@ function moveEntry(entryId, dir){
   openDetail(entryId);
 }
 
+// Moves (or reorders) an entry, optionally into a different project. If
+// beforeEntryId is given, the entry lands just above it; otherwise it's
+// appended to the end of the target project's rail.
+function moveEntryToPosition(entryId, targetProjectId, beforeEntryId){
+  const entry = state.entries.find(x => x.id === entryId);
+  if(!entry) return;
+  entry.projectId = targetProjectId;
+  const siblings = entriesFor(targetProjectId).filter(x => x.id !== entryId);
+  let insertIdx = siblings.length;
+  if(beforeEntryId){
+    const idx = siblings.findIndex(x => x.id === beforeEntryId);
+    if(idx !== -1) insertIdx = idx;
+  }
+  siblings.splice(insertIdx, 0, entry);
+  siblings.forEach((e, i) => { e.order = i + 1; });
+  saveState();
+}
+
 /* ============ QUICK ADD ============ */
 $('#qaToday').addEventListener('click', () => { $('#qaDate').value = todayISO(); });
 
@@ -614,32 +692,32 @@ $('#btnSettings').addEventListener('click', () => {
 function renderSourceRows(){
   const wrap = $('#tdSources');
   wrap.innerHTML = '';
-  state.todoist.sources.forEach((s, i) => {
-    const row = document.createElement('div');
-    row.className = 'source-row';
-    row.innerHTML = `
-      <input type="text" placeholder="label (e.g. Olympiad)" class="src-label" value="${escapeHtml(s.label||'')}">
-      <input type="text" placeholder="Todoist project name" class="src-project" value="${escapeHtml(s.projectName||'')}">
-      <input type="text" placeholder="section (optional)" class="src-section" value="${escapeHtml(s.sectionName||'')}">
-      <button class="btn btn-tiny btn-ghost src-remove" type="button">×</button>
-    `;
-    row.querySelector('.src-remove').addEventListener('click', () => { row.remove(); });
-    row.dataset.idx = i;
-    wrap.appendChild(row);
+  state.todoist.sources.forEach((s) => {
+    wrap.appendChild(buildSourceRow(s));
   });
 }
-$('#tdAddSource').addEventListener('click', () => {
-  const wrap = $('#tdSources');
+
+function buildSourceRow(s = {}){
   const row = document.createElement('div');
   row.className = 'source-row';
+  const projectOpts = state.projects.map(p => `<option value="${p.id}">${escapeHtml(p.name)}</option>`).join('')
+    || '<option value="">No tracks yet</option>';
   row.innerHTML = `
-    <input type="text" placeholder="label (e.g. Olympiad)" class="src-label">
-    <input type="text" placeholder="Todoist project name" class="src-project">
-    <input type="text" placeholder="section (optional)" class="src-section">
+    <input type="text" placeholder="label (e.g. Olympiad)" class="src-label" value="${escapeHtml(s.label||'')}">
+    <input type="text" placeholder="Todoist project name" class="src-project" value="${escapeHtml(s.projectName||'')}">
+    <input type="text" placeholder="section (optional)" class="src-section" value="${escapeHtml(s.sectionName||'')}">
+    <select class="src-target" title="Import into this track">${projectOpts}</select>
     <button class="btn btn-tiny btn-ghost src-remove" type="button">×</button>
   `;
+  const targetSel = row.querySelector('.src-target');
+  if(s.targetProjectId && state.projects.some(p => p.id === s.targetProjectId)){
+    targetSel.value = s.targetProjectId;
+  }
   row.querySelector('.src-remove').addEventListener('click', () => row.remove());
-  wrap.appendChild(row);
+  return row;
+}
+$('#tdAddSource').addEventListener('click', () => {
+  $('#tdSources').appendChild(buildSourceRow());
 });
 
 $('#tdSave').addEventListener('click', () => {
@@ -647,7 +725,8 @@ $('#tdSave').addEventListener('click', () => {
   state.todoist.sources = $$('.source-row', $('#tdSources')).map(row => ({
     label: row.querySelector('.src-label').value.trim(),
     projectName: row.querySelector('.src-project').value.trim(),
-    sectionName: row.querySelector('.src-section').value.trim()
+    sectionName: row.querySelector('.src-section').value.trim(),
+    targetProjectId: row.querySelector('.src-target').value || ''
   })).filter(s => s.projectName);
   saveState();
   closeModal('modalSettings');
@@ -779,6 +858,7 @@ async function syncTodoist(){
       filtered.forEach(t => {
         collected.push({
           source: source.label || source.projectName,
+          targetProjectId: source.targetProjectId || '',
           taskId: t.id,
           content: t.content,
           description: t.description,
@@ -810,10 +890,16 @@ function refreshTodoistImportList(){
     groups[t.source].push(t);
   });
   Object.entries(groups).forEach(([source, items]) => {
+    const srcConfig = state.todoist.sources.find(s => (s.label || s.projectName) === source);
+    const targetProject = srcConfig && srcConfig.targetProjectId ? projectById(srcConfig.targetProjectId) : null;
+
     const label = document.createElement('div');
     label.className = 'import-group-label';
-    label.textContent = source;
+    label.innerHTML = targetProject
+      ? `${escapeHtml(source)} <span class="import-group-target">→ ${escapeHtml(targetProject.name)}</span>`
+      : `${escapeHtml(source)} <span class="import-group-target warn">⚠ no target track set — fix in Settings</span>`;
     wrap.appendChild(label);
+
     items.forEach(item => {
       if(item.error){
         const div = document.createElement('div');
@@ -832,43 +918,33 @@ function refreshTodoistImportList(){
       wrap.appendChild(row);
     });
   });
-
-  // project target selector — reuse quick-add project select list at bottom via a select injected once
-  if(!$('#tdTargetProject')){
-    const sel = document.createElement('select');
-    sel.id = 'tdTargetProject';
-    sel.className = 'qa-select';
-    sel.style.marginTop = '10px';
-    wrap.parentElement.insertBefore(sel, wrap);
-  }
-  $('#tdTargetProject').innerHTML = state.projects.map(p => `<option value="${p.id}">→ ${escapeHtml(p.name)}</option>`).join('') || '<option disabled>No tracks yet</option>';
 }
 
 $('#tdImportSelected').addEventListener('click', () => {
-  const targetSel = $('#tdTargetProject');
-  const projectId = targetSel ? targetSel.value : null;
-  if(!projectId){ toast('Create a track to import into first'); return; }
   const kind = $('#tdImportKind').value;
   const checked = $$('.imp-check:checked', $('#tdImportList'));
   if(!checked.length){ toast('Select at least one task'); return; }
 
+  let imported = 0, skipped = 0;
   checked.forEach(chk => {
     const taskId = chk.dataset.taskId;
     const item = todoistCache.tasks.find(t => t.taskId === taskId);
     if(!item) return;
+    if(!item.targetProjectId || !projectById(item.targetProjectId)){ skipped++; return; }
     state.entries.push({
-      id: uid(), projectId, kind, title: item.content,
+      id: uid(), projectId: item.targetProjectId, kind, title: item.content,
       date: item.date || null,
       notes: item.description || '',
       code: null,
       links: item.url ? [{ label:'Todoist task', url:item.url }] : [],
-      order: nextOrder(projectId), createdAt: Date.now()
+      order: nextOrder(item.targetProjectId), createdAt: Date.now()
     });
+    imported++;
   });
   saveState();
   renderAll();
-  closeModal('modalTodoist');
-  toast(`Imported ${checked.length} task(s)`);
+  if(imported) closeModal('modalTodoist');
+  toast(skipped ? `Imported ${imported} · skipped ${skipped} (no target track — set one in Settings)` : `Imported ${imported} task(s)`);
 });
 
 /* ============ WHEEL → HORIZONTAL SCROLL (rails view) ============ */
