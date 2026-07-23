@@ -281,6 +281,7 @@ code{
   border-radius: var(--radius-l);
   box-shadow: var(--shadow-card);
   padding: 20px 20px 14px;
+  min-width: 0;
 }
 
 .panel-head{
@@ -403,7 +404,7 @@ code{
    --------------------------------------------------------------- */
 .calendar-grid{
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -419,7 +420,8 @@ code{
   padding: 9px 10px 10px;
   cursor: pointer;
   font-family: var(--font-body);
-  min-height: 92px;
+  /* min-height: 92px; */
+  min-height: unset;
   transition: border-color .12s ease, transform .12s ease;
 }
 .cal-card:hover{ border-color: var(--accent); transform: translateY(-1px); }
@@ -441,10 +443,8 @@ code{
   font-size: .82rem;
   font-weight: 600;
   line-height: 1.25;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .cal-stat{

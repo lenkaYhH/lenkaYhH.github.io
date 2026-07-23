@@ -47,12 +47,10 @@ const CONFIG = {
   // near the top of the page. Leave '' to hide it.
   CUTTLE_LOGIN_URL: 'https://informatica.cuttle.org/index.php?action=login',
 
-  // Edit these by hand whenever the next office hour changes — this is
-  // not pulled from the sheet, just plain config.
   OFFICE_HOURS: {
-    when: 'Zondag 19 juli, 15:00-17:00',       // e.g. 'Thursday 3 July · 16:00–17:00 CET'
-    note: '',                       // optional, e.g. a topic for the session
-    link: 'https://meet.google.com/gbu-btyd-sqp',                       // meeting URL; leave '' to hide the button
+    when: 'Vrijdag 23 juli, 10:00-12:00',
+    note: '',                       
+    link: 'https://teams.microsoft.com/meet/347980802973110?p=GixhIUChxiIhNXBJgu'                      // meeting URL; leave '' to hide the button
   },
 
   // Problem statements live in a GitHub repo as
