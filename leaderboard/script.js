@@ -48,8 +48,8 @@ const CONFIG = {
   CUTTLE_LOGIN_URL: 'https://informatica.cuttle.org/index.php?action=login',
 
   OFFICE_HOURS: {
-    when: 'Vrijdag 23 juli, 10:00-12:00',
-    note: '',                       
+    when: 'Vrijdag 24 juli, 10:00-12:00',
+    note: 'Meeting ID: 347 980 802 973 110 / Passcode: U9NE7pE6',                       
     link: 'https://teams.microsoft.com/meet/347980802973110?p=GixhIUChxiIhNXBJgu'                      // meeting URL; leave '' to hide the button
   },
 
