@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Informatics Scoreboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="brand">
+      <div class="mark">&lt;/&gt;</div>
+      <div>
+        <h1>Informatics Scoreboard</h1>
+        <p>Cuttle &amp; Non-Cuttle problem tracker &mdash; live from Google Sheets</p>
+      </div>
+    </div>
+    <div class="sync-box">
+      <div class="sync-status"><span class="dot" id="syncDot"></span><span id="syncText">connecting&hellip;</span></div>
+      <select class="mini" id="autoRefreshSel" title="Auto-refresh interval">
+        <option value="0">Auto-refresh: off</option>
+        <option value="60000">Every 1 min</option>
+        <option value="300000" selected>Every 5 min</option>
+        <option value="900000">Every 15 min</option>
+      </select>
+      <button class="btn" id="refreshBtn">&#8635; Refresh</button>
+      <button class="btn" id="topicLockBtn"></button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab-btn active" data-tab="overview">Overview</button>
+    <button class="tab-btn" data-tab="cuttle">Cuttle Problems</button>
+    <button class="tab-btn" data-tab="noncuttle">Non-Cuttle Problems</button>
+    <button class="tab-btn" data-tab="students">Students</button>
+  </nav>
+
+  <!-- OVERVIEW -->
+  <div class="tab-panel active" id="tab-overview">
+    <div class="stat-grid" id="statGrid"></div>
+    <section class="panel">
+      <h2>Student Leaderboard <span style="font-weight:400; font-size:11px; color:var(--text-dim);">total problems solved</span>
+        <select class="mini" id="lbScope">
+          <option value="all">All problems</option>
+          <option value="cuttle">Cuttle only</option>
+          <option value="noncuttle">Non-Cuttle only</option>
+        </select>
+      </h2>
+      <ol class="lb-list" id="studentLeaderboard"></ol>
+    </section>
+    <div class="lb-grid">
+      <section class="panel">
+        <h2>Cuttle Problems <span class="tag-src cuttle">CUTTLE</span></h2>
+        <div style="display:flex; gap:8px; margin-bottom:10px;">
+          <button class="btn small active-toggle" data-toggle="cuttleLbMode" data-val="hardest">Least solved</button>
+          <button class="btn small ghost" data-toggle="cuttleLbMode" data-val="easiest">Most solved</button>
+        </div>
+        <ol class="lb-list" id="cuttleProblemLeaderboard"></ol>
+      </section>
+      <section class="panel">
+        <h2>Non-Cuttle Problems <span class="tag-src noncuttle">NON-CUTTLE</span></h2>
+        <div style="display:flex; gap:8px; margin-bottom:10px;">
+          <button class="btn small active-toggle" data-toggle="ncLbMode" data-val="hardest">Least solved</button>
+          <button class="btn small ghost" data-toggle="ncLbMode" data-val="easiest">Most solved</button>
+          <button class="btn small ghost" data-toggle="ncLbMode" data-val="stuck">Most attempted, unsolved</button>
+        </div>
+        <ol class="lb-list" id="ncProblemLeaderboard"></ol>
+      </section>
+    </div>
+  </div>
+
+  <!-- CUTTLE -->
+  <div class="tab-panel" id="tab-cuttle">
+    <div class="filterbar" id="cuttleFilterBar"></div>
+    <div class="table-scroll"><table class="matrix" id="cuttleTable"></table></div>
+  </div>
+
+  <!-- NON-CUTTLE -->
+  <div class="tab-panel" id="tab-noncuttle">
+    <div class="filterbar" id="ncFilterBar"></div>
+    <div class="table-scroll"><table class="matrix" id="ncTable"></table></div>
+  </div>
+
+  <!-- STUDENTS -->
+  <div class="tab-panel" id="tab-students">
+    <div class="filterbar" id="studentsFilterBar"></div>
+    <div class="student-grid" id="studentGrid"></div>
+  </div>
+
+  <footer class="note">Data pulled directly from the shared Google Sheet &middot; nothing is stored server-side &middot; refresh the page any time for the latest state</footer>
+</div>
+
+<div class="modal-backdrop" id="lockModal">
+  <div class="modal">
+    <h3>Unlock topic tags</h3>
+    <p>Topic tags are hidden by default. Enter the passphrase to reveal them for this session.</p>
+    <div class="err" id="lockErr">Incorrect passphrase.</div>
+    <input type="password" id="lockInput" placeholder="Passphrase">
+    <div class="row">
+      <button class="btn ghost" id="lockCancel">Cancel</button>
+      <button class="btn primary" id="lockSubmit">Unlock</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
