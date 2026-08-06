@@ -48,9 +48,9 @@ const CONFIG = {
   CUTTLE_LOGIN_URL: 'https://informatica.cuttle.org/index.php?action=login',
 
   OFFICE_HOURS: {
-    when: 'zondag 2 aug, 14:00-16:00',
-    note: 'TEAMS Meeting ID: 377 725 630 225 887 / Passcode: wB6JP2Rr',                       
-    link: 'https://teams.microsoft.com/meet/377725630225887?p=7EQ7I0rVCfP2nqMnUG'                      // meeting URL; leave '' to hide the button
+    when: 'Zaterdag 8 aug, 16:00-18:00',
+    note: 'TEAMS Meeting ID: 317 904 369 571 922 / Passcode: Za3tp22x',                       
+    link: 'https://teams.microsoft.com/meet/317904369571922?p=SuJY7jP7KhHWFhNxsi'
   },
 
   // Problem statements live in a GitHub repo as
